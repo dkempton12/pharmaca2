@@ -1,0 +1,201 @@
+<!--Uses CSS Grid to position elements-->
+
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+
+<style>
+
+    
+    #whats-hot h1, #whats-hot h2, #whats-hot h3 {
+        font-family: 'Libre Baskerville'   
+    }
+    
+    #whats-hot h3 {
+        font-weight: 400;   
+        margin-top: 0;
+        font-size: 1.5em;
+        text-transform: lowercase;
+    }
+    
+    #whats-hot span {
+        color: red;
+        font-size: 80%;
+        text-transform: lowercase;
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+    #whats-hot p {
+        line-height: 2em;   
+        font-weight: 300;
+        font-size: 15px;
+        color: #333;
+        font-family: 'Raleway';
+    }
+    
+    #whats-hot.grid-wrapper {
+      max-width: 1300px;
+      margin: 0 auto;  
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-column-gap: 50px;
+      grid-auto-rows: minmax(100px, auto);
+      grid-row-gap: 100px;
+    }
+
+
+    #whats-hot.grid-wrapper img {
+        max-width: 100%;
+    }
+
+
+    #whats-hot .hot-box {
+        grid-column: auto / span 4;
+        grid-row: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    #whats-hot .page-title {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    #whats-hot .col-span-1 {
+      grid-column: auto / span 1;
+    }
+
+    #whats-hot .row-span-1 {
+      grid-row: auto / span 1;
+    }
+    
+    #whats-hot .col-span-2 {
+      grid-column: auto / span 2;
+    }
+
+    #whats-hot .row-span-2 {
+      grid-row: auto / span 2;
+    }
+    
+    #whats-hot .col-span-3 {
+      grid-column: auto / span 3;
+    }
+
+    #whats-hot .row-span-3 {
+      grid-row: auto / span 3;
+    }
+    
+    
+    #whats-hot .header-right {
+        background: #efefef;
+        margin: 1.5em 0 0 0;
+        padding: 1.3em 1.5em;
+    }
+    
+    #whats-hot .header-right h2 {
+        font-style: italic;
+        letter-spacing: 1px;
+        line-height: normal;
+        padding: 0;
+        margin: 0.2em 0 0.2em;
+        text-transform: initial;   
+    }
+    
+    #whats-hot .header-left h1 span {
+        color: #be0505;
+        text-transform: uppercase;
+        letter-spacing: -3px;
+        font-size: 3em;
+        font-style: normal;
+        display: block;
+    }
+    
+    #whats-hot .hot-box p {
+        margin-left: 1em;   
+    }
+    
+    #whats-hot .page-title p.slogan {
+        font-size: 1.5em;
+        color: #333;
+        padding: 0;
+        margin: 0 0 0.5em 0;
+    }
+    
+    
+    
+</style>
+
+
+<div id="whats-hot" class="grid-wrapper">
+    <div class="page-title">
+        <div class="col-span-2 row-span-2 header-left">
+            <h1>What's <span>Hot Now</span></h1>
+        </div>
+        <div class="col-span-2 row-span-2 header-right">
+            <h2>We've polled our experts...</h2>
+            <p class="slogan">And found out what’s trending in the world of natural health &amp; beauty. Shop their picks now! </p>
+        </div>
+    </div>
+    
+    <div class="hot-box">
+        <div class="col-span-2 row-span-2">
+           <img src="https://www.pharmaca.com/media/wysiwyg/whats-hot/2018/apr/hyaluronic-acid.jpg">
+        </div>
+        <div class="col-span-2 row-span-2">
+            <h3><span>product:</span> Hyaluronic Acid</h3>
+            <p>Give your skin a serious boost of hydration with this important nutrient that helps bind moisture to the skin. Hyaluronic acid is naturally produced by the body, but our ability to make it decreases as we age, creating dryness and increasing the chance for wrinkles. Topical hyaluronic acid improves the skin’s ability to retain moisture and creates an instant plumping effect. Skin appears softer, firmer and more volumized.</p>
+        </div>
+    </div>
+    <div class="hot-box">
+        <div class="col-span-2 row-span-2">
+           <img src="https://www.pharmaca.com/media/wysiwyg/whats-hot/2018/apr/collagen.jpg">
+        </div>
+        <div class="col-span-2 row-span-2">
+            <h3><span>product:</span> Collagen</h3>
+            <p>This nutritent is vital for the health of your skin, hair, tendons, cartilage, bones and joints. Choose collagen from a variety of sources and in formulations with greens, protein and more.</p>
+        </div>
+    </div>
+    <div class="hot-box">
+        <div class="col-span-1 row-span-2">
+            <h3><span>product:</span> Mineral Sunscreen</h3>
+            <p>Minerals like zinc oxide and titanium dioxide offer strong protection from UV rays and don’t break down in the sun. Find it in powders, lotions and cosmetics!</p>
+        </div>
+        <div class="col-span-3 row-span-2">
+           <img src="https://www.pharmaca.com/media/wysiwyg/whats-hot/2018/apr/mineral-sunscreen.jpg">
+        </div>
+    </div>
+    <div class="hot-box">
+        <div class="col-span-2 row-span-2">
+            <h3><span>product:</span> Digestive Enzymes</h3>
+            <p>These beneficial supplements can help break down food to relieve indigestion and make nutrients for available for absorption. When taken on an empty stomach, enzymes also help fight systemic inflammation throughout the body.</p>
+        </div>
+        <div class="col-span-2 row-span-2">
+           <img src="https://www.pharmaca.com/media/wysiwyg/whats-hot/2018/apr/digestive-enzymes.jpg">
+        </div>
+    </div>  
+    <div class="hot-box">
+        <div class="col-span-2 row-span-2">
+           <img src="https://www.pharmaca.com/media/wysiwyg/whats-hot/2018/apr/boody.jpg">
+        </div>
+        <div class="col-span-2 row-span-2">
+            <h3><span>brand:</span> Boody</h3>
+            <h3><span>category:</span> Bamboo-Based Apparel</h3>
+            <p>Made from super soft, breathable fabric that’s up to 95% organic bamboo, these eco-conscious undergarments feel comfortable and look great.</p>
+        </div>
+    </div>
+    <div class="hot-box">
+        <div class="col-span-2 row-span-2">
+           <img src="https://www.pharmaca.com/media/wysiwyg/whats-hot/2018/apr/medicinal-mushrooms.jpg">
+        </div>
+        <div class="col-span-2 row-span-2">
+            <h3><span>product:</span> Medicinal Mushrooms</h3>
+            <p>Great for helping boost immunity and overall health! Mushrooms can have anti-inflammatory actions and detoxify the liver, and strengthen the adrenals to help lower stress levels. They are also widely used for heart conditions, weak lungs, asthma and adrenal fatigue.</p>
+        </div>
+    </div>
+</div>
