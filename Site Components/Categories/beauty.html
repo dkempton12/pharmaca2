@@ -42,9 +42,28 @@
         
     </style>
     
+    <script>
+        require(['jquery', 'underscore', 'owl_carousel', 'owl_config' ],
+            function ($, _) {
+                $(document).ready(function() {
+                    $('#owl-slide').owlCarousel({
+                        loop:true,
+                        margin:10,
+                        nav:true,
+                        items: 1
+                    })
+                });
+            });
+    </script>
 
     <div id="custom-category">
-        <div class="row">
+        <div class="row" id="owl-slide">
+            <div class="col-md-12 cat-cta-parent">
+                <img src="/media/wysiwyg/categories/2018/beauty/cat-header-beauty.jpg" alt="Shop Moisturizers & Oils" />
+                <div class="cat-cta">
+                    <a href="/catalog/category/view/s/all-other-minerals/id/481/">Moisturizers &amp; Oils</a>
+                </div>
+            </div>
             <div class="col-md-12 cat-cta-parent">
                 <img src="/media/wysiwyg/categories/2018/beauty/cat-header-beauty.jpg" alt="Shop Moisturizers & Oils" />
                 <div class="cat-cta">
