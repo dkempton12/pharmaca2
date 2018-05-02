@@ -2,6 +2,7 @@
         #custom-category .row {
             margin-bottom: 25px;
         }
+        
         #custom-category .cat-cta-parent img,
         #custom-category .botm-cta-parent img {
             position: relative;
@@ -40,20 +41,26 @@
             align-items: center;
         }
         
-    </style>
+</style>
     
     <script>
+        // add this static block to any page that needs a single rotating slider
+        // examples are custom category pages or brand pages
+        
         require(['jquery', 'underscore', 'owl_carousel', 'owl_config' ],
             function ($, _) {
                 $(document).ready(function() {
-                    $('#owl-slide').owlCarousel({
-                        loop:true,
-                        margin:10,
-                        nav:true,
-                        items: 1
-                    })
+                    if ($('#owl-slide')) {
+                        $('#owl-slide').owlCarousel({
+                            loop:true,
+                            margin:10,
+                            nav:true,
+                            items: 1
+                        })
+                    }
                 });
-            });
+            }
+        );
     </script>
 
     <div id="custom-category">
