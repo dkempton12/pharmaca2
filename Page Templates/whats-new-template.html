@@ -1,0 +1,545 @@
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Raleway" rel="stylesheet">
+
+
+<style>
+
+.main-container {
+    position: static;
+}
+
+#whats-new-wrapper {
+    max-width: 1344.16px;
+    margin: 2em auto 0;
+}
+
+#whats-new-wrapper a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#whats-new-intro {
+    text-align: center;
+    background: url("/media/wysiwyg/whats-new/header-bg.png");
+    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#whats-new-intro h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 0;
+    text-transform: none;
+    padding-top: 0.2em;
+}
+
+#whats-new-intro p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    width: 30em;
+    margin: 0 auto 0;
+}
+
+#whats-new-wrapper .stylish-line {
+    margin-top: 4em;
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
+
+#products-container {
+    max-width: 960px;
+    margin: 4em auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+#whats-new-wrapper .product-box {
+    max-width: 100%;
+    margin: 4em 0 6em;
+    display: flex;
+    align-items: center;
+}
+
+#whats-new-wrapper .product-img {
+    width:40%;
+}
+
+#whats-new-wrapper .product-img img {
+    margin: 0 auto;
+    max-height: 330px;
+    max-width: 365px;
+}
+    
+.right-box .product-img img {
+    padding-left: 2em;
+}    
+
+#whats-new-wrapper .product-info {
+    width: 60%;
+}
+
+#whats-new-wrapper .product-desc {
+    background: #fff;
+    padding: 4em 2em;
+}
+
+#whats-new-wrapper .product-desc p {
+    font-family: "Raleway", Helvetica-neue, Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 2em;
+    line-height: 2em;
+    color: #333;
+}
+
+
+#whats-new-wrapper .product-title {
+    padding: 0.5em 0;
+}
+
+#whats-new-wrapper .product-title h2,
+#whats-new-wrapper .product-title h3 {
+    margin-bottom: 0;
+    font-family: "Libre Baskerville", serif;
+    color: #fff;
+    padding-left: 2rem;
+    text-transform: none;
+}
+
+#whats-new-wrapper .product-title h2 {
+    font-size: 20px;
+}
+
+#whats-new-wrapper .product-title h3 {
+    font-size: 18px;
+}
+
+#whats-new-wrapper .shop-prompts span {
+    font-size: 16px;
+    padding: 0 2em 0 0;
+    color: #707070;
+    font-family: "Libre Baskerville", serif;
+}
+
+#whats-new-wrapper .shop-prompts span:last-of-type {
+    padding: 0;
+}
+
+
+/*****POSITIONING OF LEFT AND RIGHT INFO****/
+
+.left-box {
+    flex-direction: row-reverse;
+}
+
+.right-box .product-desc {
+    margin-left: 2em;
+}
+
+.left-box .product-desc {
+    margin-right: 2em;
+}
+
+.right-box .product-desc p {
+    text-align: left;
+}
+
+.left-box .product-desc p,
+.left-box h2,
+.left-box h3 {
+    text-align: right;
+}
+
+.left-box h2,
+.left-box h3 {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+.left-box .shop-prompts {
+    text-align: right;
+}
+
+.right-box .shop-prompts {
+    text-align: left;
+}
+
+/* Bindie-lRAND SPECIFIC STYLING*/
+#sciote {
+    background: url("/media/wysiwyg/whats-new/2018/mar/indie-lee-bg.jpg");
+    height: 400px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#sciote .product-title {
+    background: #F2B059;
+}
+
+#sciote .shop-prompts span:first-of-type {
+    color: #F2B059;
+}  
+
+#whats-new-wrapper #sciote .product-desc {
+    padding: 2em;
+}
+    
+    
+    
+#sonage {
+    background: url("/media/wysiwyg/whats-new/2018/may/sonage-bg2.jpg");
+    height: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#sonage .product-title {
+    background: #90bb90;
+}
+
+#sonage .shop-prompts span:first-of-type {
+    color: #90bb90;
+}   
+
+#whats-new-wrapper #sonage .product-img {
+    width: 46%;
+}
+    
+    
+#tru-melange {
+    background: url("/media/wysiwyg/whats-new/2018/may/tru-melange-bg.jpg");
+    height: 400px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#tru-melange .product-title {
+    background: #8A0A4B;
+}
+
+#tru-melange .shop-prompts span:first-of-type {
+    color: #8A0A4B;
+}
+ 
+#mychelle {
+    background: url("/media/wysiwyg/whats-new/2018/may/sciote-bg.jpg");
+    height: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#mychelle .product-title {
+    background: #83969D;
+}
+
+#mychelle .shop-prompts span:first-of-type {
+    color: #83969D;
+}     
+    
+#mychelle .product-img img {
+    max-width: 300px;
+}       
+    
+#vital-proteins {
+    background: url("/media/wysiwyg/whats-new/2018/apr/vital-proteins-bg.jpg");
+    height: 400px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+    
+#vital-proteins .product-title {
+    background: #438782;
+}
+
+#vital-proteins .shop-prompts span:first-of-type {
+    color: #438782
+}  
+
+
+#bare-republic {
+    background: url("/media/wysiwyg/whats-new/2018/may/bare-republic-bg.jpg");
+    height: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#bare-republic .product-title {
+    background: #e29cc9;
+}
+    
+#bare-republic .shop-prompts span:first-of-type {
+    color: #e29cc9
+}
+
+
+
+
+/*BACKGROUND ELEMENTS***/
+
+.row1-left,
+.row1-right,
+.row2-left,
+.row2-right,
+.row3-left,
+.row3-right,
+.row4-left {
+    position: absolute;
+    z-index: 0;
+}
+
+
+.row1-left {
+    top: 30em;
+    left: 0;
+}
+
+.row1-right {
+    top: 60em;
+    right: 0;
+}
+
+.row2-left {
+    top: 95em;
+    left: 0;
+}
+
+.row2-right {
+    top: 105em;
+    right: 0;
+}
+
+.row3-left {
+    top: 160em;
+    left: 0;
+}
+
+.row3-right {
+    top: 200em;
+    right: 0;
+}
+
+.row4-left {
+    top: 180em;
+    left: 0;
+}
+
+.desktop-hide {
+    height: 300px;
+}
+
+@media screen and (min-width: 490px) {
+    .desktop-hide {
+        display:none;
+    }
+}
+
+
+@media screen and (max-width:1140px) {
+    .row1-left,
+    .row1-right,
+    .row2-left,
+    .row2-right,
+    .row3-left,
+    .row3-right,
+    .row4-left {
+        display: none;
+    }
+}
+
+@media screen and (max-width:810px) {
+
+    #whats-new-intro p {
+        width: 90%;
+    }
+
+    #whats-new-wrapper .product-box {
+        align-items: baseline;
+        flex-direction: column;
+        height: auto;
+        background-position: top;
+    }
+
+    #whats-new-wrapper .product-img {
+        padding: 4em 0 4em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #whats-new-wrapper .product-img img {
+        float: none;
+    }
+
+    #whats-new-wrapper .product-info {
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-box .product-desc {
+        margin-left: 0;
+    }
+    .left-box .product-desc {
+        margin-right: 0;
+    }
+
+    .left-box .product-desc p, .left-box h2, .left-box h3, .left-box .shop-prompts {
+        text-align: left;
+    }
+    
+    #whats-new-wrapper #nutrition .product-info,
+    .right-box .product-img img {
+        padding-left: 0;   
+    }
+    
+    #whats-new-wrapper #dr-hauschka .product-img {
+        margin-left: 0;   
+    }
+    
+    #whats-new-wrapper .shop-prompts span {
+        display: block;
+    }
+
+}
+
+</style>
+
+<div id="whats-new-wrapper">
+
+    <!--Begin Main Page Elements below-->
+    <div id="whats-new-intro">
+        <h1>new on the scene</h1>
+        <p><i>We're loving these new natural essentials from some of our favorite health and beauty lines</i></p>
+    </div>
+    <div class="stylish-line"></div>
+
+    <!--Product Containers-->
+    <div id="products-container">
+        
+        <!--Left Box 1-->
+        <div class="product-box clearfix right-box" id="sciote">
+            <div class="product-img">
+                <a href="/body-hair-care/shopby/sciote-skin"><img src="/media/wysiwyg/whats-new/2018/may/sciote.png" alt="Sciote Skin Care"></a>
+            </div>
+            <div class="product-info">
+                <div class="product-title">
+                    <h2>Sciote</h2>
+                    <h3>Body Care</h3>
+                </div>
+                <div class="product-desc">
+                    <p>Awaken your senses with this luxurious collection that hydrates, nourishes and replenishes your skin and hair to perfection! Natural oils and botanical extracts leave behind a lingering scent that will stay with you long after your bath is over. </p>
+                    <div class="shop-prompts">
+                        <span><a href="/body-hair-care/shopby/sciote-skin">Shop Now</a></span>
+                        <span><a href="/sciote-skin">Shop All Sciote</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-box clearfix left-box" id="sonage">
+            <div class="product-img">
+                <a href="/sonage-tulsi-soothing-tri-clay-mask-1oz"><img src="/media/wysiwyg/whats-new/2018/may/sonage.png" alt="sonage SnapHappy Kits"></a>
+            </div>
+            <div class="product-info">
+                <div class="product-title">
+                    <h2>Sonage</h2>
+                    <h3>Tulsi Soothing Tri Clay Mask</h3>
+                </div>
+                <div class="product-desc">
+                    <p>This calming blend of three mineral rich clays with a trifecta of healing Ayurvedic herbs—to extract toxins and impurities from the skin while delivering minerals to maintain a smooth, fresh complexion. </p>
+                    <div class="shop-prompts">
+                        <span><a href="/sonage-tulsi-soothing-tri-clay-mask-1oz">Shop Now</a></span>
+                        <span><a href="/sonage">Shop All Sonage</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Right Box 1-->
+        <div class="product-box clearfix right-box" id="tru-melange">
+             <div class="product-img">
+                <a href="/catalogsearch/result/?q=tru+melange+5oz"><img src="/media/wysiwyg/whats-new/2018/may/tru-melange.png" alt="Tru Melange Candles"></a>
+            </div>
+            <div class="product-info">
+                <div class="product-title">
+                    <h2>Tru Melange</h2>
+                    <h3>5 oz Colored Glass Candles</h3>
+                </div>
+                <div class="product-desc">
+                    <p>These beautiful, perfectly portable candles make it easy to set light to the best-selling Tru Melange scents everyone loves. </p>
+                    <div class="shop-prompts">
+                        <span><a href="/catalogsearch/result/?q=tru+melange+5oz">Shop Now</a></span>
+                        <span><a href="/tru-melange">Shop All Tru Melange</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-box clearfix left-box" id="mychelle">
+            <div class="product-img">
+                <a href="/mychelle"><img src="/media/wysiwyg/whats-new/2018/may/mychelle.png" alt="MyChelle Summer Essentials Tote"></a>
+            </div>
+            <div class="product-info">
+                <div class="product-title">
+                    <h2>MyChelle</h2>
+                    <h3>Summer Essentials Tote</h3>
+                </div>
+                <div class="product-desc">
+                    <p>Pick up everything you need to stay protected and hydrated this summer with this handy tote! The perfect way to maintain your summer glow, naturally.</p>
+                    <div class="shop-prompts">
+                        <span><a href="/mychelle-summer-essentials-tote">Shop Now</a></span>
+                        <span><a href="/mychelle">Shop All MyChelle</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <!--Left Box 2-->
+
+
+        <div class="product-box clearfix right-box" id="vital-proteins">
+            <div class="product-img">
+                <a href="/catalogsearch/result/?q=vital+proteins+creamer"><img src="/media/wysiwyg/whats-new/2018/apr/vital-proteins.png" alt="Vital Proteins"></a>
+            </div>
+            <div class="product-info">
+                <div class="product-title">
+                    <h2>Vital Proteins</h2>
+                    <h3>Collagen Creamer</h3>
+                </div>
+                <div class="product-desc">
+                    <p>A nourishing way to boost your morning brew! This versatile creamer is rich in clean collagen protein and healthy fats from organic coconut milk.</p>
+                    <div class="shop-prompts">
+                        <span><a href="/catalogsearch/result/?q=vital+proteins+creamer">Shop Now</a></span>
+                        <span><a href="/vital-proteins">Shop All Vital Proteins</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!--Right Box 1-->
+        <div class="product-box clearfix left-box" id="bare-republic">
+             <div class="product-img">
+                <a href="/catalogsearch/result/?q=bare+republic+neon"><img src="/media/wysiwyg/whats-new/2018/may/bare-republic.png" alt="Bare Republic Neon Sunscreen Sticks"></a>
+            </div>
+            <div class="product-info">
+                <div class="product-title">
+                    <h2>Bare Republic</h2>
+                    <h3>Neon Sunscreen Sticks</h3>
+                </div>
+                <div class="product-desc">
+                    <p>These healthy, eco-active mineral sunscreens are formulated for the entire family. New for 2018: natural, vibrant neon color sunscreen sticks that make sun safety fun!</p>
+                    <div class="shop-prompts">
+                        <span><a href="/catalogsearch/result/?q=bare+republic+neon">Shop Now</a></span>
+                        <span><a href="/bare-republic">Shop All Bare Republic</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

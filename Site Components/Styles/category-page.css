@@ -1,0 +1,53 @@
+
+/*Add this static block to any custom category page above the HTML*/
+
+        #custom-category .row {
+            margin-bottom: 25px;
+        }
+        #custom-category .cat-cta-parent img,
+        #custom-category .botm-cta-parent img {
+            position: relative;
+        }
+        #custom-category .cat-cta,
+        #custom-category .botm-cta {
+            position: absolute; 
+            top: 50%;
+            
+            padding: 1em;
+        }
+        #custom-category .dark-bg {
+            background: rgba(0,0,0,0.6); 
+        }
+        #custom-category .dark-bg a {
+            color: #fff; 
+        }
+        #custom-category .white-bg {
+            background: rgba(255,255,255,0.9);
+        }
+        #custom-category .botm-cta {
+            left: 10%;                        
+            transform: translate(-10%, -50%); 
+            font-size: 2.3rem;
+        }
+        #custom-category .cat-cta {
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            font-size: 2rem;
+        }
+        #custom-category .cat-cta a {
+            color: #333;
+        }
+        #custom-category p.center {
+            font-size: 2rem;
+        }
+        .botm-logo img {
+            margin-bottom: 1.8rem;
+        }
+        .cat-box {
+            min-height: 280px;
+            border: 10px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
