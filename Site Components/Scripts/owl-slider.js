@@ -1,6 +1,6 @@
 // add this static block to any page that needs a single rotating slider
         // examples are custom category pages or brand pages
-        // to initialize an owl slider, give the parent row div an id of 'owl-slide'
+// to initialize an owl slider, give the parent row div an id of 'owl-slide'
         
         require(['jquery', 'underscore', 'owl_carousel', 'owl_config' ],
             function ($, _) {
