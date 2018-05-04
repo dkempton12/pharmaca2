@@ -4,8 +4,7 @@
         #custom-category .row {
             margin-bottom: 25px;
         }
-        #custom-category .cat-cta-parent img,
-        #custom-category .botm-cta-parent img {
+        #custom-category .cta-parent img {
             position: relative;
         }
         #custom-category .cta-center,
