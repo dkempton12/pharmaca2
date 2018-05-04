@@ -8,8 +8,9 @@
         #custom-category .botm-cta-parent img {
             position: relative;
         }
-        #custom-category .cat-cta,
-        #custom-category .botm-cta {
+        #custom-category .cta-center,
+        #custom-category .cta-left,
+        #custom-category .cta-right {
             position: absolute; 
             top: 50%;
             padding: 1em;
@@ -23,19 +24,25 @@
         #custom-category .white-bg {
             background: rgba(255,255,255,0.9);
         }
-        #custom-category .botm-cta {
+        #custom-category .white-bg a {
+            color: #333;
+        }
+        #custom-category .cta-left {
             left: 10%;                        
             transform: translate(-10%, -50%); 
             font-size: 2.3rem;
         }
-        #custom-category .cat-cta {
+        #custom-category .cta-right {
+            right: 10%;                        
+            transform: translate(-10%, -50%); 
+            font-size: 2.3rem;
+        }
+        #custom-category .cta-center {
             left: 50%;
             transform: translate(-50%, -50%); 
             font-size: 2rem;
         }
-        #custom-category .cat-cta a {
-            color: #333;
-        }
+        
         #custom-category p.center {
             font-size: 2rem;
         }
