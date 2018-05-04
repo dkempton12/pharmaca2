@@ -18,7 +18,7 @@ requirejs(['jquery'], function( $ ) {
                 $('#insta-feed').append(
                         '<li class="feed-box-' + x + '">' +
                                 '<a href="' + data.data[x].link +'" target="_blank">' +
-                                '<img src="' + data.data[x].images.low_resolution.url + '">' +
+                                '<img alt="' + data.data[x].caption.text + '" src="' + data.data[x].images.low_resolution.url + '">' +
                                 '<div class="view-overlay"><p class="mid-content">' +
                                 '<span class="likes">&hearts; ' + data.data[x].likes.count + '</span>' +
                                 '<span class="comments"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" viewBox="0 0 24 24"><path d="M24 1h-24v16.981h4v5.019l7-5.019h13z"/></svg>' + data.data[x].comments.count + '</span></p></div>' +
