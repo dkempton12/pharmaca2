@@ -1,43 +1,71 @@
-
 /*Add this static block to any custom category page above the HTML*/
 
         #custom-category .row {
             margin-bottom: 25px;
         }
-        #custom-category .cat-cta-parent img,
-        #custom-category .botm-cta-parent img {
+        #custom-category .cta-parent img {
             position: relative;
         }
-        #custom-category .cat-cta,
-        #custom-category .botm-cta {
+        #custom-category .cta-center,
+        #custom-category .cta-left,
+        #custom-category .cta-right,
+        #custom-category .banner-copy-left,
+        #custom-category .banner-copy-center,
+        #custom-category .banner-copy-right {
             position: absolute; 
             top: 50%;
-            
             padding: 1em;
+        }
+
+        #custom-category .banner-copy-left *,
+        #custom-category .banner-copy-center *
+        #custom-category .banner-copy-right * {
+            margin-top: 0;
+        }
+
+        #custom-category .cta-parent a,
+        #custom-category .cta-parent p,
+        #custom-category p.center {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+
+        #custom-category .cta-parent a.primary {
+            font-size: 1.5rem;
+        }
+        #custom-category .cta-parent a {
+            text-decoration: none;
         }
         #custom-category .dark-bg {
             background: rgba(0,0,0,0.6); 
         }
-        #custom-category .dark-bg a {
+        #custom-category .dark-bg a,
+        #custom-category .copy-light * {
             color: #fff; 
         }
         #custom-category .white-bg {
             background: rgba(255,255,255,0.9);
         }
-        #custom-category .botm-cta {
+        #custom-category .white-bg a,
+        #custom-category .copy-dark * {
+            color: #333;
+        }
+        #custom-category .cta-left,
+        #custom-category .banner-copy-left {
             left: 10%;                        
             transform: translate(-10%, -50%); 
             font-size: 2.3rem;
         }
-        #custom-category .cat-cta {
+        #custom-category .cta-right,
+        #custom-category .banner-copy-right {
+            right: 10%;                        
+            transform: translate(-10%, -50%); 
+            font-size: 2.3rem;
+        }
+        #custom-category .cta-center,
+        #custom-category .banner-copy-center {
             left: 50%;
             transform: translate(-50%, -50%); 
-            font-size: 2rem;
-        }
-        #custom-category .cat-cta a {
-            color: #333;
-        }
-        #custom-category p.center {
             font-size: 2rem;
         }
         .botm-logo img {
@@ -50,4 +78,4 @@
             justify-content: center;
             align-items: center;
         }
-        
+      
