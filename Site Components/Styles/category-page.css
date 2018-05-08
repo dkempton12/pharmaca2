@@ -53,6 +53,9 @@
         #custom-category .copy-dark * {
             color: #333;
         }
+        #custom-category a.primary {
+            color: #fff; 
+        }
         #custom-category .cta-left,
         #custom-category .banner-copy-left {
             left: 10%;                        
