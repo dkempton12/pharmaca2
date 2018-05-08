@@ -17,6 +17,10 @@
             padding: 1em;
         }
 
+        #custom-category p {
+            margin-top: 1rem;
+        }
+
         #custom-category .banner-copy-left *,
         #custom-category .banner-copy-center *
         #custom-category .banner-copy-right * {
@@ -26,8 +30,7 @@
         #custom-category .cta-parent a,
         #custom-category .cta-parent p,
         #custom-category p.center {
-            font-size: 2rem;
-            margin-bottom: 0;
+            font-size: 2.3rem;
         }
 
         #custom-category .cta-parent a.primary {
@@ -66,7 +69,7 @@
         #custom-category .banner-copy-center {
             left: 50%;
             transform: translate(-50%, -50%); 
-            font-size: 2rem;
+            font-size: 2.3rem;
         }
         .botm-logo img {
             margin-bottom: 1.8rem;

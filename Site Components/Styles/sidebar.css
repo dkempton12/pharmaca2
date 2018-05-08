@@ -1,0 +1,37 @@
+/*This CSS should go on any content page that has a page hierarchy*/
+
+.cms-menu,
+.cms-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cms-menu ul {
+    background: #F4F4F4;
+}
+
+/* hide parent link */
+/**hide compare/wishlist**/
+.cms-menu li.parent > a,
+.sidebar.sidebar-additional {
+    display: none; 
+ }
+
+.cms-menu ul li a {
+    text-decoration: none;
+}
+
+.cms-menu ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+    margin: 0
+}
+
+.cms-menu ul li:last-of-type {
+    border: none;
+}
+
+.cms-menu ul li:hover {
+    background: #fafafa
+}
+

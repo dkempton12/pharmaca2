@@ -30,6 +30,7 @@ requirejs(['jquery'], function( $ ) {
             $('#insta-feed').owlCarousel({
                 loop:true,
                 margin:10,
+                nav: true,
                 responsive:{
                     0:{
                         items:1
