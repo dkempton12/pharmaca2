@@ -17,14 +17,19 @@
     display: none; 
  }
 
-.cms-menu ul li a {
+ .cms-menu ul li a {
     text-decoration: none;
+    line-height: 0;
+    text-transform: uppercase;
+    color: #333;
 }
 
 .cms-menu ul li {
     border-bottom: 1px solid #ccc;
-    padding: 1em;
-    margin: 0
+    padding: 10px 40px 10px 10px;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .cms-menu ul li:last-of-type {
@@ -35,3 +40,6 @@
     background: #fafafa
 }
 
+.cms-menu ul li a:hover {
+    text-decoration: underline;
+}
