@@ -23,16 +23,6 @@
             margin-top: 0;
         }
 
-        #custom-category .cta-parent a,
-        #custom-category .cta-parent p,
-        #custom-category p.center {
-            font-size: 2rem;
-            margin-bottom: 0;
-        }
-
-        #custom-category .cta-parent a.primary {
-            font-size: 1.5rem;
-        }
         #custom-category .cta-parent a {
             text-decoration: none;
         }
@@ -55,18 +45,23 @@
             left: 10%;                        
             transform: translate(-10%, -50%); 
             font-size: 2.3rem;
+            max-width: 50%;
         }
         #custom-category .cta-right,
         #custom-category .banner-copy-right {
             right: 10%;                        
             transform: translate(-10%, -50%); 
             font-size: 2.3rem;
+            max-width: 50%;
+        }
+        #custom-category a.primary {
+            color: #fff; 
         }
         #custom-category .cta-center,
         #custom-category .banner-copy-center {
             left: 50%;
             transform: translate(-50%, -50%); 
-            font-size: 2rem;
+            font-size: 2.3rem;
         }
         .botm-logo img {
             margin-bottom: 1.8rem;

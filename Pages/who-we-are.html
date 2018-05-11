@@ -1,69 +1,32 @@
-<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet">
-
 <style>
-.page-title {    display: none;}
-
 
 /****Typography****/
 #pharmaca-who-we-are h2,
 #who-we-are-header .header-copy h1    {
-    font-family: 'Libre Baskerville', serif;
-    margin-bottom: 3%;
     text-transform: none;
+    margin-bottom: 20px;
 }
 
 #pharmaca-who-we-are p,
 #who-we-are-navbar .nav-item,
 #who-we-are-navbar .nav-item a {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     color: #333;
     line-height: 2em;
     font-size: 15px;
 }
 
-#pharmaca-who-we-are .containers {
-    margin-bottom: 5em;
-}
-
-/****Header*****/
-#who-we-are-header .header-hero {
-    background-image: url("/media/wysiwyg/2017/who-we-are/pharmaca-team.jpg");
-    background-size: cover;
-    height: 50em;
+#pharmaca-who-we-are .row {
+    margin: 2em auto;
 }
 
 #who-we-are-header .header-copy {
     text-align: center;
-    margin-top: -15em;
-    background: #fdfdfd;
-    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding: 2% 10% 2%;
+    padding: 1em;
 }
 
-#who-we-are-header .header-copy h1 {
-    font-size: 55px;
-    color: #333;
-    margin-bottom: 0;
-}
-
-#who-we-are-header .header-copy p:first-of-type {
-    font-size: 30px;
-    margin-bottom: 1em;
-}
-
-#who-we-are-header .header-copy p:last-of-type {
-    font-size: 16px;
-    line-height: 2em;
-}
-
-.header-copy img {
-    margin: 0 auto;
-}
-    
 /****nav****/
-    
 #who-we-are-navbar {
     display: flex;
     align-items: center;
@@ -79,12 +42,11 @@
     
 .nav-item:hover {
     text-decoration: underline;
-}    
-    
+}
 
 /**holistic approach***/
 
-#pharmaca-who-we-are .section {
+#pharmaca-who-we-are .sections {
     position: relative;
 }
 
@@ -144,7 +106,7 @@
 
 /***seriously effective***/
 #seriously-effective .header-hero {
-    background: url("/media/wysiwyg/2017/who-we-are/effective.jpg");
+    background: url("/media/wysiwyg/who-we-are/effective.jpg");
     height: 32em;
     background-size: cover;
 }
@@ -222,31 +184,26 @@
         display: block;   
     }
     
-    #who-we-are-header .header-copy {
-        max-width: 100%;   
-    }
-    
-    #who-we-are-header .header-copy h1 {
-        font-size: 3.2em;
-    }
-    
 }
 
 </style>
 
 
 <div id="pharmaca-who-we-are">
-    <div class="containers">
-        <div id="who-we-are-header">
-            <div class="header-hero"></div>
-            <div class="header-copy">
-                <img src="/media/wysiwyg/2017/who-we-are/pharmaca-leaf.png" alt="Pharmaca leaf">
-                <h1>WELCOME</h1>
-                <p>to a new world of natural beauty &amp; wellness</p>
+    <div class="row">
+        <div id="who-we-are-header" class="row">
+            <div class="header-copy col-md-6 center">
+                <img src="/media/wysiwyg/who-we-are/pharmaca-leaf.png" alt="Pharmaca leaf">
+                <h1 class="h1-supporting">WELCOME</h1>
+                <h2>to a new world of natural beauty &amp; wellness</h2>
                 <p>For more than 15 years, Pharmaca has been a force for change in the world of natural health and beauty, empowering customers to think outside the box when it comes to the way they manage their own health and the products they use. </p>
+            </div>
+            <div class="header-hero col-md-6">
+                <img src="/media/wysiwyg/who-we-are/who-we-are-header.jpg" alt="Who we are header" />
+            </div>
         </div>
     </div>
-    <div class="containers">
+    <div class="row">
         <div id="who-we-are-navbar" class="clearfix">
             <div class="nav-item"><a href="/about-us/events">EVENTS</a></div>
             <div class="nav-item"><a href="/about-us/mission-and-values">MISSION &amp; VALUES</a></div>
@@ -255,21 +212,21 @@
             <div class="nav-item"><a href="/about-us/management">MANAGEMENT</a></div>
         </div>        
     </div>    
-    <div class="containers">
-        <div id="holistic-approach" class="clearfix section">
+    <div class="row">
+        <div id="holistic-approach" class="clearfix sections">
             <div class="copy">
                 <h2>a holistic approach</h2>
                 <p>Our holistic approach offers a variety of tools for healthy living, including the highest-quality vitamins, hard-to-find herbal and homeopathic formulas, and organic and natural skin care and cosmetics that will leave your skin feeling as good as it looks. The products offered here were selected based on the expertise of the many health care professionals that work in Pharmaca's stores, so you can trust that they’re the best of the best.</p>
             </div>
             <div class="image-right">
-                <img src="/media/wysiwyg/2017/who-we-are/a-holistic-approach.jpg" alt="Pharmaca's Holistic Approach">
+                <img src="/media/wysiwyg/who-we-are/a-holistic-approach.jpg" alt="Pharmaca's Holistic Approach">
             </div>
         </div>
     </div>
-    <div class="containers">
-        <div id="our-stores" class="clearfix section">
+    <div class="row">
+        <div id="our-stores" class="clearfix sections">
             <div class="image-left">
-                <img src="/media/wysiwyg/2017/who-we-are/our-stores.jpg" alt="About Pharmaca's Stores">
+                <img src="/media/wysiwyg/who-we-are/our-stores.jpg" alt="About Pharmaca's Stores">
             </div>
             <div class="copy">
                 <h2>about our stores</h2>
@@ -278,20 +235,20 @@
             </div>
         </div>
     </div>    
-    <div class="containers">
-        <div id="truly-natural" class="clearfix section">
+    <div class="row">
+        <div id="truly-natural" class="clearfix sections">
             <div class="copy">
                 <h2>truly natural</h2>
                 <p>Our products use nature’s most powerful ingredients to nourish your body, inside and out. In our collection you’ll find superfood drinks made from chlorella and acai, nourishing oils from the African baobab tree and sea buckthorn bush, and cosmetics tinted with pure minerals and fruit juices.</p>
                 <p>We carefully monitor our products to ensure they contain only the ingredients you want, and nothing you don’t—like parabens, phthalates, PEGs, sulfates, petroleum...you get the idea. We believe that if it hasn’t been absolutely been proven safe, it has no place on or in our bodies.</p>
             </div>
             <div class="image-right">
-                <img src="/media/wysiwyg/2017/who-we-are/blueberries.jpg" alt="Truly Natural Products">
+                <img src="/media/wysiwyg/who-we-are/blueberries.jpg" alt="Truly Natural Products">
             </div>
         </div>
     </div>
-    <div class="containers">
-        <div id="seriously-effective" class="clearfix section">
+    <div class="row">
+        <div id="seriously-effective" class="clearfix sections">
             <div class="header-hero">
                     
             </div>
@@ -302,14 +259,14 @@
             </div>
         </div>
     </div>
-    <div class="containers">
-        <div id="sustainably-made" class="clearfix section">
+    <div class="row">
+        <div id="sustainably-made" class="clearfix sections">
             <div class="copy">
                 <h2>sustainably made</h2>
                 <p>The products we carry are made by companies that believe as we do—that we are responsible for taking good care of the earth even as we take good care of ourselves.</p>
-                <p>That’s why we offer vitamins and supplements made with organic ingredients, cosmetics that are vegan and cruelty-free, reusable food and drink containers that keep waste out of landfills and our oceans, and skin care wrapped in recycled and recyclable packaging.</p>
+                <p>That’s why we offer vitamins and supplements made with organic ingredients, cosmetics that are vegan and cruelty-free, reusable food and drink row that keep waste out of landfills and our oceans, and skin care wrapped in recycled and recyclable packaging.</p>
                 <div class="badges">
-                    <img src="/media/wysiwyg/2017/who-we-are/pharmaca-badges.png" alt="Pharmaca is made sustainably">
+                    <img src="/media/wysiwyg/who-we-are/pharmaca-badges.png" alt="Pharmaca is made sustainably">
                 </div>
                 <div class="thanks-stopping">
                     <p>Thanks for stopping by.</p>
@@ -317,7 +274,7 @@
                 </div>
             </div>
             <div class="image-right">
-                <img src="/media/wysiwyg/2017/who-we-are/sustainable.jpg" alt="Oils and cheese">
+                <img src="/media/wysiwyg/who-we-are/sustainable.jpg" alt="Oils and cheese">
             </div>
 
         </div>
