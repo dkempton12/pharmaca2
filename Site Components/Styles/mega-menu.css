@@ -1,0 +1,36 @@
+.ves-megamenu .navigation .level0>a {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+****These styles are necessary to center the
+****dropdown menu. If you want to remove these
+****styles, go to the MM settings and remove the
+****center-dropdowns class from the menu.
+**/
+
+.center-dropdowns .submenu.dropdown-menu {
+    position: absolute;
+    width: 100%;
+    top: 80px!important
+}
+.center-dropdowns.ves-megamenu .navigation .level0 {
+    position: initial;
+}
+
+
+/***Media Queries***/
+
+@media (min-width: 768px){
+    .nav-sections {margin-bottom: 0;}
+    .ves-megamenu.top-navigation>.navigation {padding: 10px 20px 0 10px;}
+    
+}
+
+@media (max-width: 767px) {
+    .center-dropdowns .submenu.dropdown-menu {top: initial!important;}
+}
