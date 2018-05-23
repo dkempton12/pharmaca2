@@ -1,5 +1,12 @@
 <style>
-    #brand-page hr {
+    /*set inner padding for modal*/
+    div#brand-page {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    /*style section hr tags*/
+    #brand-page .hr-divider {
         height: 4px;
         width: 70px;
         text-align: center;
@@ -7,23 +14,39 @@
         background: #00a0ad;
         margin: 0 auto;
         margin-bottom: 30px;
-
     }
-</style>
 
+    /*modal styles*/
+    .modal-intro {
+        padding: 0 9em;
+    }
+    
+
+    /*margins*/
+    #brand-page img.pull-left {margin: 1em 1em 1em 0;}
+    #brand-page img.pull-right {margin: 1em 0 1em 1em;}
+    #brand-page .row {margin-bottom: 1em;}
+
+</style>
 
 <div class="row">
     <div class="col-md-12 center">
-        <button type="button" id="openModel" class="btn btn-primary">Open Model</button>
+        <img src="/media/wysiwyg/brands/pages/dr-hauschka/hauschka-test.jpg">
     </div>
 </div>
-<div id="myModel">
+<div class="row">
+    <div class="col-md-12 center modal-intro">
+        <p>Dr. Hauschka makeup includes everything you need to look fabulous – from eyeshadow and mascara to blush and concealer.  Learn more about their story!</p>
+        <button type="button" id="openModel" class="button action primary">Learn</button>
+    </div>
+</div>
+<div id="brandModel">
     <div id="brand-page">
         <!--ABOUT-->
         <div class="row">
             <div class="col-md-12">
                 <h2 class="center">About Dr. Hauschka Skin Care</h2>
-                <hr />
+                <hr class="hr-divider" />
             </div>
             <div class="col-md-12">
                 <p>Dr. Hauschka empowers you to care for the health of your skin naturally&mdash;and awaken your beauty, both inside and out.</p>
@@ -76,7 +99,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="center">Dr Hauschka in the press</h2>
-                <hr />
+                <hr class="hr-divider" />
             </div>
             <div class="col-md-6">
                 <p><strong>CAROLINA BRIDE</strong><br>
@@ -163,7 +186,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="center">Educational articles from Dr. Hauschka</h2>
-                <hr />
+                <hr class="hr-divider"
 
                 <p>In Support of a Radiant World<br>
                 <a target="_blank" href="/projectwellness/?p=3261">Learn more about Dr. Hauschka's commitment to sustainably sourced ingredients.</a></p>
@@ -179,20 +202,18 @@
         <!--BEGIN VIDEOS-->
         <div class="row">
             <div class="col-md-12 center">
-            <h2>Dr. Hauschka Videos</h2>
-            <hr />
+                <h2>Dr. Hauschka Videos</h2>
+                <hr class="hr-divider">
 
-            <h3>Top makeup application tips and tricks International Makeup Artist Karim Sattar</h3>
+                <h3>Top makeup application tips and tricks International Makeup Artist Karim Sattar</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IrQ2vnpZQyY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/IrQ2vnpZQyY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>Get tips from Karim Sattar on makeup bag essentials</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ADDRX3RPf9U?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+                <h3>Learn how to achieve the ultimate smoky eye quickly and easily with Dr. Hauschka's decorative cosmetics</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oZMjSElQwek?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             
-            <h3>Get tips from Karim Sattar on makeup bag essentials</h3>
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ADDRX3RPf9U?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            
-            <h3>Learn how to achieve the ultimate smoky eye quickly and easily with Dr. Hauschka's decorative cosmetics</h3>
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/oZMjSElQwek?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
         <!--END VIDEOS-->
@@ -202,30 +223,30 @@
  
 
 <script>
-        require(
-            [
-                'jquery',
-                'Magento_Ui/js/modal/modal'
-            ],
-            function($,modal) {
-                var options = {
-                    type: 'popup',
-                    responsive: true,
-                    innerScroll: true,
-                    title: "Dr. Hauschka's Story",
-                    clickableOverlay: true,
-                    buttons: [{
-                        text: $.mage.__('Close'),
-                        class: '',
-                        click: function () {
-                            this.closeModal();
-                        }
-                    }]
-                };
-                var popup = modal(options, $('#myModel'));
-                $("#openModel").on("click",function(){
-                    $('#myModel').modal('openModal');
-                });
-            }
-        );
-    </script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+        function($,modal) {
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                title: "Dr. Hauschka's Story",
+                clickableOverlay: true,
+                buttons: [{
+                    text: $.mage.__('Close'),
+                    class: '',
+                    click: function () {
+                        this.closeModal();
+                    }
+                }]
+            };
+            var popup = modal(options, $('#brandModel'));
+            $("#openModel").on("click",function(){
+                $('#brandModel').modal('openModal');
+            });
+        }
+    );
+</script>
