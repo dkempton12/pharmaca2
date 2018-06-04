@@ -14,15 +14,20 @@ updatePiLayout = () => {
         let price = box.getElementsByClassName('igo_product_regular_price_value')[0].innerText;
         let sale = box.getElementsByClassName('igo_product_sale_price_value')[0].innerText;
         let shopButton = box.getElementsByTagName('a')[1];
-        
-        
+
         //add bootstrap classes
         box.className += " col-md-3 center";
         box.getElementsByTagName('img')[0].alt = altText;
 
+        //add strikethroughs
+        if (price > sale) {
+           box.getElementsByClassName('igo_product_regular_price_value')[0].className += ' strikethrough';
+        }
+
         //Check to make sure sale pricing isn't the same as full price
         if(sale == '$0.00' || price == sale) {
-            box.getElementsByClassName('igo_product_sale_price_value')[0].remove();
+            box.getElementsByClassName('igo_product_sale_price')[0].remove();
+            
         }
 
         //add Shop Button
