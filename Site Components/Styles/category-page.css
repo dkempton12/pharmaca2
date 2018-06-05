@@ -1,3 +1,4 @@
+
 /*Add this static block to any custom category page above the HTML*/
 
         #custom-category .row {
@@ -73,4 +74,8 @@
             justify-content: center;
             align-items: center;
         }
-      
+
+        /**Subcategory styles***/
+        .sub-category h5 {
+            margin: 0.5em 0;
+        }
