@@ -78,4 +78,12 @@
         /**Subcategory styles***/
         .sub-category h5 {
             margin: 0.5em 0;
+            font-weight: 500;
+        }
+        .sub-category p {
+            color: #868686;
+            line-height: 20px;
+        }
+        #custom-category .row {
+            margin-bottom: 4em;
         }
