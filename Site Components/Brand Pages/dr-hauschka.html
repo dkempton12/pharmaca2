@@ -16,12 +16,29 @@
         margin-bottom: 30px;
     }
 
+    /*Videos Section*/
+    .vid-box {
+        margin: 0 0 2em 0;
+    }
+
+    .vid-box:nth-child(odd) {
+        background: #333;
+        padding: 10px 0 3em;
+    }
+
+    .vid-box:nth-child(odd) h3 {
+        color: #fff;
+        margin-top: 0em;
+    }
+
+
     /*modal styles*/
     .modal-intro {
         padding: 0 9em;
     }
-    
 
+    #brand-page h2 {margin-bottom: 0.5em}
+    
     /*margins*/
     #brand-page img.pull-left {margin: 1em 1em 1em 0;}
     #brand-page img.pull-right {margin: 1em 0 1em 1em;}
@@ -204,16 +221,18 @@
             <div class="col-md-12 center">
                 <h2>Dr. Hauschka Videos</h2>
                 <hr class="hr-divider">
-
-                <h3>Top makeup application tips and tricks International Makeup Artist Karim Sattar</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/IrQ2vnpZQyY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            
-                <h3>Get tips from Karim Sattar on makeup bag essentials</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ADDRX3RPf9U?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        
-                <h3>Learn how to achieve the ultimate smoky eye quickly and easily with Dr. Hauschka's decorative cosmetics</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oZMjSElQwek?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            
+                <div class="vid-box">
+                    <h3>Top makeup application tips and tricks International Makeup Artist Karim Sattar</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IrQ2vnpZQyY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="vid-box">
+                    <h3>Get tips from Karim Sattar on makeup bag essentials</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ADDRX3RPf9U?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="vid-box">
+                    <h3>Learn how to achieve the ultimate smoky eye quickly and easily with Dr. Hauschka's decorative cosmetics</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oZMjSElQwek?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
         <!--END VIDEOS-->
