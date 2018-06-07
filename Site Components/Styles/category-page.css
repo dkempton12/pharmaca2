@@ -91,6 +91,17 @@
             margin-bottom: 4em;
         }
 
+        .sub-category a {
+            font-size: inherit;
+            font-weight: inherit;
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .sub-category a:hover {
+            text-decoration: underline;
+        }
+
         /**owl slide fix**/
         #custom-category #owl-slide {
             height: 300px;
