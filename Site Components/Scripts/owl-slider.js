@@ -5,9 +5,11 @@
         require(['jquery', 'underscore', 'owl_carousel', 'owl_config' ],
             function ($, _) {
                 $(document).ready(function() {
-                    if ($('#owl-slide')) {
-                        $('#owl-slide').owlCarousel({
+                    if ($('.owl-slide')) {
+                        $('.owl-slide').owlCarousel({
                             loop:true,
+                            autoplay: 3000,
+                            autoplayHoverPause: true,
                             margin:10,
                             nav:true,
                             items: 1

@@ -76,14 +76,41 @@
         }
 
         /**Subcategory styles***/
-        .sub-category h5 {
+        .sub-category h2 {
             margin: 0.5em 0;
-            font-weight: 500;
+            font-weight: 800;
+            display: inline;
+            font-size: 1.5rem;
         }
         .sub-category p {
             color: #868686;
             line-height: 20px;
+            display: inline;
         }
         #custom-category .row {
             margin-bottom: 4em;
+        }
+
+        .sub-category a {
+            font-size: inherit;
+            font-weight: inherit;
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .sub-category a:hover {
+            text-decoration: underline;
+        }
+
+        /**owl slide fix**/
+        #custom-category #owl-slide {
+            height: 300px;
+            overflow: hidden;
+        }
+        .sub-category .owl-carousel .owl-stage-outer {
+            padding: 0;
+        }
+        
+        .sub-category .owl-theme .owl-dots {
+            bottom: 0;
         }

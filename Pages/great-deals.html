@@ -1,0 +1,390 @@
+<style>
+
+#promo-codes-container {
+    display: block;
+    background:url("/media/wysiwyg/great-deals/bg_pdp_bottom.gif") repeat 0 0 #ffffff;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+    
+.promo-codes-box {
+    background-color: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    width: 21.5%;
+    min-width: 292.7px;
+    margin: 2% 1.5%;
+    border-radius: 6px;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.promo-codes-box img {
+    margin: 5% auto 0;
+}
+
+#promo-codes-container:after {
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.promo-codes-box p {
+    margin: 0;
+}
+p.promo-details {
+    color: #8b8b8b;
+}
+
+p.expiration {
+    font-style: italic;
+    margin-bottom: 1em;
+} 
+
+.fancy {
+    font-family: "Libre Baskerville"
+}   
+
+.page-title {
+    margin-top: 1em;
+}
+    
+.page-title h1 {
+    margin-bottom: 0;
+}    
+      /* [Object] Modal
+ * =============================== */
+    
+    .modal {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: left;
+        background: rgba(0,0,0, .4);
+        transition: opacity .25s ease;
+    }
+    
+    .modal__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+    }
+    
+    .modal-state {
+        display: none;
+    }
+    
+    .modal-state:checked + .modal {
+        opacity: 1;
+        z-index: 1000;
+        visibility: visible;
+    }
+    
+    .modal-state:checked + .modal .modal__inner {
+        top: 30%;
+    }
+    
+    .modal__inner {
+        transition: top .25s ease;
+        position: absolute;
+        top: -20%;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        width: 25%;
+        margin: auto;
+        overflow: auto;
+        background: #fff;
+        border-radius: 5px;
+        padding: 3em 4em;
+        height: auto;;
+    }
+    
+    .modal__close {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        width: 1.1em;
+        height: 1.1em;
+        cursor: pointer;
+    }
+    
+    .modal__close:after,
+    .modal__close:before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 1.5em;
+        background: #ccc;
+        display: block;
+        transform: rotate(45deg);
+        left: 50%;
+        margin: -3px 0 0 -1px;
+        top: 0;
+    }
+    
+    .modal__close:hover:after,
+    .modal__close:hover:before {
+        background: #aaa;
+    }
+    
+    .modal__close:before {
+        transform: rotate(-45deg);
+    }
+    
+    @media screen and (max-width: 768px) {
+        .modal__inner {
+            width: 90%;
+            height: 90%;
+            box-sizing: border-box;
+        }
+        
+        #coupon-codes-lp h1 {
+            font-size: 35px;
+        }
+        
+        #coupon-codes-lp p.intro-graph {
+            font-size: 14px;   
+        }
+        
+    }
+    
+</style>
+
+
+<div id="coupon-codes-lp">
+    <div class="page-title">
+        <h1 class="fancy center">Exclusive Savings</h1>
+    </div>
+    <p class="intro-graph center fancy">Check out the latest sales and bonus offers from your favorite brands</p>
+    <div id="promo-codes-container">
+        
+        <!--BEAUTY PRODUCTS-->
+        <div class="promo-codes-box">
+            <a href="/dr-hauschka"><img src="{{media url="wysiwyg/great-deals/great-deals-dr-hauschka.jpg"}}" alt="Dr. Hauschka 25% off select products"></a>
+            <h3>25% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive-hauschka"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/dr-hauschka" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/acure"><img src="{{media url="wysiwyg/great-deals/great-deals-acure.jpg"}}" alt="acure 20% off"></a>
+            <h3>20% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/acure" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/trilogy"><img src="{{media url="wysiwyg/great-deals/great-deals-trilogy.jpg"}}" alt="Trilogy 25% off"></a>
+            <h3>25% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/trilogy" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/avene"><img src="{{media url="wysiwyg/great-deals/great-deals-avene.jpg"}}" alt="avene Skin Deals at Pharmaca"></a>
+            <h3>20% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/avene" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/pangea-organics"><img src="{{media url="wysiwyg/great-deals/great-deals-pangea-organics.jpg"}}" alt="pangea organics Deals at Pharmaca"></a>
+            <h3>Buy 1, Get 1 FREE</h3>
+            <p>Lip Tints</p>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="bogo-pangea"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/pangea-organics" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/w3ll-people"><img src="{{media url="wysiwyg/great-deals/great-deals-w3ll-people.jpg"}}" alt="W3ll PEOPLE Deals at Pharmaca"></a>
+            <h3>20% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/w3ll-people" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/s-w-basics"><img src="{{media url="wysiwyg/great-deals/great-deals-sw-basics.jpg"}}" alt="SW Basics Deals at Pharmaca"></a>
+            <h3>20% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/s-w-basics" class="button primary action">SHOP</a>
+        </div> 
+        <div class="promo-codes-box">
+            <a href="/mineral-fusion"><img src="{{media url="wysiwyg/great-deals/great-deals-mineral-fusion.jpg"}}" alt="Mineral Fusion Deals at Pharmaca"></a>
+            <h3>20% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/mineral-fusion" class="button primary action">SHOP</a>
+        </div>
+
+        <!--VITAMINS AND SUPPLEMENTS-->
+        <div class="promo-codes-box">
+            <a href="/megafood"><img src="{{media url="wysiwyg/great-deals/great-deals-megafood.jpg"}}" alt="MegaFood Deals at Pharmaca"></a>
+            <h3>28% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/megafood" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/renew-life"><img src="{{media url="wysiwyg/great-deals/great-deals-renew-life.jpg"}}" alt="Renew Life Deals at Pharmaca"></a>
+            <h3>25% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/renew-life" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/gaia-herbs"><img src="{{media url="wysiwyg/great-deals/great-deals-gaia-herbs.jpg"}}" alt="Gaia Herbs Deals at Pharmaca"></a>
+            <h3>35% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/gaia-herbs" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/neocell"><img src="{{media url="wysiwyg/great-deals/great-deals-neocell.jpg"}}" alt="Neocell Deals at Pharmaca"></a>
+            <h3>30% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/neocell" class="button primary action">SHOP</a>
+        </div>    
+        <div class="promo-codes-box">
+            <a href="/vega"><img src="{{media url="wysiwyg/great-deals/great-deals-vega.jpg"}}" alt="vega deals at Pharmaca"></a>
+            <h3>25% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/vega" class="button primary action">SHOP</a>
+        </div>
+
+        <div class="promo-codes-box">
+            <a href="/vitanica"><img src="{{media url="wysiwyg/great-deals/great-deals-vitanica.jpg"}}" alt="Vitanica Deals at Pharmaca"></a>
+            <h3>10% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/vitanica" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/ancient-nutrition"><img src="{{media url="wysiwyg/great-deals/great-deals-ancient-nutrition.jpg"}}" alt="Ancient Nutrition Best deals at Pharmaca"></a>
+            <h3>12% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/ancient-nutrition" class="button primary action">SHOP</a>
+        </div>
+        <div class="promo-codes-box">
+            <a href="/rainbow-light"><img src="{{media url="wysiwyg/great-deals/great-deals-rainbow-light.jpg"}}" alt="rainbow-light Deals at Pharmaca"></a>
+            <h3>30% OFF</h3>
+            <p>No coupon necessary</p>
+            <p class="expiration">Expires 6.5.18</p>
+            <p class="promo-details">See Details<label class="btn" for="line-drive"><i class="icon-info-sign" aria-hidden="true"></i></label></p>
+            <a href="/rainbow-light" class="button primary action">SHOP</a>
+        </div>
+    </div>
+</div>
+
+<!--
+=============HIDDEN POPUPS==================
+====PAY ATTENTION TO IDs AND CLASSES=======
+-->
+
+<!--generic sale popup-->
+<input class="modal-state" id="line-drive" type="checkbox" />
+<div class="modal">
+    <label class="modal__bg" for="line-drive"></label>
+    <div class="modal__inner">
+        <label class="modal__close" for="line-drive"></label>
+        <h3>Sale Details</h3>
+        <p>Sale prices valid through 6.5.18 No coupon code required.</p>
+    </div>
+</div>
+
+<!--Hauschka sale popup-->
+<input class="modal-state" id="line-drive-hauschka" type="checkbox" />
+<div class="modal">
+    <label class="modal__bg" for="line-drive-hauschka"></label>
+    <div class="modal__inner">
+        <label class="modal__close" for="line-drive-hauschka"></label>
+        <h3>Sale Details</h3>
+        <p>Sale prices valid through 6.5.18 No coupon code required. Excludes Med Line &amp; Cosmetics</p>
+    </div>
+</div>
+
+<!--Hauschka masks popup-->
+<input class="modal-state" id="masks-hauschka" type="checkbox" />
+<div class="modal">
+    <label class="modal__bg" for="masks-hauschka"></label>
+    <div class="modal__inner">
+        <label class="modal__close" for="masks-hauschka"></label>
+        <h3>Sale Details</h3>
+        <p>Sale prices valid through 6.5.18 No coupon code required. Valid only on Dr. Hauschka Masks.</p>
+    </div>
+</div>
+
+
+<!--pre de provence BOGO popup-->
+<input class="modal-state" id="bogo-pdp" type="checkbox" />
+<div class="modal">
+    <label class="modal__bg" for="bogo-pdp"></label>
+    <div class="modal__inner">
+        <label class="modal__close" for="bogo-pdp"></label>
+        <h3>Buy 2, Get 1 Details</h3>
+        <p>Offer valid through 6.5.18 Valid on Pre de Provence 150g and 250g bar soaps of equal or lesser value. Place 3 items in cart and discount will automatically apply to lowest priced item. Additional coupon codes not applicable.</p>
+    </div>
+</div>
+
+
+<!--Pangea BOGO popup-->
+<input class="modal-state" id="bogo-pangea" type="checkbox" />
+<div class="modal">
+    <label class="modal__bg" for="bogo-pangea"></label>
+    <div class="modal__inner">
+        <label class="modal__close" for="bogo-pangea"></label>
+        <h3>Buy 1, Get 1 Details</h3>
+        <p>Offer valid through 6.5.18 Valid on Pangea Lip Tints of equal or lesser value. Place 2 items in cart and discount will automatically apply to lowest priced item. Additional coupon codes not applicable.</p>
+    </div>
+</div>
+
+
+<!--Generic coupon code popup-->
+<input class="modal-state" id="coupon-code-details" type="checkbox" />
+<div class="modal">
+    <label class="modal__bg" for="coupon-code-details"></label>
+    <div class="modal__inner">
+        <label class="modal__close" for="coupon-code-details"></label>
+        <h3>Coupon Code Details</h3>
+        <p>Offer valid through 6.5.18 Not combinable with other coupon codes. </p>
+    </div>
+</div>
+
+<!--Buy 1, 50% off popup-->
+<input class="modal-state" id="bogo-50" type="checkbox" />
+<div class="modal">
+    <label class="modal__bg" for="bogo-50"></label>
+    <div class="modal__inner">
+        <label class="modal__close" for="bogo-50"></label>
+        <h3>Buy 1, Get 1 Details</h3>
+        <p>Offer valid through 6.5.18 Place two identical items in cart and discount will automatically apply. Mixing and matching not permitted.</p>
+    </div>
+</div>
