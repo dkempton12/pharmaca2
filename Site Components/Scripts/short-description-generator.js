@@ -13,15 +13,16 @@ require(['jquery', 'underscore',],
                         //find the area to place the short description fields
                         var whereToPlace = $('.product-info-price')[0];
                         //insert the short description field into the page
-                        $(shortDescription).insertAfter(whereToPlace)
-                        
+                        $(shortDescription).insertAfter(whereToPlace);   
                     }
-                    //create the actual short description    
+                    //create the actual short description content   
                     function getShortDescriptionContent() {
-                        var longDescription = document.querySelectorAll('.product.info.detailed .description .value')[0].innerHTML
-                        //create the short description from the long description
+                        var longDescription = document.querySelectorAll('.product.info.detailed .description .value')[0].innerHTML;
+
+                        //get short description from the long description
                         var shortDescription = longDescription.slice(0, 150);
                         shortDescription += '...<a href="#tab-label-product.info.description">Read More</a>';
+
                         //Call the create function with the short description passed in as 'content'
                         createShortDescriptionField(shortDescription)
                     }
