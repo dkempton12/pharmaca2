@@ -1,0 +1,211 @@
+<!--Add the following to the CSS section of weltpixel. Script must be added to the content section for the JS to load correctly
+#map {
+    height: 555px;
+    width: 100%;
+}
+#store-page .store-info {
+    padding-left: 0;
+}
+#store-page .store-info h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+#store-page .store-info .row {
+    margin-bottom: 1.5rem;
+}
+
+#store-page .store-info td,
+#store-page .store-info th {
+    padding-left: 0;
+}
+
+#store-page .store-info th {
+    padding-top: 0.3em;
+}
+
+#maincontent h1.page-title {
+    margin: 1em 0;
+    border-bottom: 1px solid #ededed;
+}
+#store-page h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+-->
+<!--coordinates must be changed for each store in script. Everything below should get pasted in main content-->
+<script>
+    function initMap() {
+        var losGatos = {
+            lat: 37.224145,
+            lng: -121.98286
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 17,
+                center: losGatos
+            });
+
+        var marker = new google.maps.Marker({
+            position: losGatos,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWWxjgEujniVBwV2QzteUoHxmPHZ9FIo&callback=initMap"></script>
+        
+<div id="store-page">
+    <div class="row">
+        <div class="col-md-5 store-info">
+            <h2>Store Information</h2>
+            <div class="row address">
+                <div class="col-md-2">
+                    <h3>Address: </h3>
+                </div>
+                <div class="col-md-10">
+                    <p>54 N Santa Cruz Ave<br />
+                       Los Gatos, Colorado<br />
+                      95030
+                    </p>
+                </div>
+            </div>
+            <div class="row phone">
+                <div class="col-md-2">
+                    <h3>Phone:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>408.395.1231</p>
+                </div>
+            </div>
+            <div class="row fax">
+                <div class="col-md-2">
+                    <h3>Fax:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>408.395.1947</p>
+                </div>
+            </div>
+            <div class="row services">
+                <div class="col-md-2">
+                    <h3>Services:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>Full-service pharmacy, Rx delivery, $30 gift coupon for transferred prescriptions, walk-in immunizations for whooping cough, pneumonia and flu (seasonal) </p>
+                </div>
+            </div>
+            <div class="row hours">
+                <div class="col-md-2">
+                    <h3>Hours:</h3>
+                </div>
+                <div class="col-md-10">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Day</th>
+                            <th>Retail</th>
+                            <th>Pharmacy</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10AM - 6PM</td>
+                                <td>10AM - 6PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-calendar3"></i></div>
+    <div class="row events">
+        <h2>Upcoming Events</h2>
+        <div class="col-md-6">
+            <h3>Our New Fall Event Title Example</h3>
+            <p>Join So and So alongside What'sHerFace as they take you through our fall event.</p>
+            <p><i>Wednesday &amp; Thursday, 1-3pm</i></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Really Cool Natural Beauty Event</h3>
+            <p>Stop buying makeup from places that test them on animals you monster. Join Blahblah and Madeup Person as they coach you through the best fall makeup tips.</p>
+            <p><i>Friday, Sept. 13, 1-3pm</i></p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-users"></i></div>
+    <div class="row staff">
+        <h2>Los Gatos Staff</h2>
+        <div class="col-md-12">
+            <h3>Carrie A., Store Manager, M.A.</h3>
+            <p>Carrie earned a Master's Degree in Integrative Health Studies from the California Institute of Integral Studies in San Francisco in 2006. Prior to this she completed a one-year program in Western Herbalism at the Rocky Mountain Center of Botanical Studies in Boulder, Colo. She enjoys sharing her knowledge of and experience with the many benefits of medicinal plants. Most recently, she served as Clinic Coordinator at Charlotte Maxwell Complementary Clinic, a state-licensed free clinic for underserved women with cancer. Here she gained valuable experience assisting clients in the midst of cancer treatments and managing volunteers. She joined Pharmaca in July 2010 and takes pride in contributing to the overall health of the community.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Derek C., Herbalist</h3>
+            <p>Derek began working with herbs in China in the 70's. He has practiced herbal remedies for decades. Derek teaches nutrition and herb workshops focusing on healthy cooking, dietary supplements and alternative medicine. He believes that natural food is the best medicine and natural medicine is the best food.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Melissa G., Wellness Counselor</h3>
+            <p>Melissa is a licensed acupuncturist (LAc) and educational specialist passionate about health and wellness and currently practicing in Aptos. Her education includes Masters in Traditional Chinese Medicine (MTCM), BA in Psychology, and a background in nutrition, homeopathy and aromatherapy. Melissa's goal is to utilize hjer knowledge and experience to improve and optimize the health of every person she interacts with on a individual level!</p>
+        </div>    
+        <div class="col-md-12">
+            <h3>Karma B., Esthetician, MOD</h3>
+            <p>Karmonisctia is a licensed esthetician who believes long term healthy beautiful skin comes not only from natural effective products, but total wellness as well. Karmonisctia is thrilled to work at Pharmaca where she can expand her knowledge all while helping people look and feel their best.</p>
+        </div>    
+        <div class="col-md-12">
+            <h3>Laura J., Esthetician</h3>
+            <p>A licensed Esthetician in the state of California, she received her training at Gavilan College. A passion for learning new things, she continues to educate herself about the latest trends in skin care and the beauty industry and is excited about the direction of skin care where a wide variety of natural yet effective products are available. She is a firm believer that the best formula for great skin is using products that work for your particular skin condition while following a healthy diet and life style.</p>
+        </div>  
+        <div class="col-md-12">
+            <h3>Jessica R., Esthetician</h3>
+            <p>Jessica has worked in both the beauty and wellness fields for more than 15 years. She obtained her cosmetology license in 2003 and has worked as both a stylist and skincare specialist since then. She also obtained her massage practitioner's license in 2011 and has worked closely with some of the top mind-body professionals in the area. In 2017, Jessica completed a certificate program through the Institute of Integrative Nutrition and has been a practicing health coach since then. She is passionate about healthy and natural living and love helping people shine from the inside out.</p>
+        </div>     
+        <div class="col-md-12">
+            <h3>Jeannette S., LP/Acupuncturist</h3>
+            <p>Jeannette is a licensed acupuncturist, herbalist and faculty member of the Oregon College of Oriental Medicine. She is a graduate of Five Branches University and completed advanced study of Eastern medicine in Hangzhou, China. She has more than 20 years of experience in Eastern and Western medicine, and maintains a private practice in Portland.</p>
+        </div>      
+    </div>
+    <div class="divider divider-left"><i class="icon-info-sign"></i></div>
+    <div class="row info">
+        <h2>Additional Store Information</h2>
+        <p>Pharmaca in Los Gatos, California offers a bevy of common and hard-to-find natural vitamins, supplements, beauty products and OTC meds. This unique wellness sotre in Los Gatos features a staff of friendly, highly qualified individuals who are passionate about integrative medicines, and how holistic health, proper nutrition and Western medicine can work together to serve and promote optimal wellbeing. Pharmaca’s Los Gatos location holds itself to a higher standard and prides itself on being the go-to location for all things natural and sustainable. Shop Pharmaca's natural health store in Los Gatos today!</p>
+    </div>
+</div>
+    
+            
+            
+            

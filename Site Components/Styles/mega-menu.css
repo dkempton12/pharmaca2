@@ -1,21 +1,31 @@
 .ves-megamenu .navigation .level0>a {
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Montserrat';
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;}
+
+.navigation .level0 .submenu a {color: #404041;}
+
+.ves-megamenu .navigation .level1>a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #404041;}
+
+@media (min-width: 768px) {
+.ves-megamenu.ves-offcanvas .level0 .submenu .nav-item>a, .ves-megamenu.ves-dhorizontal .level0 .submenu .nav-item>a {
+line-height: 30px;}
 }
 
 /**
 ****These styles are necessary to center the
-****dropdown menu. If you want to remove these
+****drop-down menu. If you want to remove these
 ****styles, go to the MM settings and remove the
 ****center-dropdowns class from the menu.
 *******note: I had to set everything to important
 *******because JS is injecting style tags
 *******somewhere
 **/
-
 .center-dropdowns .submenu.dropdown-menu {
     position: absolute!important;
     width: 100%!important;
@@ -23,6 +33,42 @@
 }
 .center-dropdowns.ves-megamenu .navigation .level0 {
     position: initial!important;
+}
+
+
+/*fixes background colors getting rendered on active*/
+/*updates styling to still differentiate active cats*/
+.ves-megamenu .navigation .level0.current>a {
+    background: none;
+    font-weight: 600;
+}
+
+.ves-megamenu .nav-item.active>a {
+    background: none;
+}
+
+.ves-megamenu .nav-item.active>a span {
+    border-bottom: 2px solid #333
+ }
+
+.ves-megamenu .navigation .level0 .submenu .nav-item.current>a {
+    border: none;
+}
+
+
+/***Fixes the bold on hover from making the rest of the nav items move***/
+.navigation .level0, .navigation .level0 > a {
+    transition: none!important;
+    padding: 0 4px!important;
+}
+
+.navigation a::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 

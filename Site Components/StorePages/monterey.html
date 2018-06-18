@@ -1,0 +1,215 @@
+<!--Add the following to the CSS section of weltpixel. Script must be added to the content section for the JS to load correctly
+#map {
+    height: 555px;
+    width: 100%;
+}
+#store-page .store-info {
+    padding-left: 0;
+}
+#store-page .store-info h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+#store-page .store-info .row {
+    margin-bottom: 1.5rem;
+}
+
+#store-page .store-info td,
+#store-page .store-info th {
+    padding-left: 0;
+}
+
+#store-page .store-info th {
+    padding-top: 0.3em;
+}
+
+#maincontent h1.page-title {
+    margin: 1em 0;
+    border-bottom: 1px solid #ededed;
+}
+#store-page h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+-->
+<!--coordinates must be changed for each store in script. Everything below should get pasted in main content-->
+<script>
+    function initMap() {
+        var monterey = {
+            lat: 36.596558,
+            lng: -121.89435
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 17,
+                center: monterey
+            });
+
+        var marker = new google.maps.Marker({
+            position: monterey,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWWxjgEujniVBwV2QzteUoHxmPHZ9FIo&callback=initMap"></script>
+        
+<div id="store-page">
+    <div class="row">
+        <div class="col-md-5 store-info">
+            <h2>Store Information</h2>
+            <div class="row address">
+                <div class="col-md-2">
+                    <h3>Address: </h3>
+                </div>
+                <div class="col-md-10">
+                    <p>570 Munras Avenue<br />
+                       Monterey, Colorado<br />
+                       93940
+                    </p>
+                </div>
+            </div>
+            <div class="row phone">
+                <div class="col-md-2">
+                    <h3>Phone:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>831.333.0751</p>
+                </div>
+            </div>
+            <div class="row fax">
+                <div class="col-md-2">
+                    <h3>Fax:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>831.333.0759</p>
+                </div>
+            </div>
+            <div class="row services">
+                <div class="col-md-2">
+                    <h3>Services:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>Full-service pharmacy, Rx delivery, $30 gift coupon for transferred prescriptions, walk-in immunizations for whooping cough, pneumonia and flu (seasonal) </p>
+                </div>
+            </div>
+            <div class="row hours">
+                <div class="col-md-2">
+                    <h3>Hours:</h3>
+                </div>
+                <div class="col-md-10">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Day</th>
+                            <th>Retail</th>
+                            <th>Pharmacy</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10AM - 7PM</td>
+                                <td>10AM - 6PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-calendar3"></i></div>
+    <div class="row events">
+        <h2>Upcoming Events</h2>
+        <div class="col-md-6">
+            <h3>Our New Fall Event Title Example</h3>
+            <p>Join So and So alongside What'sHerFace as they take you through our fall event.</p>
+            <p><i>Wednesday &amp; Thursday, 1-3pm</i></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Really Cool Natural Beauty Event</h3>
+            <p>Stop buying makeup from places that test them on animals you monster. Join Blahblah and Madeup Person as they coach you through the best fall makeup tips.</p>
+            <p><i>Friday, Sept. 13, 1-3pm</i></p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-users"></i></div>
+    <div class="row staff">
+        <h2>Monterey Staff</h2>
+        <div class="col-md-12">
+            <h3>Serena Q., Assistant Store Manager</h3>
+            <p>Serena is the newest addition to the Monterey team and is excited to fulfill her role as assistant store manager. For more than seven years, Serena has built her expertise in the customer service field, and is passionate about providing customers with unique and satisfying customer service experiences. Serena is eager to learn and continue to grow with Pharmaca.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Dr. Ashleigh Putnam, Naturopathic Doctor, Lead Practitioner</h3>
+            <p>Dr. Putnam earned her doctorate in naturopathic medicine from Bastyr University in Seattle, Wash. where she also completed an internship specializing in natural childbirth. As a recent transplant to the area, she looks forward to building her private practice and becoming part of the local community. She has a special interest in women’s health, pediatrics, prevention/treatment of allergies, hormone balancing, gastrointestinal disturbance and immune health.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Rebecca C., Health Educator</h3>
+            <p>Rebecca comes to Pharmaca with 15 years experience in natural wellness. She has team-taught classes on restoring the body through detoxification and balance, mentally, physically, spiritually and emotionally. She has also developed extensive supplement knowledge while counseling with natural product companies. Rebecca is passionate about helping people with their health options and sharing her first-hand knowledge about returning to vibrant health after chronic fatigue, fibromyalgia and adrenal burnout.</p>
+        </div>    
+        <div class="col-md-12">
+            <h3>Raj M., D Hyp, MET, Energy Therapist</h3>
+            <p>Raj comes to Pharmaca with 15 years of experience in reflexology, clinical hypnosis, energy psychology and aromatherapy. She received most of her training in London, where she had a private practice and spent seven years at the London Lighthouse HIV Center, dealing with anxiety, depression and side effects of patients’ drug therapy. She is also a Reiki Master. Through her own life experiences, Raj has developed a keen interest in helping people with anxiety and stress management using natural supplements and self-help techniques. She also has a special interest in helping people achieve balance and harmony in their everyday life through meditation, Pranayama breathing and EFT (Emotional Freedom Technique).</p>
+        </div> 
+        <div class="col-md-12">
+            <h3>Laura M., Esthetician</h3>
+            <p>Lauren is a licensed esthetician who is devoted to working with her customers, developing both short and long term strategies for their desired appearance. She is passionate about learning, and sharing product benefits. Lauren works with each customer to understand how to best assist them in achieving their goals for healthy skin and overall well being.</p>
+        </div>  
+        <div class="col-md-12">
+            <h3>Lauren P., Esthetician</h3>
+            <p>Lauren is a licensed esthetician who is devoted to working with her customers, developing both short and long term strategies for their desired appearance. She is passionate about learning, and sharing product benefits. Lauren works with each customer to understand how to best assist them in achieving their goals for healthy skin and overall well being.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Connie C., Cosmetologist And Store Manager</h3>
+            <p>Connie has 18 years of experience as a licensed cosmetologist, and has focused on situational management and customer service. Her goals are always to exceed the customers' expectation by providing excellent customer service.</p>
+        </div> 
+        <div class="col-md-12">
+            <h3>Erika F., Esthetician</h3>
+            <p>Erika is a licensed esthetician who studied at Marinello in Seaside, CA. With nine years of customer service experience, Erika loves working with people and finds her job most fulfilling when clients see improvements in their skin’s health as a result of her skin care recommendations.</p>
+        </div>           
+    </div>
+    <div class="divider divider-left"><i class="icon-info-sign"></i></div>
+    <div class="row info">
+        <h2>Additional Store Information</h2>
+        <p>At Pharmaca in Monterey, you will find a knowledgeable, friendly team of health and wellness specialists ranging from licensed health practitioners to expert estheticians. The Pharmaca Monterey team of practitioners is highly trained to assist and advise clients and customers on their health and wellness questions and concerns. Pharmaca serves as a vitamin store in Monterey, and carries a plethora of supplements, homeopathic remedies and natural vitamins for individuals who are consciously trying to improve their health while seeking out natural wellness alternatives. Pharmaca’s Monterey location can be found on Munras Avenue near the intersection of Webster Street, next to Trader Joe’s. Stop in any day to shop a top-notch selection of natural and organic supplements, beauty products and more. While you are there, take advantage of our many ongoing events such as our complimentary wellness consultations, mini facials and makeovers, and blood pressure screenings.</p>
+    </div>
+</div>
+    
+            
+            
+            

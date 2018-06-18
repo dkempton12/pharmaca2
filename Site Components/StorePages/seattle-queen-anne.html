@@ -1,0 +1,169 @@
+<!--Add the following to the CSS section of weltpixel. Script must be added to the content section for the JS to load correctly
+#map {
+    height: 555px;
+    width: 100%;
+}
+#store-page .store-info {
+    padding-left: 0;
+}
+#store-page .store-info h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+#store-page .store-info .row {
+    margin-bottom: 1.5rem;
+}
+
+#store-page .store-info td,
+#store-page .store-info th {
+    padding-left: 0;
+}
+
+#store-page .store-info th {
+    padding-top: 0.3em;
+}
+
+#maincontent h1.page-title {
+    margin: 1em 0;
+    border-bottom: 1px solid #ededed;
+}
+#store-page h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+-->
+<!--coordinates must be changed for each store in script. Everything below should get pasted in main content-->
+<script>
+    function initMap() {
+        var seattle = {
+            lat: 47.63662,
+            lng: -122.35683
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 17,
+                center: seattle
+            });
+
+        var marker = new google.maps.Marker({
+            position: seattle,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWWxjgEujniVBwV2QzteUoHxmPHZ9FIo&callback=initMap"></script>
+        
+<div id="store-page">
+    <div class="row">
+        <div class="col-md-5 store-info">
+            <h2>Store Information</h2>
+            <div class="row address">
+                <div class="col-md-2">
+                    <h3>Address: </h3>
+                </div>
+                <div class="col-md-10">
+                    <p>1900 Queen Anne Avenue N<br />
+                        Seattle, Washington<br />
+                        98109
+                    </p>
+                </div>
+            </div>
+            <div class="row phone">
+                <div class="col-md-2">
+                    <h3>Phone:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>206.216.2248</p>
+                </div>
+            </div>
+            <div class="row hours">
+                <div class="col-md-2">
+                    <h3>Hours:</h3>
+                </div>
+                <div class="col-md-10">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Day</th>
+                            <th>Retail</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>10AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>10AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>10AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>10AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>10AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10AM - 7PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-calendar3"></i></div>
+    <div class="row events">
+        <h2>Upcoming Events</h2>
+        <div class="col-md-6">
+            <h3>Our New Fall Event Title Example</h3>
+            <p>Join So and So alongside What'sHerFace as they take you through our fall event.</p>
+            <p><i>Wednesday &amp; Thursday, 1-3pm</i></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Really Cool Natural Beauty Event</h3>
+            <p>Stop buying makeup from places that test them on animals you monster. Join Blahblah and Madeup Person as they coach you through the best fall makeup tips.</p>
+            <p><i>Friday, Sept. 13, 1-3pm</i></p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-users"></i></div>
+    <div class="row staff">
+        <h2>Seattle (Queen Anne) Staff</h2>
+        <div class="col-md-12">
+            <h3>Dr. Jill C., Naturopathic Doctor</h3>
+            <p>Jill is a naturopathic physician and nutritionist who specializes in LGBTQ health with an emphasis in transgender health. She graduated from Bastyr University in 2014. Aside from naturopathic medicine and nutrition, she enjoys hiking with her fiancé, drinking coffee, playing with puppies and walking around Seattle.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Deborah M., Naturopathic Physician</h3>
+            <p>Debbie is a naturopathic physician, and has a passion for the mind-body medicine connection. She earned her doctorate from Bastyr University, and is currently working towards her board certification as a biofeedback practitioner. In her free time, she enjoys playing and writing music, biking, and doing crossword puzzles.</p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-info-sign"></i></div>
+    <div class="row info">
+        <h2>Additional Store Information</h2>
+        <p>Pharmaca's Queen Anne location is conveniently located off of Queen Anne Avenue North. Pharmaca in Queen Anne is your go-to destination for holistic beauty and health, featuring a full staff of naturopathic doctors, estheticians, herbalists and other practitioners who are ready to give out expert advice.</p>
+        <p>At Pharmaca, you can shop for natural vitamins and supplements, in addition to reasonably priced OTC medicines. Whatever your need, our expert team of practitioners will guide you along the way. Need a product recommendation? Just ask! If you're concerned about ingredients in your supplements, rest assured that we have the answer.</p>
+        <p>The Pharmaca in Queen Anne also features a Natural Beauty Bar for all of your skin care needs. Our licensed estheticians will perfect your beauty regimen, offering advice on makeup, treatments and more. Need a makeover, brow shaping or waxing? Visit Queen Anne's Pharmaca and let us pamper you!</p>
+    </div>
+</div>
+    
+            
+            
+            
