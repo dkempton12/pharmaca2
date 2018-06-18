@@ -1,0 +1,213 @@
+<!--Add the following to the CSS section of weltpixel. Script must be added to the content section for the JS to load correctly
+#map {
+    height: 555px;
+    width: 100%;
+}
+#store-page .store-info {
+    padding-left: 0;
+}
+#store-page .store-info h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+#store-page .store-info .row {
+    margin-bottom: 1.5rem;
+}
+
+#store-page .store-info td,
+#store-page .store-info th {
+    padding-left: 0;
+}
+
+#store-page .store-info th {
+    padding-top: 0.3em;
+}
+
+#maincontent h1.page-title {
+    margin: 1em 0;
+    border-bottom: 1px solid #ededed;
+}
+#store-page h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+-->
+<!--coordinates must be changed for each store in script. Everything below should get pasted in main content-->
+<script>
+    function initMap() {
+        var beaverton = {
+            lat: 45.522582,
+            lng: -122.80123
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 17,
+                center: beaverton
+            });
+
+        var marker = new google.maps.Marker({
+            position: beaverton,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWWxjgEujniVBwV2QzteUoHxmPHZ9FIo&callback=initMap"></script>
+        
+<div id="store-page">
+    <div class="row">
+        <div class="col-md-5 store-info">
+            <h2>Store Information</h2>
+            <div class="row address">
+                <div class="col-md-2">
+                    <h3>Address: </h3>
+                </div>
+                <div class="col-md-10">
+                    <p>240 NW Lost Springs Terrace #36<br />
+                        Portland, Oregon<br />
+                        97229
+                    </p>
+                </div>
+            </div>
+            <div class="row phone">
+                <div class="col-md-2">
+                    <h3>Phone:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>503.596.3552</p>
+                </div>
+            </div>
+            <div class="row fax">
+                <div class="col-md-2">
+                    <h3>Fax:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>503.596.3566</p>
+                </div>
+            </div>
+            <div class="row services">
+                <div class="col-md-2">
+                    <h3>Services:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>Full-service pharmacy, Rx delivery, walk-in immunizations for whooping cough, pneumonia and flu (seasonal) </p>
+                </div>
+            </div>
+            <div class="row hours">
+                <div class="col-md-2">
+                    <h3>Hours:</h3>
+                </div>
+                <div class="col-md-10">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Day</th>
+                            <th>Retail</th>
+                            <th>Pharmacy</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10AM - 6PM</td>
+                                <td>10AM - 6PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-calendar3"></i></div>
+    <div class="row events">
+        <h2>Upcoming Events</h2>
+        <div class="col-md-6">
+            <h3>Our New Fall Event Title Example</h3>
+            <p>Join So and So alongside What'sHerFace as they take you through our fall event.</p>
+            <p><i>Wednesday &amp; Thursday, 1-3pm</i></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Really Cool Natural Beauty Event</h3>
+            <p>Stop buying makeup from places that test them on animals you monster. Join Blahblah and Madeup Person as they coach you through the best fall makeup tips.</p>
+            <p><i>Friday, Sept. 13, 1-3pm</i></p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-users"></i></div>
+    <div class="row staff">
+        <h2>Beaverton Staff</h2>
+        <div class="col-md-12">
+            <h3>Sydne P., Wellness Counselor, Store Manager</h3>
+            <p>Sydne is a Colorado native and a recent Oregon transplant! She is a holistic health enthusiast and graduated with a B.S. in Integrative Medicine from Metropolitan State University of Denver. She has experience with homeopathic remedies, botanical medicine, Ayurvedic medicine, aromatherapy and nutrition.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Karen C., Licensed Acupuncturist, Licensed Naturopathic Physician</h3>
+            <p>Karen is a naturopathic physician and acupuncturist who loves helping people to optimize their health naturally. She is passionate about tailoring healthcare to each individual client's needs and body. Her favorite tools for healing are clinical nutrition, botanical medicine, acupuncture and homeopathy. Karen graduated from the National University of Natural Medicine in Portland, Oregon. She currently practices as a Naturopath and Acupuncturist specializing in primary care at Hood to Coast Healthcare in Portland. In her time off you can find her trying out new and interesting healthy food recipes, hiking, biking, trail running, and hanging with her beloved pooch.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Dr. Lucy R., Naturopath</h3>
+            <p>Before completing her doctorate degree in naturopathic medicine at the National University of Natural Medicine, Lucy earned her B.A. in studio art from the University of California at Santa Cruz, and was certified as a natural chef by Bauman College. Lucy believes strongly in the body's natural ability to heal and in individualized treatments for each person. She is particularly interested in local herbalism, body-positive nutrition and LGBTQ healthcare.</p>
+        </div>  
+        <div class="col-md-12">
+            <h3>Laura M., Wellness Counselor</h3>
+            <p>Laura is a holistic wellness coach who loves helping people integrate an enjoyable, lifelong approach to healthy food, nutrition, and lifestyle. She is certified through Institute for Integrative Nutrition where she studied a diverse and broad array of dietary theories and cutting-edge coaching techniques, which prepared her to give individualized guidance to each of her clients. Laura’s clients are given the tools, resources, and support they need to get in touch with their own bodies, take charge of their own health, and discover which foods, habits, and mindsets are most healing and vital to them. Her approach to health focuses on empowerment, confidence in the kitchen, freedom from stress, and fun.</p>
+        </div> 
+        <div class="col-md-12">
+            <h3>Alicia V., Esthetician</h3>
+            <p>After finishing her esthetics education at Aveda Institute Portland, Alicia sought continuing education and became proficient at body sugaring, and well versed in the chemistry and efficacy of natural products. She then spent the following year as a freelance makeup artist working at weddings and volunteering makeup services at special needs formal events.</p>
+        </div>  
+        <div class="col-md-12">
+            <h3>Christine R., Esthetician</h3>
+            <p>Christine is a graduate from the Euro Institute of Holistic Skin Care where she studied European and Naturopathic Skin Care. After graduating, Christine chose to put her esthetics career on hold to be a mom, wife, run and generally act like a human. After the brief pause, Christine chose to dive in to the skin care world and open her own skin care studio. Her strong belief that with proper education, a healthy state of mind, exercise and balanced nutrition coupled with the right products will help anyone achieve amazing and beautiful healthy skin.</p>
+        </div>   
+        <div class="col-md-12">
+            <h3>Jennifer S., Esthetician</h3>
+            <p>Jennifer was a student at the Euro Institute of naturopathic skin care and enjoys all aspects of esthetics. She is committed to natural, Earth-friendly products that provide skin benefits and deliver results.</p>
+        </div>          
+    </div>
+    <div class="divider divider-left"><i class="icon-info-sign"></i></div>
+    <div class="row info">
+        <h2>Additional Store Information</h2>
+        <p>Pharmaca’s Beaverton, Oregon location offers convenient access to natural health care and skin care products, such as organic makeup, homeopathic remedies, natural multivitamins and more. Located at 240 NW Lost Springs Terrace, the Pharmaca in Beaverton offers complementary and alternative medicine services.</p>
+        <p>As an integrative health store, Pharmaca merges the services of modern health stores with traditional and alternative medicines, giving customers unparalleled options for meeting their health care needs. At our Beaverton location, you’ll find helpful staff members who can give expert guidance on herbal medicines, natural supplements, over-the-counter medications, vitamins and more.</p>
+        <p>If you have beauty questions, Pharmaca’s estheticians have the answers. Come visit our Beauty Bar to learn the latest tips and secrets about natural cosmetics and hair care products, solutions for problem skin and more. Also be sure to check out all of our regularly scheduled events each month for even more tips and tricks for holistic wellness!</p>
+    </div>
+</div>
+    
+            
+            
+            

@@ -1,0 +1,201 @@
+<!--Add the following to the CSS section of weltpixel. Script must be added to the content section for the JS to load correctly
+#map {
+    height: 555px;
+    width: 100%;
+}
+#store-page .store-info {
+    padding-left: 0;
+}
+#store-page .store-info h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+#store-page .store-info .row {
+    margin-bottom: 1.5rem;
+}
+
+#store-page .store-info td,
+#store-page .store-info th {
+    padding-left: 0;
+}
+
+#store-page .store-info th {
+    padding-top: 0.3em;
+}
+
+#maincontent h1.page-title {
+    margin: 1em 0;
+    border-bottom: 1px solid #ededed;
+}
+#store-page h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+-->
+<!--coordinates must be changed for each store in script. Everything below should get pasted in main content-->
+<script>
+    function initMap() {
+        var sanFran = {
+            lat: 37.765373,
+            lng: -122.45007
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 17,
+                center: sanFran
+            });
+
+        var marker = new google.maps.Marker({
+            position: sanFran,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWWxjgEujniVBwV2QzteUoHxmPHZ9FIo&callback=initMap"></script>
+        
+<div id="store-page">
+    <div class="row">
+        <div class="col-md-5 store-info">
+            <h2>Store Information</h2>
+            <div class="row address">
+                <div class="col-md-2">
+                    <h3>Address: </h3>
+                </div>
+                <div class="col-md-10">
+                    <p>925 Cole Street<br />
+                        San Francisco, California<br />
+                        94117
+                    </p>
+                </div>
+            </div>
+            <div class="row phone">
+                <div class="col-md-2">
+                    <h3>Phone:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>415.661.1216</p>
+                </div>
+            </div>
+            <div class="row fax">
+                <div class="col-md-2">
+                    <h3>Fax:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>415.661.7646</p>
+                </div>
+            </div>
+            <div class="row services">
+                <div class="col-md-2">
+                    <h3>Services:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>Full-service pharmacy, walk-in B12 shots, $30 gift coupon for transferred prescriptions, walk-in immunizations for whooping cough, pneumonia and flu (seasonal) </p>
+                </div>
+            </div>
+            <div class="row hours">
+                <div class="col-md-2">
+                    <h3>Hours:</h3>
+                </div>
+                <div class="col-md-10">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Day</th>
+                            <th>Retail</th>
+                            <th>Pharmacy</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 7PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10AM - 7PM</td>
+                                <td>10AM - 6PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-calendar3"></i></div>
+    <div class="row events">
+        <h2>Upcoming Events</h2>
+        <div class="col-md-6">
+            <h3>Our New Fall Event Title Example</h3>
+            <p>Join So and So alongside What'sHerFace as they take you through our fall event.</p>
+            <p><i>Wednesday &amp; Thursday, 1-3pm</i></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Really Cool Natural Beauty Event</h3>
+            <p>Stop buying makeup from places that test them on animals you monster. Join Blahblah and Madeup Person as they coach you through the best fall makeup tips.</p>
+            <p><i>Friday, Sept. 13, 1-3pm</i></p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-users"></i></div>
+    <div class="row staff">
+        <h2>San Francisco (Cole Valley) Staff</h2>
+        <div class="col-md-12">
+            <h3>Rachel S., Certified Nutrition Consultant</h3>
+            <p>Rachel is an NGH Certified Consulting Hypnotist and energy healer. She has studied and worked in various retreat and healing centers around the world learning traditional herbal medicine and the use of mind-body healing techniques. She is passionate about nutrition and herbal medicine. Rachel also holds a BA in International Relations from Boston University.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Joshua L., Lead Practitioner</h3>
+            <p>Joshua is a certified herbalist with over a decade of education and experience. He specializes in integrating the usage of western herbs with the science of Chinese Medical Theory. Joshua is a licensed massage therapist specializing in Tui Na, a Chinese medical bodywork modality, that he uses to augment the effectiveness of medicinal herbs and supplements. He is also interested in integrating sustainability practices in herbal medicine harvesting and manufacturing.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Peter B., Acupuncturist</h3>
+            <p>Peter is a California state and national licensed acupuncturist since 2012. Inspired from his experiences traveling and living in South East Asia, Peter began studying Eastern & Western herbalism, as well as therapeutic bodywork. He earned his Bachelor's of Health Science from Pacific College of Oriental Medicine, San Diego and his Master's degree from the Acupuncture and Integrated Medicine College, Berkeley. His knowledge of supplements stems from his use of practitioner lines in his private practice as well as retail sales and management experience at local health food stores.</p>
+        </div>  
+        <div class="col-md-12">
+            <h3>Jeri C., Esthetician</h3>
+            <p>Jeri is a licensed esthetician who has been practicing for more than 10 years in the state of California. She has also been trained in New York and Los Angeles as a promotional make-up artist and educational trainer for national makeup brands. With more than 1,000 hours of training in holistic health seminars, Jeri also integrates that knowledge into her background of skin health and beauty.</p>
+        </div> 
+    </div>
+    <div class="divider divider-left"><i class="icon-info-sign"></i></div>
+    <div class="row info">
+        <h2>Additional Store Information</h2>
+        <p>Pharmaca organic health store in San Francisco combines the benefits of a full service health store with the convenience of hundreds of natural and organic OTC medications. Pharmaca San Francisco also carries hard-to-find vitamins, supplements and herbs, as well as a full line of organic and natural beauty products. Many of the products at Pharmaca wellness store are safe for those who suffer from allergies or lead vegetarian, vegan and gluten-free lifestyles.</p>
+        <p>Pharmaca San Francisco has proudly served the Cole Valley neighborhood for many years and strives to provide top-notch service to each and every customer. The in-store team consists of beauty, nutrition and medical experts who hold degrees and certifications in the fields of naturopathy, herbal medicine, esthetics, acupuncture and more. The team of practitioners is one of the most well rounded teams you will find at any organic health store, willing and able to help you with any of your health or wellness needs.</p>
+        <p>Visit Pharmaca's wellness store in San Francisco and take advantage of their unique events, ongoing activities and hundreds of high-quality natural and organic products.</p>
+    </div>
+</div>
+    
+            
+            
+            

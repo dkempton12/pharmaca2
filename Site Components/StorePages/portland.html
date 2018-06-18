@@ -1,0 +1,199 @@
+<!--Add the following to the CSS section of weltpixel. Script must be added to the content section for the JS to load correctly
+#map {
+    height: 555px;
+    width: 100%;
+}
+#store-page .store-info {
+    padding-left: 0;
+}
+#store-page .store-info h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+#store-page .store-info .row {
+    margin-bottom: 1.5rem;
+}
+
+#store-page .store-info td,
+#store-page .store-info th {
+    padding-left: 0;
+}
+
+#store-page .store-info th {
+    padding-top: 0.3em;
+}
+
+#maincontent h1.page-title {
+    margin: 1em 0;
+    border-bottom: 1px solid #ededed;
+}
+#store-page h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+-->
+<!--coordinates must be changed for each store in script. Everything below should get pasted in main content-->
+<script>
+    function initMap() {
+        var pacPal = {
+            lat: 34.045718,
+            lng: -118.52447
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 17,
+                center: pacPal
+            });
+
+        var marker = new google.maps.Marker({
+            position: pacPal,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWWxjgEujniVBwV2QzteUoHxmPHZ9FIo&callback=initMap"></script>
+        
+<div id="store-page">
+    <div class="row">
+        <div class="col-md-5 store-info">
+            <h2>Store Information</h2>
+            <div class="row address">
+                <div class="col-md-2">
+                    <h3>Address: </h3>
+                </div>
+                <div class="col-md-10">
+                    <p>15150 W Sunset Blvd<br />
+                       Pacific Palisades, Colorado<br />
+                       90272
+                    </p>
+                </div>
+            </div>
+            <div class="row phone">
+                <div class="col-md-2">
+                    <h3>Phone:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>310.454.1345</p>
+                </div>
+            </div>
+            <div class="row fax">
+                <div class="col-md-2">
+                    <h3>Fax:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>310.573.0016</p>
+                </div>
+            </div>
+            <div class="row services">
+                <div class="col-md-2">
+                    <h3>Services:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>Full-service pharmacy, Rx delivery, $30 gift coupon for transferred prescriptions, walk-in immunizations for whooping cough, pneumonia and flu (seasonal) </p>
+                </div>
+            </div>
+            <div class="row hours">
+                <div class="col-md-2">
+                    <h3>Hours:</h3>
+                </div>
+                <div class="col-md-10">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Day</th>
+                            <th>Retail</th>
+                            <th>Pharmacy</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>8AM - 8PM</td>
+                                <td>8AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>8AM - 8PM</td>
+                                <td>8AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>8AM - 8PM</td>
+                                <td>8AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>8AM - 8PM</td>
+                                <td>8AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>8AM - 8PM</td>
+                                <td>8AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10AM - 7PM</td>
+                                <td>10AM - 6PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-calendar3"></i></div>
+    <div class="row events">
+        <h2>Upcoming Events</h2>
+        <div class="col-md-6">
+            <h3>Our New Fall Event Title Example</h3>
+            <p>Join So and So alongside What'sHerFace as they take you through our fall event.</p>
+            <p><i>Wednesday &amp; Thursday, 1-3pm</i></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Really Cool Natural Beauty Event</h3>
+            <p>Stop buying makeup from places that test them on animals you monster. Join Blahblah and Madeup Person as they coach you through the best fall makeup tips.</p>
+            <p><i>Friday, Sept. 13, 1-3pm</i></p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-users"></i></div>
+    <div class="row staff">
+        <h2>Pacific Palisades Staff</h2>
+        <div class="col-md-12">
+            <h3>William R., Assistant Manager, Nutritionist</h3>
+            <p>William is a Certified Holistic Nutritionist with more than eight years experience in the natural products industry. He is dedicated to sharing his insight and expertise about the entire spectrum of nutritional supplements including vitamins, minerals, antioxidants, probiotics, omega fatty acids and more. William believes that small changes in daily habits create tremendously beneficial results.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Sabrina M., Nutritionist</h3>
+            <p>Sabrina Magno is a certified nutritionist, lactation educator, First Line Therapist practitioner and a passionate activist for sustainability and the environment. She completed a formal Nutritional Medicine Program at The American University of Complementary Medicine and a Lactation Educator training at UCLA. Additionally, Sabrina has received certification in Functional Endocrinology, Functional Blood Chemistry analysis and Applying Advanced Nutritional Strategies for Autoimmune Diseases. She continues to advance her studies in functional medicine through the Institute for Functional Medicine, the Medical Academy of Pediatric Special Needs and the University of Bridgeport College of Chiropractic. Sabrina is also an active member of The Iyengar Yoga National Association of the United States. The opportunity to introduce customers to an entire new world of integrative health is her favorite part of working at Pharmaca. She loves to employ all available nutritional, supplemental and educational resources available at the store and from her own expertise to help customers achieve their health goals.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Charlene W., Esthetician</h3>
+            <p>C.W. graduated from esthetician school in 2004, after which she went to Europe and studied with naturopathic doctors in Germany and Italy. In 2008 she traveled to Southeast Asia where she was able to further her knowledge of skin care with Chinese Herbalists. Her interest in universal health care systems brought her to Pharmaca, where she has been able to integrate her worldly experiences with the customers and the staff here at Sunset. She has enjoyed the two years she has been here and especially loves working at the Natural Beauty Bar.</p>
+        </div>  
+        <div class="col-md-12">
+            <h3>Janhé G., Esthetician</h3>
+            <p>Jahné holds a Esthetician license from Marinello Schools of Beauty, where she gained experience as a wax specialist, make-up artist and skin care specialist. Jahné enjoys working at Pharmaca and helping others achieve their goals of beauty, using a less toxic and more natural approach.</p>
+        </div>          
+    </div>
+    <div class="divider divider-left"><i class="icon-info-sign"></i></div>
+    <div class="row info">
+        <h2>Additional Store Information</h2>
+        <p>Pharmaca is a wellness store in Pacific Palisades that is your go-to source for natural vitamins, supplements and more. Pharmaca is more than just your average drugstore--it is an entire wellbeing center. Pharmaca organic health store proudly features the highest-quality natural products, many of which you will not find anywhere else. Many of the organic vitamins, supplements are safe for those who are gluten-free, vegetarian or vegan. In addition to carrying a large line of products that promote health and wellness, Pharmaca Pacific Palisades also features a Natural Beauty Bar with makeup, brow and facial waxing services available daily. Visit your local Pacific Palisades Pharmaca today and take advantage of store events, covering topics such as heart health, digestive health and reflexology. Events change on a regular basis, so stop in often to take full advantage! Pacific Palisades Pharmaca is located on West Sunset Boulevard, near Monument Street. Stop in today.</p>
+    </div>
+</div>
+    
+            
+            
+            
