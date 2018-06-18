@@ -1,0 +1,207 @@
+<!--Add the following to the CSS section of weltpixel. Script must be added to the content section for the JS to load correctly
+#map {
+    height: 555px;
+    width: 100%;
+}
+#store-page .store-info {
+    padding-left: 0;
+}
+#store-page .store-info h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+#store-page .store-info .row {
+    margin-bottom: 1.5rem;
+}
+
+#store-page .store-info td,
+#store-page .store-info th {
+    padding-left: 0;
+}
+
+#store-page .store-info th {
+    padding-top: 0.3em;
+}
+
+#maincontent h1.page-title {
+    margin: 1em 0;
+    border-bottom: 1px solid #ededed;
+}
+#store-page h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+-->
+<!--coordinates must be changed for each store in script. Everything below should get pasted in main content-->
+<script>
+    function initMap() {
+        var seattle = {
+            lat: 47.660629,
+            lng: -122.3357
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 17,
+                center: seattle
+            });
+
+        var marker = new google.maps.Marker({
+            position: seattle,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWWxjgEujniVBwV2QzteUoHxmPHZ9FIo&callback=initMap"></script>
+        
+<div id="store-page">
+    <div class="row">
+        <div class="col-md-5 store-info">
+            <h2>Store Information</h2>
+            <div class="row address">
+                <div class="col-md-2">
+                    <h3>Address: </h3>
+                </div>
+                <div class="col-md-10">
+                    <p>1815 North 45th Street<br />
+                        Seattle, Washington<br />
+                        98103
+                    </p>
+                </div>
+            </div>
+            <div class="row phone">
+                <div class="col-md-2">
+                    <h3>Phone:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>206.547.1208</p>
+                </div>
+            </div>
+            <div class="row fax">
+                <div class="col-md-2">
+                    <h3>Fax:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>206.547.9751</p>
+                </div>
+            </div>
+            <div class="row services">
+                <div class="col-md-2">
+                    <h3>Services:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>Full-service pharmacy, $30 gift coupon for transferred prescriptions, walk-in B12 shots, walk-in immunizations for whooping cough, pneumonia and flu (seasonal) </p>
+                </div>
+            </div>
+            <div class="row hours">
+                <div class="col-md-2">
+                    <h3>Hours:</h3>
+                </div>
+                <div class="col-md-10">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Day</th>
+                            <th>Retail</th>
+                            <th>Pharmacy</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10AM - 6PM</td>
+                                <td>10AM - 6PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-calendar3"></i></div>
+    <div class="row events">
+        <h2>Upcoming Events</h2>
+        <div class="col-md-6">
+            <h3>Our New Fall Event Title Example</h3>
+            <p>Join So and So alongside What'sHerFace as they take you through our fall event.</p>
+            <p><i>Wednesday &amp; Thursday, 1-3pm</i></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Really Cool Natural Beauty Event</h3>
+            <p>Stop buying makeup from places that test them on animals you monster. Join Blahblah and Madeup Person as they coach you through the best fall makeup tips.</p>
+            <p><i>Friday, Sept. 13, 1-3pm</i></p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-users"></i></div>
+    <div class="row staff">
+        <h2>Seattle (Wallingford) Staff</h2>
+        <div class="col-md-12">
+            <h3>Haydn E., Store Manager</h3>
+            <p>Haydn (pronounced Hi'den) is a graduate of Bastyr University where she earned her Master’s in Science in Acupuncture. She is also National Board Certified in Acupuncture (NCCAOM), licensed by the State of Washington, and a graduate of The Cortiva Institute Brenneke School of Massage. Her practice specializes in the treatment of women’s health and gynecology, as well as with chronic conditions such as fatigue, insomnia, anxiety, depression, digestive problems, allergies, and chronic pain and injury.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Dr. Clare Bauermeister, ND</h3>
+            <p>Dr. Bauermeister has always had an interest in science and medicine. She earned a B.S. degree at New York University, then moved to Seattle to complete a doctorate in naturopathic medicine at Bastyr University. She has received additional advanced training in nutrition, diet and nutrient therapy, and enjoys working with other practitioners to help individuals achieve optimum health.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Dr. Ken Pentland, ND</h3>
+            <p>Dr. Pentland received his Doctorate in Naturopathic Medicine and Master’s in Acupuncture and Oriental Medicine from Bastyr University. His inspiration comes from the challenge of raising the practice of medicine to an art. His approach therefore involves getting to know the individual’s needs and providing them with the most relevant information available. He most enjoys seeing individuals empowered to improve their life through conscious healthy choices.</p>
+        </div>   
+        <div class="col-md-12">
+            <h3>Claire M., Esthetician</h3>
+            <p>Claire is a licensed esthetician who is committed to helping people find a healthy balance in their lives and the skin they're in. She is passionate about continually learning and sharing information related to natural and holistic skin care, as well as encouraging customers and clients to appreciate their own natural beauty and helping them to find products that will enhance it. Claire owns a private practice where she especially enjoys pampering clients with individual attention.</p>
+        </div> 
+        <div class="col-md-12">
+            <h3>Amy F., Esthetician</h3>
+            <p>Amy is a licensed Esthetician and Cosmetologist with over 17 years of experience in the beauty and health industry. She has worked in respected day spas in Seattle with expertise in European facials, anti-aging and body treatments, including hydrotherapy. She is committed to service and promoting health and wellness and enjoys learning and sharing her knowledge with clients, guiding them to have healthy, radiant skin. Amy was born and raised in Honolulu, Hawaii and the aloha spirit informs everything she does. She has also been a dedicated Reiki Practitioner since 1998.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Maia P., Esthetician</h3>
+            <p>Maia is a licensed esthetician with a bachelors in Education from University of Washington. She specializes in holistic skincare with the philosophy that beauty starts from the inside out. Maia enjoys educating customers on skin care and wellness and through that enjoys helping them find the optimal products to enhance their natural beauty and confidence. She also works independently at a spa where she provides healing ayurvedic facials and wellness coaching.</p>
+        </div>        
+    </div>
+    <div class="divider divider-left"><i class="icon-info-sign"></i></div>
+    <div class="row info">
+        <h2>Additional Store Information</h2>
+        <p>Pharmaca's beauty and natural supplement store is located in the Wallingford neighborhood of Seattle. This retail store offers natural personal care items as well as over-the-counter medicines. At this location the team of health professionals, naturopathic doctors and estheticians can answer any questions and help you choose the right products for your lifestyle. The Wallingford Pharmaca also offers an abundance of ongoing in-store events that will help you maintain a healthy lifestyle, such as zinc testing. And for those looking for natural cosmetic and beauty products, visit with one of our estheticians to get matched to the right mineral makeup for your skin. In addition to these on-going events, our experienced team is always available to answer any questions and to help you get the right products for your lifestyle. Pharmaca offers the best when it comes to natural vitamins, over-the-counter medicines and personal care, in addition to herbal remedies and homeopathic medications. Stop by the store today to find all the natural products for your lifestyle today.</p>
+    </div>
+</div>
+    
+            
+            
+            

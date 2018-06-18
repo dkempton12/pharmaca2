@@ -1,0 +1,205 @@
+<!--Add the following to the CSS section of weltpixel. Script must be added to the content section for the JS to load correctly
+#map {
+    height: 555px;
+    width: 100%;
+}
+#store-page .store-info {
+    padding-left: 0;
+}
+#store-page .store-info h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+#store-page .store-info .row {
+    margin-bottom: 1.5rem;
+}
+
+#store-page .store-info td,
+#store-page .store-info th {
+    padding-left: 0;
+}
+
+#store-page .store-info th {
+    padding-top: 0.3em;
+}
+
+#maincontent h1.page-title {
+    margin: 1em 0;
+    border-bottom: 1px solid #ededed;
+}
+#store-page h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+-->
+<!--coordinates must be changed for each store in script. Everything below should get pasted in main content-->
+<script>
+    function initMap() {
+        var carlsbad = {
+            lat: 33.102652,
+            lng: -117.26746
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 17,
+                center: carlsbad
+            });
+
+        var marker = new google.maps.Marker({
+            position: carlsbad,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWWxjgEujniVBwV2QzteUoHxmPHZ9FIo&callback=initMap"></script>
+        
+<div id="store-page">
+    <div class="row">
+        <div class="col-md-5 store-info">
+            <h2>Store Information</h2>
+            <div class="row address">
+                <div class="col-md-2">
+                    <h3>Address: </h3>
+                </div>
+                <div class="col-md-10">
+                    <p>6985 El Camino Real Suite 103<br />
+                        Carlsbad, California<br />
+                        92009
+                    </p>
+                </div>
+            </div>
+            <div class="row phone">
+                <div class="col-md-2">
+                    <h3>Phone:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>760.444.3800</p>
+                </div>
+            </div>
+            <div class="row fax">
+                <div class="col-md-2">
+                    <h3>Fax:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>760.444.3811</p>
+                </div>
+            </div>
+            <div class="row services">
+                <div class="col-md-2">
+                    <h3>Services:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>Full-service pharmacy, Rx delivery, $30 gift coupon for transferred prescriptions, walk-in immunizations for whooping cough, pneumonia and flu (seasonal) </p>
+                </div>
+            </div>
+            <div class="row hours">
+                <div class="col-md-2">
+                    <h3>Hours:</h3>
+                </div>
+                <div class="col-md-10">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Day</th>
+                            <th>Retail</th>
+                            <th>Pharmacy</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10AM - 7PM</td>
+                                <td>10AM - 6PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-calendar3"></i></div>
+    <div class="row events">
+        <h2>Upcoming Events</h2>
+        <div class="col-md-6">
+            <h3>Our New Fall Event Title Example</h3>
+            <p>Join So and So alongside What'sHerFace as they take you through our fall event.</p>
+            <p><i>Wednesday &amp; Thursday, 1-3pm</i></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Really Cool Natural Beauty Event</h3>
+            <p>Stop buying makeup from places that test them on animals you monster. Join Blahblah and Madeup Person as they coach you through the best fall makeup tips.</p>
+            <p><i>Friday, Sept. 13, 1-3pm</i></p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-users"></i></div>
+    <div class="row staff">
+        <h2>Carlsbad Staff</h2>
+        <div class="col-md-12">
+            <h3>Nancy B., Certified Herbalist</h3>
+            <p>Nancy is a clinically certified herbalist and aromatherapist with more than 25 years in the holistic health industry. She is also a student of Ayurveda and nutrition, being a long time proponent of the Slow Food movement. Her interests include women's health, children's health and cardiovascular health. Nancy owns her own aromatherapy company and has formulated a therapeutic line of essential oil products which is sold across the country.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>LoRayne H., Nutritionist</h3>
+            <p>For more than 25 years LoRayne has evolved as one of the leading experts in the nutrition and fitness industry. She is a published author, with more than 40 articles including “Why Americans Can’t Weight,” “Creating Inner Harmony-The Path to Optimal Digestion,” “The Many Faces of Breast Cancer.” She is also a wellness educator, who has built nutrition departments for 5-star luxury spas, gyms, medical facilities, and natural product stores. She holds an A.A. In Applied Health, Nutrition & Kinesiology, and an A.A. in Gerontology, and is currently working on a combined B.S. in Food & Nutrition Management from Arizona State University.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Lauren M., Esthetician</h3>
+            <p>Lauren is a licensed esthetician with a special interest in anti-aging skin care, organic skin care and makeup. As a former travel agent, she is passionate about traveling, and she is also active in the American Cancer Society’s Look Good…Feel Better program that helps women cancer patients improve their appearance and self image by teaching them hands on beauty techniques.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Sophie T., Esthetician</h3>
+            <p>Sophie is a holistic esthetician with a background in fitness and nutrition. She graduated from The Euro Institute of Skincare, an internationally recognized school located in Seattle WA. Sophie is passionate about holistic health and providing education to those interested in enhancing their health from the inside out.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Jessica S., Esthetician</h3>
+            <p>Jessica has been a professional skin therapist since 2008, earning certification through Paloma's college of beauty and IDI, "Internal Dermal Institute". Jessica worked under a doctor of cosmetic surgery providing light therapy, dermaplaining, peels, microdermabrasion,dermasweep as well as topical anesthesia prep. She is a clinically certified herbalist and aromatherapist; she is certified through Self Heal School.</p>
+        </div>      
+    </div>
+    <div class="divider divider-left"><i class="icon-info-sign"></i></div>
+    <div class="row info">
+        <h2>Additional Store Information</h2>
+        <p>At Pharmaca in Carlsbad, you will find an amazing team of naturopathic doctors, holistic practitioners and estheticians who concentrate in whole food nutrition, Eastern medicine, naturopathy, homeopathy, esthetics, health and wellness. This team is dedicated to ensuring that Pharmaca is the premier all natural wellness store in Carlsbad.</p>
+        <p>This vitamin store in Carlsbad carries thousands of common and hard-to-find natural supplements, homeopathics and beauty products for Californians seeking natural alternatives to health and wellness.</p>
+        <p>Pharmaca beauty and vitamin store in Carlsbad is located on Solano Drive, just east of Ensenada Avenue. Join us for our recurring in-store events such as complimentary mini-facials, wellness consultations, or check our calendar for specialty events. Experience the Pharmaca difference at your local natural health and wellness in Carlsbad.</p>
+    </div>
+</div>
+    
+            
+            
+            

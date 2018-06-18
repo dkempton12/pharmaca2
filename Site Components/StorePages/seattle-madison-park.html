@@ -1,0 +1,202 @@
+<!--Add the following to the CSS section of weltpixel. Script must be added to the content section for the JS to load correctly
+#map {
+    height: 555px;
+    width: 100%;
+}
+#store-page .store-info {
+    padding-left: 0;
+}
+#store-page .store-info h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+#store-page .store-info .row {
+    margin-bottom: 1.5rem;
+}
+
+#store-page .store-info td,
+#store-page .store-info th {
+    padding-left: 0;
+}
+
+#store-page .store-info th {
+    padding-top: 0.3em;
+}
+
+#maincontent h1.page-title {
+    margin: 1em 0;
+    border-bottom: 1px solid #ededed;
+}
+#store-page h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+-->
+<!--coordinates must be changed for each store in script. Everything below should get pasted in main content-->
+<script>
+    function initMap() {
+        var seattle = {
+            lat: 47.635423,
+            lng: -122.27855
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 17,
+                center: seattle
+            });
+
+        var marker = new google.maps.Marker({
+            position: seattle,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWWxjgEujniVBwV2QzteUoHxmPHZ9FIo&callback=initMap"></script>
+        
+<div id="store-page">
+    <div class="row">
+        <div class="col-md-5 store-info">
+            <h2>Store Information</h2>
+            <div class="row address">
+                <div class="col-md-2">
+                    <h3>Address: </h3>
+                </div>
+                <div class="col-md-10">
+                    <p>4130 E Madison St.<br />
+                        Seattle, Washington<br />
+                        98112
+                    </p>
+                </div>
+            </div>
+            <div class="row phone">
+                <div class="col-md-2">
+                    <h3>Phone:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>206.324.0701</p>
+                </div>
+            </div>
+            <div class="row fax">
+                <div class="col-md-2">
+                    <h3>Fax:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>206.324.2223</p>
+                </div>
+            </div>
+            <div class="row services">
+                <div class="col-md-2">
+                    <h3>Services:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>Full-service pharmacy, walk-in B12 shots, $30 gift coupon for transferred prescriptions, walk-in immunizations for whooping cough, pneumonia and flu (seasonal) </p>
+                </div>
+            </div>
+            <div class="row hours">
+                <div class="col-md-2">
+                    <h3>Hours:</h3>
+                </div>
+                <div class="col-md-10">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Day</th>
+                            <th>Retail</th>
+                            <th>Pharmacy</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9AM - 8PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10AM - 6PM</td>
+                                <td>10AM - 6PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-calendar3"></i></div>
+    <div class="row events">
+        <h2>Upcoming Events</h2>
+        <div class="col-md-6">
+            <h3>Our New Fall Event Title Example</h3>
+            <p>Join So and So alongside What'sHerFace as they take you through our fall event.</p>
+            <p><i>Wednesday &amp; Thursday, 1-3pm</i></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Really Cool Natural Beauty Event</h3>
+            <p>Stop buying makeup from places that test them on animals you monster. Join Blahblah and Madeup Person as they coach you through the best fall makeup tips.</p>
+            <p><i>Friday, Sept. 13, 1-3pm</i></p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-users"></i></div>
+    <div class="row staff">
+        <h2>Seattle (Madison Park) Staff</h2>
+        <div class="col-md-12">
+            <h3>Dr. Courtenay Newton, Naturopathic Doctor</h3>
+            <p>Dr. Newton received her Doctor of Naturopathic Medicine (ND) from Bastyr University, and her Bachelor of Arts (BA) from Dartmouth College. She has advanced training in biofeedback and homeopathy, and more than 20 years experience in the environmental, health and safety fields. She has a private practice in Seattle (Wallingford), and is passionate about preventing disease and supporting the body’s ability to heal. A detective by nature, Dr. Newton thoroughly enjoys figuring out what is contributing to the symptoms her patients are experiencing. She loves educating people about both natural and conventional therapy options, and helping each person attain their health and wellness goals.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Dr. Patrick Fox, Naturopathic Doctor, Lead Practitioner</h3>
+            <p>Dr. Fox is a Naturopathic Doctor trained at Bastyr University and completed a CNME certified two-year residency. His approach integrates a variety of medical systems in diagnosing and treating chronic and acute diseases including autoimmune disease, chronic Lyme disease,, mold biotoxin illness, metabolic disease, hormone imbalances, as well as improving wellness in those who are healthy. When he get's to take off the white coat, Dr. Fox enjoys eating as locally as possible. Cycling, yoga, and trail running are some of his favorite ways to stay active.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Rebecca S., Wellness Counselor</h3>
+            <p>Rebecca has worked at Pharmaca as a Wellness Counselor for more than eight years. She has been interested in health, nutrition and natural healing alternatives since the 1970's. After receiving her MA in Psychology, she became certified in Reflexology. Rebecca enjoys gardening, reading, travel and ongoing learning. She is a proud grandma to three boys and partnered with a wonderful man. Pharmaca continues to be a great place to work and grow for her thanks to supportive management and great team members.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Michelle G., Esthetician</h3>
+            <p>Michelle is experienced with answering questions related to hair, skin care, vitamins, immune support and over the counter pharmaceuticals. Her expertise lies in skin care and skin health. She'd be happy to help you and support you with your skin care needs.</p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-info-sign"></i></div>
+    <div class="row info">
+        <h2>Additional Store Information</h2>
+        <p>This Pharmaca site is located in Seattle’s vibrant, Madison Park neighborhood, just west of Lake Washington’s shore. This Madison Park staple features not only top of the line natural and organic health and wellness products, but a large variety of over the counter medications and natural beauty products you would be hard pressed to find anywhere else.</p>
+        <p>The Madison Park team of health practitioners and naturopathic doctors are passionate about health and wellness and are dedicated to helping you find your path to optimal health. Consult with our staff experts any day with questions regarding natural beauty, the best vitamins or overall general health.</p>
+        <p>The Seattle, Madison Park Pharmaca location is proud to feature events that change on a monthly basis. Check our events pages for unique opportunities to discover new ways of becoming a better version of you.</p>
+        <p>Delivery options are available, as well as A 10 percent senior discount every Tuesday. Pharmaca's natural health storein Madison Park, Seattle is the source for all of your natural, organic and holistic products. Please stop in and meet us any day of the week!</p>
+    </div>
+</div>
+    
+            
+            
+            

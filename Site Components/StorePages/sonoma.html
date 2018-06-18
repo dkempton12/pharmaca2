@@ -1,0 +1,198 @@
+<!--Add the following to the CSS section of weltpixel. Script must be added to the content section for the JS to load correctly
+#map {
+    height: 555px;
+    width: 100%;
+}
+#store-page .store-info {
+    padding-left: 0;
+}
+#store-page .store-info h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+#store-page .store-info .row {
+    margin-bottom: 1.5rem;
+}
+
+#store-page .store-info td,
+#store-page .store-info th {
+    padding-left: 0;
+}
+
+#store-page .store-info th {
+    padding-top: 0.3em;
+}
+
+#maincontent h1.page-title {
+    margin: 1em 0;
+    border-bottom: 1px solid #ededed;
+}
+#store-page h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+-->
+<!--coordinates must be changed for each store in script. Everything below should get pasted in main content-->
+<script>
+    function initMap() {
+        var sonoma = {
+            lat: 38.292216,
+            lng: -122.4639
+        };
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 17,
+                center: sonoma
+            });
+
+        var marker = new google.maps.Marker({
+            position: sonoma,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWWxjgEujniVBwV2QzteUoHxmPHZ9FIo&callback=initMap"></script>
+        
+<div id="store-page">
+    <div class="row">
+        <div class="col-md-5 store-info">
+            <h2>Store Information</h2>
+            <div class="row address">
+                <div class="col-md-2">
+                    <h3>Address: </h3>
+                </div>
+                <div class="col-md-10">
+                    <p>303 West Napa Street<br />
+                        Sonoma, California<br />
+                        95476
+                    </p>
+                </div>
+            </div>
+            <div class="row phone">
+                <div class="col-md-2">
+                    <h3>Phone:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>707.938.1147</p>
+                </div>
+            </div>
+            <div class="row fax">
+                <div class="col-md-2">
+                    <h3>Fax:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>707.938.1513</p>
+                </div>
+            </div>
+            <div class="row services">
+                <div class="col-md-2">
+                    <h3>Services:</h3>
+                </div>
+                <div class="col-md-10">
+                    <p>Full-service pharmacy, RX delivery, $30 gift coupon for transferred prescriptions, walk-in immunizations for whooping cough, pneumonia and flu (seasonal) </p>
+                </div>
+            </div>
+            <div class="row hours">
+                <div class="col-md-2">
+                    <h3>Hours:</h3>
+                </div>
+                <div class="col-md-10">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Day</th>
+                            <th>Retail</th>
+                            <th>Pharmacy</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9AM - 7PM</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9AM - 6PM</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10AM - 6PM</td>
+                                <td>10AM - 6PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-calendar3"></i></div>
+    <div class="row events">
+        <h2>Upcoming Events</h2>
+        <div class="col-md-6">
+            <h3>Our New Fall Event Title Example</h3>
+            <p>Join So and So alongside What'sHerFace as they take you through our fall event.</p>
+            <p><i>Wednesday &amp; Thursday, 1-3pm</i></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Really Cool Natural Beauty Event</h3>
+            <p>Stop buying makeup from places that test them on animals you monster. Join Blahblah and Madeup Person as they coach you through the best fall makeup tips.</p>
+            <p><i>Friday, Sept. 13, 1-3pm</i></p>
+        </div>
+    </div>
+    <div class="divider divider-left"><i class="icon-users"></i></div>
+    <div class="row staff">
+        <h2>Sonoma</h2>
+        <div class="col-md-12">
+            <h3>Paul Clark, Certified Clinical Herbalist (C.C.H.), Assistant Manager</h3>
+            <p>Paul is a graduate of Kushi Institute in the UK and East West Herbal School at San Francisco State. He has 20 years of clinical experience and is a member of the American Herbalist Guild. Paul is happy to bring his experience to Pharmaca where he can help customers navigate through the choices of health care.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Shizandra Fox, Certified Diet Counselor</h3>
+            <p>Shizandra has been actively involved in health and nutritional studies for over 30 years. She is a graduate of the California School of Herbal Studies and the Bauman Nutritional College, and is a certified diet counselor. Shizandra has been dedicated to the community here in Sonoma for almost 14 years. She is proud to be a member of Pharmaca's staff for over 5 years where she has brought together a total approach with physicians, pharmacists, medication and nutritional protocols to provide people with a confident environment to better their health care management.</p>
+        </div>
+        <div class="col-md-12">
+            <h3>Leslie M., Licensed Esthetician And Nutrition Educator</h3>
+            <p>Leslie has been a Wellness Practitioner for more than 20 years. She received her education in Nutrition at Bauman College and is a California State Licensed Esthetician with training at Le Melange Academy. By combining her knowledge of nutrition and skin care, Leslie has helped numerous customers and clients look younger, feel better and have clear, radiant skin.</p>
+        </div>      
+    </div>
+    <div class="divider divider-left"><i class="icon-info-sign"></i></div>
+    <div class="row info">
+        <h2>Additional Store Information</h2>
+        <p>At Pharmaca natural health store in Sonoma, California you will find a wide variety of natural supplements, homeopathics, vitamins, OTC and more, ideal for those seeking to optimize their health and wellness. If you're looking for natural and organic vitamin and wellness product solutions, Sonoma Pharmaca is for you.</p>
+        <p>The expert staff at Pharmaca holds certificates and degrees in health services, nutritional studies, herbal medicine, acupuncture and holistic health, bringing a combination of Eastern and Western philosophies to an award-winning organic store in Sonoma. For five years running, the Sonoma Pharmaca has earned the titles of Best of Sonoma – health store from the US Commerce Association.</p>
+        <p>Stop in to Pharmaca's wellness store any day, seven days a week. We feature several in-store events each month, from makeovers, to healthy cleansing, to allergy management. Our featured events change monthly, so stop in frequently to get the full Pharmaca experience.</p>
+        <p>Sonoma is located on West Napa Street near the intersection of Third Street West.</p>
+    </div>
+</div>
+    
+            
+            
+            
