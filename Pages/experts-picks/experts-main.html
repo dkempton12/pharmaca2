@@ -1,0 +1,286 @@
+<style>
+
+#oe-header {
+    margin: 3em 0;
+}
+
+#title h1 {
+    margin-bottom: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+#title h2 {
+    font-family: 'Libre Baskerville', serif;
+    margin: 0.5em auto 0 auto;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#our-experts .product-list h2    {
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 0;
+}    
+    
+ #our-experts .product-list h2 {
+    font-style: italic;
+}
+  
+#our-experts .product-list h3, #our-experts p {
+    opacity: 1;
+}
+    
+#our-experts .product-list h3 {
+    text-align: center;
+}
+    
+#our-experts #profile-pictures .col-md-4 {
+    margin-bottom: 4em;
+}
+    
+#our-experts #profile-pictures img,
+#our-experts .product-list img {
+    margin: 0 auto;
+}
+    
+#our-experts .product-list img {
+    margin: 0 auto 2em;
+    max-height: 200px;
+}
+    
+#profile-pictures h2 {
+    position: absolute;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    padding: 0.6em 0;
+    color: #ffffff;
+    bottom: 1%;
+    width: 100%;
+    opacity: 1;
+    font-size: 22px;
+}
+    
+#profile-pictures h3,
+#profile-pictures p {
+    color: #ffffff;
+}
+
+    
+#profile-pictures h3 {
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+}
+    
+#profile-pictures p {
+    margin-bottom: 0;
+    font-size: 22px;
+}
+    
+.overlay-about {
+    opacity: 0;
+    position: absolute;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 5em 0 0 0;
+    background: rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+}
+
+.inner-content {
+    max-width: 360px;
+    position: relative;
+    margin: 0 auto;
+    background: #edededed;
+}
+    
+    
+/*On Hover stuff*/    
+#profile-pictures .col-md-4:hover .overlay-about,
+#profile-pictures .col-md-4:focus .overlay-about {
+    opacity: 1;
+    height: 100%;
+}
+       
+#profile-pictures .col-md-4:hover h2,
+#profile-pictures .col-md-4:focus .overlay-about{
+    opacity: 0;
+}
+
+    
+/*****MOBILE STYLES****/
+    
+@media screen and (max-width: 720px) {
+    #oe-header {
+        margin-bottom: 4em;
+    }
+    #our-experts #profile-pictures .col-md-4 {
+        margin-bottom: 4em;   
+    }
+}       
+
+</style>
+
+
+
+<div id="our-experts">
+    <div class="row" id="oe-header">
+        <div id="title" class="col-md-12 center">
+            <h1>Our Experts</h1>
+            <h2>Find out what's on the must-have list of our practitioners, buyers and staff</h2>
+        </div>
+    </div>
+    <div id="profile-pictures">
+        <div class="row">
+            <div id="karen" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-karen">
+                        <img src="/media/wysiwyg/our-experts/karen/karen.jpg" alt="Karen Profile Pic">
+                        <h2>Naturopathic Doctor </h2>
+                        <div class="overlay-about center">
+                            <h3>Karen</h3>
+                            <p>Naturopathic Doctor </p>
+                            <p>Pharmaca - Portland</p>
+                        </div>
+                    </a>    
+                </div>
+            </div>
+            <div id="vicky" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-vicky">
+                        <img src="/media/wysiwyg/our-experts/vicky/vicky.jpg" alt="Vicky Profile Pic">
+                        <h2>Pharmacist</h2>
+                        <div class="overlay-about center">
+                            <h3>Vicky</h3>
+                            <p>Pharmacist</p>
+                            <p>Pharmaca - Seattle Wallingford</p>
+                        </div>
+                    </a> 
+                </div>   
+            </div>
+            <div id="jill" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-jill">
+                        <img src="/media/wysiwyg/our-experts/jill/jill.jpg" alt="Jill Profile Pic">
+                        <h2>Naturopathic Doctor </h2>
+                        <div class="overlay-about center">
+                            <h3>Jill</h3>
+                            <p>Naturopathic Doctor </p>
+                            <p>Pharmaca - Seattle Queen Anne</p>
+                        </div>
+                    </a>
+                </div>   
+            </div>
+        </div>
+        <div class="row">
+            <div id="alicia" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-alicia">
+                        <img src="/media/wysiwyg/our-experts/alicia/alicia3.jpg" alt="Alicia Profile Pic">
+                        <h2>Makeup Artist</h2>
+                        <div class="overlay-about center">
+                            <h3>Alicia</h3>
+                            <p>Makeup Artist</p>
+                            <p>Pharmaca - Beaverton</p>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+            <div id="jamie" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-jamie">
+                        <img src="/media/wysiwyg/our-experts/jamie/jamie.jpg" alt="Jamie Profile Pic">
+                        <h2>Nutritional Therapist</h2>
+                        <div class="overlay-about center">
+                            <h3>Jamie</h3>
+                            <p>Nutritional Therapist</p>
+                            <p>Pharmaca - Chicago</p>
+                        </div>
+                    </a> 
+                </div>   
+            </div>
+            <div id="don" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-don">
+                        <img src="/media/wysiwyg/our-experts/don/don.jpg" alt="Don Profile Pic">
+                        <h2>VP of Integrative Medicine</h2>
+                        <div class="overlay-about center">
+                            <h3>Don</h3>
+                            <p>VP of Integrative Medicine</p>
+                            <p>Pharmaca Home Office</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="jeff" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-jeff">
+                        <img src="/media/wysiwyg/our-experts/jeff/jeff.jpg" alt="Jeff Profile Pic">
+                        <h2>Acupuncturist</h2>
+                        <div class="overlay-about center">
+                            <h3>Jeff</h3>
+                            <p>Acupuncturist</p>
+                            <p>Pharmaca - Portland</p>
+                        </div>
+                    </a>
+                </div>    
+            </div>
+            <div id="deena" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-deena">
+                        <img src="/media/wysiwyg/our-experts/deena/deena.jpg" alt="Deena Profile Pic">
+                        <h2>Esthetician </h2>
+                        <div class="overlay-about center">
+                            <h3>Deena</h3>
+                            <p>Esthetician</p>
+                            <p>Pharmaca - Greenwood Village</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="kristen" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-kristen">
+                        <img src="/media/wysiwyg/our-experts/kristen/kristen.jpg" alt="Kristen Profile Pic">
+                        <h2>Lifestyle Buyer</h2>
+                        <div class="overlay-about center">
+                            <h3>Kristen</h3>
+                            <p>Lifestyle Buyer</p>
+                            <p>Pharmaca Home Office</p>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div id="mc" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-mc">
+                        <img src="/media/wysiwyg/our-experts/mc/mary-catherine.jpg" alt="Mary Catherine Profile Pic">
+                        <h2>Beauty Buyer</h2>
+                        <div class="overlay-about center">
+                            <h3>Mary Catherine</h3>
+                            <p>Beauty Buyer</p>
+                            <p>Pharmaca Home Office</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="matthew" class="col-md-4 center" tabindex="0">
+                <div class="inner-content">
+                    <a href="/our-experts-matthew">
+                        <img src="/media/wysiwyg/our-experts/matthew/matthew.jpg" alt="Matthew Profile Pic">
+                        <h2>Herbalist</h2>
+                        <div class="overlay-about center">
+                            <h3>Matthew</h3>
+                            <p>Herbalist</p>
+                            <p>Pharmaca - North Boulder</p>
+                        </div>
+                    </a>
+                </div>   
+            </div>
+        </div>
+    </div> 
+</div>
