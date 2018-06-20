@@ -1,0 +1,149 @@
+<style>
+
+#our-experts .row {  
+    margin-bottom: 4em;
+}
+
+#title h1 {
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 0;
+}
+#title h2 {
+    margin-top: 0.5em;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-top: 4em;
+}
+
+.profile-info img {
+    margin: 0 auto;
+}
+    
+#title h2, #our-experts .product-list h3, #our-experts p {
+    text-transform: none;
+    font-size: 25px;
+}    
+    
+#our-experts .product-list h3 {
+    text-align: center;
+    font-size: 20px;
+}
+    
+#our-experts .product-list .prod-title p,
+#our-experts p {
+    font-size: 15px;
+    line-height: 2em;
+}  
+    
+#our-experts .product-list img {
+    margin: 0 auto 2em;
+    max-height: 250px;
+    display: block;
+}
+    
+.product-list .col-md-4 {
+    margin-bottom: 4em;
+    min-height: 490px;
+}   
+
+/**SHOP Button**/
+    
+button.primary {
+    margin: 0 auto;
+    display: block;
+    width: 19em;
+    font-size: 15px;
+    line-height: initial;
+    padding: 10px 0 8px;
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/**BACK BUTTON**/
+button.primary.back {
+    position: initial;
+    margin: 0 auto;
+    text-align: center;
+    transform: initial;
+}
+ 
+/***MEDIA QUERIES***/
+    
+@media screen and (max-width: 720px) {    
+    
+    .profile-info {
+        padding: 0 1em 0;
+        flex-direction: column;
+    }
+
+    #title h1 {
+        margin-top: 0.4em;
+    }
+    
+    button.primary {
+        position: initial;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
+
+    .product-list .col-md-4 {
+        min-height: initial;
+    }
+}
+
+</style>
+
+
+<!--MATTHEW-->
+<div id="our-experts">
+    <div class="row" id="oe-header">
+        <div id="title" class="profile-info center">
+            <div class="col-md-5">
+                <img src="/media/wysiwyg/our-experts/matthew/matthew.jpg" alt="matthew Profile Pic">
+            </div>
+            <div class="col-md-7">
+                <h1>Matthew</h1>
+                <h2>Herbalist</h2>
+                <p>Matthew is an experienced herbalist with expertise in both Chinese and Western medicine. For many years, he was on the core faculty of the Rocky Mountain Center for Botanical Studies where he specialized in the instruction of herbal therapeutics. Matthew has also taught 100s of classes on all aspects of natural medicine and nutrition. He has been lead practitioner at our north Boulder store since 2001.</p>
+                <a href="/our-experts"><button class="action primary back">BACK TO OUR EXPERTS</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="matthew-products" class="product-list">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="/pure-encapsulations-phyto-adr-60-vcaps"><img src="/media/wysiwyg/our-experts/matthew/pure-encapsulations.jpg" alt="Pure Encapsulations Phyto-ADR"></a>
+                <h3>Pure Encapsulations Phyto-ADR</h3>
+                <p>"I recommend this as a restorative tonic. The adoptogens in this vegetarian formulation provide comprehensive support for the adrenal glands, promoting physiological balance and improving resistance to stress. Who doesn’t need that?"</p>
+                <a href="/pure-encapsulations-phyto-adr-60-vcaps"><button class="action primary">SHOP</button></a>
+            </div>
+            <div class="col-md-4">
+                <a href="/jarrow-formulas-prostate-optimizer-90-softgels"><img src="/media/wysiwyg/our-experts/matthew/jarrow.jpg" alt="Jarrow Prostate Optimizer"></a>
+                <h3>Jarrow Prostate Optimizer</h3>
+                <p>"As men get older, this supplement—which is formulated with natural extracts and necessary fatty acids—becomes important for optimal prostate function and urinary flow."</p>
+                <a href="/jarrow-formulas-prostate-optimizer-90-softgels"><button class="action primary">SHOP</button></a>
+            </div>
+            <div class="col-md-4">
+                <a href="/thorne-research-d-5000-60-vcaps"><img src="/media/wysiwyg/our-experts/matthew/thorne.jpg" alt="Thorne Vitamin D (5,000 IU)"></a>
+                <h3>Thorne Research D-5,000</h3>
+                <p>"What I like about this particular Vitamin D supplement is that it’s the right dose and not a dangerous dose. It also has no hidden ingredients like lactose, BHT, BHA, sodium benzoate and sorbic acid, which can be detrimental to people with sensitivities."</p>
+                <a href="/thorne-research-d-5000-60-vcaps"><button class="action primary">SHOP</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="/metagenics-mag-glycinate-120-tablets"><img src="/media/wysiwyg/our-experts/matthew/metagenics.jpg" alt="Metagenics Highly Absorbable Magnesium Glycinate"></a>
+                <h3>Metagenics Mag Glycinate</h3>
+                <p>"For muscle tension and insomnia—another common complaint for men—I recommend magnesium glycinate. Not only is it highly absorbable, it’s not dependent on stomach acid for absorption, which means you won’t experience loose stools."</p>
+                <a href="/metagenics-mag-glycinate-120-tablets"><button class="action primary">SHOP</button></a>
+            </div>
+        </div>
+    </div>
+</div>
