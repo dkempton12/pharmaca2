@@ -103,14 +103,14 @@
         }
 
         /**owl slide fix**/
-        #custom-category #owl-slide {
+        .owl-slide {
             height: 300px;
             overflow: hidden;
         }
-        .sub-category .owl-carousel .owl-stage-outer {
+        .owl-carousel .owl-stage-outer {
             padding: 0;
         }
         
-        .sub-category .owl-theme .owl-dots {
+        .owl-theme .owl-dots {
             bottom: 0;
         }
