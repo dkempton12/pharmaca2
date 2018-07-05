@@ -1,116 +1,135 @@
 
 /*Add this static block to any custom category page above the HTML*/
 
-        #custom-category .row {
-            margin-bottom: 25px;
-        }
-        #custom-category .cta-parent img {
-            position: relative;
-        }
-        #custom-category .cta-center,
-        #custom-category .cta-left,
-        #custom-category .cta-right,
-        #custom-category .banner-copy-left,
-        #custom-category .banner-copy-center,
-        #custom-category .banner-copy-right {
-            position: absolute; 
-            top: 50%;
-            padding: 1em;
-        }
+.section-tittle {
+    border-bottom: solid 1px #333;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
 
-        #custom-category .banner-copy-left *,
-        #custom-category .banner-copy-center *
-        #custom-category .banner-copy-right * {
-            margin-top: 0;
-        }
+#main-cat h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 0 15px;
+    display: inline;
+}
 
-        #custom-category .cta-parent a {
-            text-decoration: none;
-        }
-        #custom-category .dark-bg {
-            background: rgba(0,0,0,0.6); 
-        }
-        #custom-category .dark-bg a,
-        #custom-category .copy-light * {
-            color: #fff; 
-        }
-        #custom-category .white-bg {
-            background: rgba(255,255,255,0.9);
-        }
-        #custom-category .white-bg a,
-        #custom-category .copy-dark * {
-            color: #333;
-        }
-        #custom-category .cta-left,
-        #custom-category .banner-copy-left {
-            left: 10%;                        
-            transform: translate(-10%, -50%); 
-            font-size: 2.3rem;
-            max-width: 50%;
-        }
-        #custom-category .cta-right,
-        #custom-category .banner-copy-right {
-            right: 10%;                        
-            transform: translate(-10%, -50%); 
-            font-size: 2.3rem;
-            max-width: 50%;
-        }
-        #custom-category a.primary {
-            color: #fff; 
-        }
-        #custom-category .cta-center,
-        #custom-category .banner-copy-center {
-            left: 50%;
-            transform: translate(-50%, -50%); 
-            font-size: 2.3rem;
-        }
-        .botm-logo img {
-            margin-bottom: 1.8rem;
-        }
-        .cat-box {
-            min-height: 280px;
-            border: 10px solid #ccc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+#main-cat .row {
+    margin-bottom: 3em;
+}
 
-        /**Subcategory styles***/
-        .sub-category h2 {
-            margin: 0.5em 0;
-            font-weight: 800;
-            display: inline;
-            font-size: 1.5rem;
-        }
-        .sub-category p {
-            color: #868686;
-            line-height: 20px;
-            display: inline;
-        }
-        #custom-category .row {
-            margin-bottom: 4em;
-        }
+#main-cat h3 {
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 0 0 5px;
+    line-height: normal;
+}
 
-        .sub-category a {
-            font-size: inherit;
-            font-weight: inherit;
-            color: inherit;
-            text-decoration: none;
-        }
-        
-        .sub-category a:hover {
-            text-decoration: underline;
-        }
+#main-cat a {
+    text-decoration: none;
+    display: inline-block;
+}
 
-        /**owl slide fix**/
-        #custom-category #owl-slide {
-            height: 300px;
-            overflow: hidden;
-        }
-        .sub-category .owl-carousel .owl-stage-outer {
-            padding: 0;
-        }
-        
-        .sub-category .owl-theme .owl-dots {
-            bottom: 0;
-        }
+#main-cat a:hover {
+    text-decoration: underline;
+}
+
+#main-cat p.inline {
+    display: inline;
+}
+
+#main-cat .qa-banner p {
+    display: block;
+    margin: 55px 0 0 20px;
+    text-align: left;
+}
+
+
+.col_full.qa-banner {
+    background: url(media/wysiwyg/categories/2018/beauty/beauty/beauty-category_08.jpg) no-repeat;
+    min-height: 255px;
+}
+
+.qa-cta {
+    float: right;
+    margin: 10px 0 0 0;
+}
+
+.qa-cta img {
+    margin: 5px 0 10px 0;
+}
+
+.product.details.product-item-details {
+    text-align: center;
+}
+
+span.old-price, span.price-savings {
+    display: none;
+}
+
+
+strong.product.name.product-item-name {
+    min-height: 52px;
+}
+
+#main-cat .shop-by-title h2 {
+    margin: 0;
+}
+
+#main-cat .shop-by-title h2 span {
+    font-weight: 100;
+}
+
+.shop-by-slider {
+    background: #f2f2f2;
+    padding: 2% 3% 0 3%;
+}
+
+img.mdm-img {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.col_three_fourth.col_last.shop-by-slider p {
+    text-align: justify;
+    margin: 15% 0 0 10%;
+}
+
+/**owl slide fix**/
+.owl-slide {
+    height: 300px;
+    overflow: hidden;
+}
+.owl-carousel .owl-stage-outer {
+    padding: 0;
+}
+
+.owl-theme .owl-dots {
+    bottom: 0;
+}
+
+/**mobile styles**/
+@media screen and (max-width: 768px) {
+
+    .catalog-category-view .page-main .page-title-wrapper {
+        display: block;
+        margin: 0 auto;
+    }
+    .catalog-category-view .page-main .page-title-wrapper .page-title {
+        margin-bottom: 0;
+    }
+
+    #main-cat .owl-slide {
+        display: none;
+    }
+
+    #main-cat .row {
+        text-align: center;
+    }
+
+    #main-cat .col-sm-6 {
+        margin-bottom: 3em;
+    }
+}
