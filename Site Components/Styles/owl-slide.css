@@ -1,0 +1,12 @@
+.owl-nav {
+    opacity: 0;
+    
+}
+
+.owl-slide:hover .owl-nav, 
+.owl-slide:focus .owl-nav,
+.owl-slide .owl-item:focus .owl-nav,
+.owl-slide a:focus .owl-nav {
+    opacity: 1;
+    transition: opacity 200ms ease-in-out 0s;
+}

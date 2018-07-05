@@ -1,11 +1,11 @@
 <div class="row" id="main-cat">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 banner nopadding">
             <img src="//via.placeholder.com/1370x250">
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 nopadding">
             <ul class="flex flex-col">
                 <li><a href="/shop-by-condition/adrenal-thyroid-support">Adrenal &amp; Thyroid Support</a></li>
                 <li><a href="/shop-by-condition/allergy-relief">Allergy Relief</a></li>
@@ -42,10 +42,16 @@
 </div>
 
 <style>
-
+.filter.block {
+    display: none;
+}
+#main-cat ul {
+    list-style-type: none;
+    padding: 0;
+}
 .flex {
     display: flex;
-    height: 250px;
+    height: 325px;
     flex-wrap: wrap;
 }
 .flex-col {
@@ -55,18 +61,45 @@
     justify-content: flex-start;
     min-height: initial;
     text-align: left;
-    padding: 0 20px 20px 0;
-    min-width: 150px;
-    max-width: 180px;
-    max-height: 50px;
+    width: 25%
 }
 
 .flex li a {
     text-decoration: none;
+    color: initial;
 }
 
 .flex li a:hover {
     text-decoration:underline;
+}
+
+@media screen and (max-width: 768px) {
+    #main-cat {
+        margin: 0 auto;
+    }
+    
+    #main-cat .row {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .flex {
+        height: 1000px;
+    }
+
+    .flex li {
+        width: 45%;
+    }
+
+    #main-cat .banner {
+        display: none;
+    }
+    .catalog-category-view .page-main .page-title-wrapper {
+        display: block;
+        margin: 0 auto;
+    }
+    .catalog-category-view .columns {
+        padding-top: 0;
+    }
 }
 
 </style>
