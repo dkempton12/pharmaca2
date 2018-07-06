@@ -112,13 +112,24 @@ img.mdm-img {
 
 /**mobile styles**/
 @media screen and (max-width: 768px) {
-
+    /*fix top margin*/
+    .category-cms {
+        display: none;
+    }
+    .catalog-category-view.page-layout-2columns-left .toolbar.toolbar-products {
+        margin-bottom: 0;
+    }
+    /*display title*/
     .catalog-category-view .page-main .page-title-wrapper {
         display: block;
         margin: 0 auto;
     }
     .catalog-category-view .page-main .page-title-wrapper .page-title {
         margin-bottom: 0;
+    }
+    /*hide content*/
+    #main-cat {
+        display: none;
     }
 
     #main-cat .owl-slide {
