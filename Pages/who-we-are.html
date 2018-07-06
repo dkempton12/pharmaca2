@@ -20,10 +20,22 @@
 }
 
 #who-we-are-header .header-copy {
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
 }
 
 /****nav****/
@@ -45,95 +57,6 @@
 }
 
 /**holistic approach***/
-
-#pharmaca-who-we-are .sections {
-    position: relative;
-}
-
-#pharmaca-who-we-are .copy {
-    padding: 3% 5%;
-    position: absolute;
-    top: 5em;
-    width: 50%;
-}
-
-#holistic-approach .copy {
-    background: #eef6f9;
-}
-
-#pharmaca-who-we-are .image-right {
-    float: right;
-    width: 50%;
-    background-size: cover;
-}
-#pharmaca-who-we-are .image-left {
-    float: left;
-    width: 50%;
-    background-size: cover;
-}   
-    
-/****our stores***/
-
-
-#our-stores .copy {
-    left: 47.75%;
-    background: #E8F3D7;
-}    
-    
-/****truly natural***/
-
-
-#truly-natural .copy {
-    right: 50%;
-    background: #fff;
-}
-
-
-/***seriously effective***/
-#seriously-effective .header-hero {
-    background: url("/media/wysiwyg/who-we-are/effective.jpg");
-    height: 32em;
-    background-size: cover;
-}
-
-#seriously-effective .copy {
-    text-align: center;
-    margin-top: -13em;
-    background: #fdfdfd;
-    width: 70%;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2% 10% 2%;
-    position: initial;
-}
-
-#seriously-effective .copy h2 {
-    color: #b49677;
-}
-
-/****sustainably made****/
-
-#sustainably-made {
-    background-color: #f5f5f5;
-    padding: 3% 2% 1% 2%;
-}
-
-
-#pharmaca-who-we-are #sustainably-made .copy {
-    position: initial;
-    padding: 0 3% 0 0;
-    float: left;
-}
-
-#pharmaca-who-we-are #sustainably-made .copy .badges img {
-    margin: 5em auto;
-}
-
-#pharmaca-who-we-are #sustainably-made .copy .thanks-stopping p {
-    font-size: 26px;
-    margin-bottom: 0;
-}
 
     
 /***MEDIA QUERIES****/
@@ -192,43 +115,35 @@
         </div>        
     </div>    
     <div id="main-page-content">
-        <div class="row">
-            <div id="holistic-approach" class="sections">
+        <div class="row flex flex-col center">
+            <div id="holistic-approach">
+                <img src="/media/wysiwyg/who-we-are/a-holistic-approach.jpg" alt="Pharmaca's Holistic Approach">
                 <div class="copy">
                     <h2>a holistic approach</h2>
                     <p>Our holistic approach offers a variety of tools for healthy living, including the highest-quality vitamins, hard-to-find herbal and homeopathic formulas, and organic and natural skin care and cosmetics that will leave your skin feeling as good as it looks. The products offered here were selected based on the expertise of the many health care professionals that work in Pharmaca's stores, so you can trust that they’re the best of the best.</p>
                 </div>
-                <div class="image-right">
-                    <img src="/media/wysiwyg/who-we-are/a-holistic-approach.jpg" alt="Pharmaca's Holistic Approach">
-                </div>
             </div>
         </div>
-        <div class="row">
-            <div id="our-stores" class="sections">
-                <div class="image-left">
-                    <img src="/media/wysiwyg/who-we-are/our-stores.jpg" alt="About Pharmaca's Stores">
-                </div>
+        <div class="row flex">
+            <div id="our-stores flex flex-col center">
+                <img src="/media/wysiwyg/who-we-are/our-stores.jpg" alt="About Pharmaca's Stores">
                 <div class="copy">
                     <h2>about our stores</h2>
                     <p>You’ll find Pharmaca’s tranquil stores in 5 western states, and at each one, a staff of licensed health care professionals—including naturopaths, herbalists, nutritionists and estheticians—waiting to help you find the perfect solution for any health concern. We hope you’ll get the chance to visit us soon.</p>
                     <p><a href="/storelocator">Find your nearest Pharmaca >></a></p>
                 </div>
             </div>
-        </div>    
-        <div class="row">
-            <div id="truly-natural" class="sections">
+            <div id="truly-natural flex flex-col center">
+                <img src="/media/wysiwyg/who-we-are/blueberries.jpg" alt="Truly Natural Products">
                 <div class="copy">
                     <h2>truly natural</h2>
                     <p>Our products use nature’s most powerful ingredients to nourish your body, inside and out. In our collection you’ll find superfood drinks made from chlorella and acai, nourishing oils from the African baobab tree and sea buckthorn bush, and cosmetics tinted with pure minerals and fruit juices.</p>
                     <p>We carefully monitor our products to ensure they contain only the ingredients you want, and nothing you don’t—like parabens, phthalates, PEGs, sulfates, petroleum...you get the idea. We believe that if it hasn’t been absolutely been proven safe, it has no place on or in our bodies.</p>
                 </div>
-                <div class="image-right">
-                    <img src="/media/wysiwyg/who-we-are/blueberries.jpg" alt="Truly Natural Products">
-                </div>
             </div>
-        </div>
+        </div>    
         <div class="row">
-            <div id="seriously-effective" class="sections">
+            <div id="seriously-effective">
                 <div class="header-hero">
                         
                 </div>
@@ -239,8 +154,9 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div id="sustainably-made" class="sections">
+        <div class="row flex align-center">
+            <div id="sustainably-made flex center">
+                <img src="/media/wysiwyg/who-we-are/sustainable.jpg" alt="Oils and cheese">
                 <div class="copy">
                     <h2>sustainably made</h2>
                     <p>The products we carry are made by companies that believe as we do—that we are responsible for taking good care of the earth even as we take good care of ourselves.</p>
@@ -253,9 +169,7 @@
                         <p>We think you're going to like it here</p>
                     </div>
                 </div>
-                <div class="image-right">
-                    <img src="/media/wysiwyg/who-we-are/sustainable.jpg" alt="Oils and cheese">
-                </div>
+
 
             </div>
         </div>
