@@ -19,6 +19,10 @@
     margin: 2em auto;
 }
 
+#pharmaca-who-we-are #main-page-content .row {
+    margin: 4em auto;
+}
+
 #who-we-are-header .header-copy {
     margin-left: auto;
     margin-right: auto;
@@ -28,6 +32,10 @@
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+.no-justify {
+    justify-content: initial;
 }
 
 .align-center {
@@ -56,7 +64,37 @@
     text-decoration: underline;
 }
 
-/**holistic approach***/
+#main-page-content img {
+    max-width: 287px;
+    max-height: 311px;
+    margin: 0 auto;
+}
+
+.copy {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*effective*/
+#seriously-effective .header-hero {
+    background: url('/media/wysiwyg/who-we-are/effective.jpg');
+    height: 287px;
+    max-width: 1000px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#seriously-effective .copy {
+    max-width: 850px;
+    margin-top: -10em;
+    background: #f3f3f3;
+    padding: 0 3em 1em;
+}
+
+#seriously-effective h2 {
+    padding-top: 1em;
+}
 
     
 /***MEDIA QUERIES****/
@@ -84,6 +122,10 @@
 
     #who-we-are-navbar {
         display: block;   
+    }
+
+    .flex {
+        flex-direction: column;
     }
     
 }
@@ -115,25 +157,37 @@
         </div>        
     </div>    
     <div id="main-page-content">
-        <div class="row flex flex-col center">
-            <div id="holistic-approach">
+        <div class="row">
+            <div id="seriously-effective">
+                <div class="header-hero">
+                        
+                </div>
+                <div class="copy center">
+                    <h2>seriously effective</h2>
+                    <p>The brands we carry rely on both cutting-edge research and centuries of ancient wisdom in their formulations. What’s more, our vitamin and supplement brands must comply with Pharmaca’s strict Quality Assurance Guidelines, which ensure that their formulas are continually tested for purity and effectiveness—and ensures that you’re not just wasting your money.</p>
+                    <p>If you’re looking for a new way to relieve stress, get better sleep, reduce wrinkles or ease digestion, take comfort in the fact that Pharmaca’s taken the guesswork out of finding health and beauty products that work the way they say they do.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row flex">
+            <div id="holistic-approach" class="flex flex-col center no-justify">
                 <img src="/media/wysiwyg/who-we-are/a-holistic-approach.jpg" alt="Pharmaca's Holistic Approach">
                 <div class="copy">
                     <h2>a holistic approach</h2>
                     <p>Our holistic approach offers a variety of tools for healthy living, including the highest-quality vitamins, hard-to-find herbal and homeopathic formulas, and organic and natural skin care and cosmetics that will leave your skin feeling as good as it looks. The products offered here were selected based on the expertise of the many health care professionals that work in Pharmaca's stores, so you can trust that they’re the best of the best.</p>
                 </div>
             </div>
-        </div>
-        <div class="row flex">
-            <div id="our-stores flex flex-col center">
+            <div id="our-stores" class="flex flex-col center no-justify" >
                 <img src="/media/wysiwyg/who-we-are/our-stores.jpg" alt="About Pharmaca's Stores">
                 <div class="copy">
                     <h2>about our stores</h2>
                     <p>You’ll find Pharmaca’s tranquil stores in 5 western states, and at each one, a staff of licensed health care professionals—including naturopaths, herbalists, nutritionists and estheticians—waiting to help you find the perfect solution for any health concern. We hope you’ll get the chance to visit us soon.</p>
-                    <p><a href="/storelocator">Find your nearest Pharmaca >></a></p>
+                    <p><a href="/store-locator">Find your nearest Pharmaca >></a></p>
                 </div>
             </div>
-            <div id="truly-natural flex flex-col center">
+        </div>    
+        <div class="row flex align-center">
+            <div id="truly-natural" class="flex flex-col center no-justify">
                 <img src="/media/wysiwyg/who-we-are/blueberries.jpg" alt="Truly Natural Products">
                 <div class="copy">
                     <h2>truly natural</h2>
@@ -141,21 +195,7 @@
                     <p>We carefully monitor our products to ensure they contain only the ingredients you want, and nothing you don’t—like parabens, phthalates, PEGs, sulfates, petroleum...you get the idea. We believe that if it hasn’t been absolutely been proven safe, it has no place on or in our bodies.</p>
                 </div>
             </div>
-        </div>    
-        <div class="row">
-            <div id="seriously-effective">
-                <div class="header-hero">
-                        
-                </div>
-                <div class="copy">
-                    <h2>seriously effective</h2>
-                    <p>The brands we carry rely on both cutting-edge research and centuries of ancient wisdom in their formulations. What’s more, our vitamin and supplement brands must comply with Pharmaca’s strict Quality Assurance Guidelines, which ensure that their formulas are continually tested for purity and effectiveness—and ensures that you’re not just wasting your money.</p>
-                    <p>If you’re looking for a new way to relieve stress, get better sleep, reduce wrinkles or ease digestion, take comfort in the fact that Pharmaca’s taken the guesswork out of finding health and beauty products that work the way they say they do.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row flex align-center">
-            <div id="sustainably-made flex center">
+            <div id="sustainably-made" class="flex flex-col center no-justify">
                 <img src="/media/wysiwyg/who-we-are/sustainable.jpg" alt="Oils and cheese">
                 <div class="copy">
                     <h2>sustainably made</h2>
@@ -169,8 +209,6 @@
                         <p>We think you're going to like it here</p>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
