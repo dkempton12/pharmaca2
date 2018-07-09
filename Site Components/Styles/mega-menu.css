@@ -1,7 +1,7 @@
 .ves-megamenu .navigation .level0>a {
     font-size: 13px;
     font-family: 'Montserrat';
-    font-weight: 400;
+    font-weight: 500;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;}
 
@@ -17,15 +17,7 @@
 line-height: 30px;}
 }
 
-/**
-****These styles are necessary to center the
-****drop-down menu. If you want to remove these
-****styles, go to the MM settings and remove the
-****center-dropdowns class from the menu.
-*******note: I had to set everything to important
-*******because JS is injecting style tags
-*******somewhere
-**/
+/** eds fixes  **/
 .center-dropdowns .submenu.dropdown-menu {
     position: absolute!important;
     width: 100%!important;
@@ -35,9 +27,7 @@ line-height: 30px;}
     position: initial!important;
 }
 
-
-/*fixes background colors getting rendered on active*/
-/*updates styling to still differentiate active cats*/
+/* Updates styling to still differentiate active cats*/
 .ves-megamenu .navigation .level0.current>a {
     background: none;
     font-weight: 600;
@@ -56,7 +46,7 @@ line-height: 30px;}
 }
 
 
-/***Fixes the bold on hover from making the rest of the nav items move***/
+/* Fixes the bold on hover from making the rest of the nav items move */
 .navigation .level0, .navigation .level0 > a {
     transition: none!important;
     padding: 0 4px!important;
@@ -71,8 +61,50 @@ line-height: 30px;}
     visibility: hidden;
 }
 
+/* Fixes background hover color on deals menu */
+.navigation #deals a:hover {
+    background: none;
+}
 
-/***Media Queries***/
+/* Brands */
+
+#mm-brands .col-md-6 {
+    padding: 0;
+    width: 48%;
+    border-right: solid #ccc 1px;
+    margin-right: 17px;
+}
+
+#mm-brands .col-md-3 {
+    padding: 5px 5px 0 0;
+}
+
+#mm-brands .col-md-3, #mm-brands .col-md-4 {
+    padding: 5px 0 0 0;
+    margin: 0 0 15px 0;
+}
+
+#mm-brands .col-md-5 {
+    padding: 0;
+    width: 36%;
+}
+
+#mm-brands .col-md-1 {
+    padding: 0;
+    width: 14.333333%;
+}
+
+#mm-brands .col-md-1 img {
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+span.brand-name {
+    display: block;
+    line-height: 10px;
+}
+
+/* Media Queries */
 
 @media (min-width: 768px){
     .nav-sections {margin-bottom: 0;}
@@ -80,7 +112,58 @@ line-height: 30px;}
     
 }
 
-/**Needed to reset the top positioning given in the above center dropdown styles***/
+/* Needed to reset the top positioning given in the above center dropdown styles */
 @media (max-width: 767px) {
     .center-dropdowns .submenu.dropdown-menu {top: initial!important;}
+}
+
+/* General Header Fixes */
+@media screen and (max-width: 576px) {
+    .logo {
+        max-width: 100%;
+        width: 54%
+    }
+
+    .logo img {
+        margin: 0 auto;
+        float: right;
+    }
+    #mm-brands .row, #mm-brands.row {
+         margin-left: 0;
+    }
+
+.ves-megamenu>.navigation .nav-item .item-content>.nav-dropdown {
+      padding-left: 0;
+}
+
+    #mm-brands .col-md-6 {
+        width: initial;
+    }
+
+    #mm-brands .col-md-5 {
+        width: initial;
+    }
+
+    #mm-brands .col-md-1 {
+        width: initial;
+    }
+
+    span.brand-name {
+        line-height: initial;
+    }
+
+/*opens the hidden subcategories*/
+.ves-megamenu.ves-offcanvas .show-mobile .opener, 
+.hide-mobile {
+    display: none;
+}
+
+.show-mobile .submenu {
+    display: block
+}
+
+.ves-megamenu .navigation .opener {
+    right: 18px;
+}
+
 }
