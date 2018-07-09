@@ -1,0 +1,45 @@
+/*set inner padding for modal*/
+div#brand-page {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+/*style section hr tags*/
+#brand-page .hr-divider {
+    height: 4px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: #00a0ad;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/*Videos Section*/
+.vid-box {
+    margin: 0 0 2em 0;
+}
+
+.vid-box:nth-child(odd) {
+    background: #333;
+    padding: 10px 0 3em;
+}
+
+.vid-box:nth-child(odd) h3 {
+    color: #fff;
+    margin-top: 0em;
+}
+
+
+/*modal styles*/
+.modal-intro {
+    padding: 0 9em;
+}
+
+#brand-page h2 {margin-bottom: 0.5em}
+
+/*margins*/
+#brand-page img.pull-left {margin: 1em 1em 1em 0;}
+#brand-page img.pull-right {margin: 1em 0 1em 1em;}
+#brand-page .row {margin-bottom: 1em;}
+

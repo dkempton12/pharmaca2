@@ -1,54 +1,11 @@
-<style>
-    /*set inner padding for modal*/
-    div#brand-page {
-        padding-left: 6rem;
-        padding-right: 6rem;
-    }
-
-    /*style section hr tags*/
-    #brand-page .hr-divider {
-        height: 4px;
-        width: 70px;
-        text-align: center;
-        position: relative;
-        background: #00a0ad;
-        margin: 0 auto;
-        margin-bottom: 30px;
-    }
-
-    /*Videos Section*/
-    .vid-box {
-        margin: 0 0 2em 0;
-    }
-
-    .vid-box:nth-child(odd) {
-        background: #333;
-        padding: 10px 0 3em;
-    }
-
-    .vid-box:nth-child(odd) h3 {
-        color: #fff;
-        margin-top: 0em;
-    }
-
-
-    /*modal styles*/
-    .modal-intro {
-        padding: 0 9em;
-    }
-
-    #brand-page h2 {margin-bottom: 0.5em}
-    
-    /*margins*/
-    #brand-page img.pull-left {margin: 1em 1em 1em 0;}
-    #brand-page img.pull-right {margin: 1em 0 1em 1em;}
-    #brand-page .row {margin-bottom: 1em;}
-
-</style>
+<!--OWL-->
+{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="72"}}
+<!--CSS-->
+{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="482"}}
 
 <div class="row">
-    <div class="col-md-12 center">
-        <img src="/media/wysiwyg/brands/pages/dr-hauschka/hauschka-test.jpg">
+    <div class="col-md-12 center nopadding">
+        <img src="http://via.placeholder.com/1078x300">
     </div>
 </div>
 <div class="row">
@@ -238,34 +195,3 @@
         <!--END VIDEOS-->
     </div>
 </div>
-
- 
-
-<script>
-    require(
-        [
-            'jquery',
-            'Magento_Ui/js/modal/modal'
-        ],
-        function($,modal) {
-            var options = {
-                type: 'popup',
-                responsive: true,
-                innerScroll: true,
-                title: "Dr. Hauschka's Story",
-                clickableOverlay: true,
-                buttons: [{
-                    text: $.mage.__('Close'),
-                    class: '',
-                    click: function () {
-                        this.closeModal();
-                    }
-                }]
-            };
-            var popup = modal(options, $('#brandModel'));
-            $("#openModel").on("click",function(){
-                $('#brandModel').modal('openModal');
-            });
-        }
-    );
-</script>
