@@ -39,6 +39,7 @@ div#brand-page {
 /*Press Section */
 #brand-page .press img.pull-left {
     margin-top: 0;
+    max-width: 300px;
 }
 #brand-page .press img {
     border: 1px solid #ccc;
