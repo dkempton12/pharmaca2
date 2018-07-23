@@ -1,35 +1,38 @@
-
 /*Add this static block to any custom category page above the HTML*/
 
-.section-tittle {
+#main-cat h3 {
+    margin: 0;
+    display: inline;
+    font-size: 14px;
+    font-weight: initial;
+}
+
+#main-cat h3.bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#main-cat .section-title {
     border-bottom: solid 1px #333;
     line-height: 30px;
     font-size: 18px;
     font-weight: 800;
     margin-bottom: 25px;
-}
-
-#main-cat h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0 0 0 15px;
-    display: inline;
+    display: block;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 #main-cat .row {
     margin-bottom: 3em;
 }
 
-#main-cat h3 {
-    font-size: 15px;
-    font-weight: normal;
-    margin: 0 0 0 5px;
-    line-height: normal;
-}
-
 #main-cat a {
     text-decoration: none;
     display: inline-block;
+    font-weight: inherit;
+    color: inherit;
+    font-size: inherit;
 }
 
 #main-cat a:hover {
@@ -47,7 +50,7 @@
 }
 
 
-.col_full.qa-banner {
+.row.qa-banner {
     background: url(media/wysiwyg/categories/2018/beauty/beauty/beauty-category_08.jpg) no-repeat;
     min-height: 255px;
 }
@@ -59,6 +62,12 @@
 
 .qa-cta img {
     margin: 5px 0 10px 0;
+}
+
+#main-cat .qa-cta a {
+    color: #fff;
+    display: block;
+    text-align: center;
 }
 
 .product.details.product-item-details {
@@ -95,6 +104,10 @@ img.mdm-img {
 .col_three_fourth.col_last.shop-by-slider p {
     text-align: justify;
     margin: 15% 0 0 10%;
+}
+
+#main-cat .shop-by-slider a {
+    color: #fff;
 }
 
 /**owl slide fix**/

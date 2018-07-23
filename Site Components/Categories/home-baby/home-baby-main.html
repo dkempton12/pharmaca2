@@ -1,40 +1,70 @@
-<!-- Static Block = 'CSS - Category Page'  -->
-{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="82"}}
-
-<!-- Static Block = 'Script - Owl Carousel'  -->
 {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="72"}}
+{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="302"}}
+<div class="row" id="main-cat">
+	<!-- top slider -->
+	<div class="row owl-slide">
+        <div class="col-md-12">
+            <img src="/media/wysiwyg/categories/2018/home-baby/Home-and-Baby-banner.jpg" alt="Home" />
+        </div>
+	</div>
+	<!-- shop by cat -->
+	<div class="row">
+        <div class="col-md-12">
+            <h2 class="section-title">Shop By Category</h2>
+        </div>
+        <div class="col-md-6">
+            <a href="/home-baby/kids-baby">
+                <img src="/media/wysiwyg/categories/2018/home-baby/baby.jpg" alt="Kids & Baby" />
+            </a>
+            <a href="/home-baby/kids-baby">
+                <h3 class="bold">Kids & Baby</h3>
+            </a>
+            <p class="inline">  -  <a href="/home-baby/kids-baby/skin-care-bath">Skin Care & Bath</a>, <a href="/home-baby/kids-baby/sun-care">Sun Care</a>, <a href="/home-baby/kids-baby/diapers-wipes">Diapers & Wipes</a>, <a href="/home-baby/kids-baby/prenatal-new-mom-care">Prenatal</a></p>
+        </div>
+        <div class="col-md-6">
+            <a href="/home-baby/natural-home">
+                <img src="media/wysiwyg/categories/2018/home-baby/natural-home.jpg" alt="Natural Home" />
+            </a>
+            <a href="/home-baby/natural-home">
+                <h3 class="bold">Natural Home</h3> 
+            </a>
+            <p class="inline"> -  <a href="/home-baby/natural-home/home">Home</a>, <a href="/home-baby/natural-home/candles">Candles</a>, <a href="/home-baby/natural-home/aromatherapy-relaxation">Aromatherapy & Relaxation</a>, <a href="/home-baby/natural-home/travel">Travel</a> </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="/home-baby/fitness-gear-accessories">
+                <img src="http://via.placeholder.com/510x185" alt="Fitness Gear & Accessories" />
+            </a>
+            <a href="/home-baby/fitness-gear-accessories">
+                <h3 class="bold">Fitness Gear & Accessories</h3>
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="/home-baby/eco-apparel">
+                <img src="http://via.placeholder.com/510x185" alt="Eco Apparel" />
+            </a>
+            <a href="/home-baby/eco-apparel">
+                <h3 class="bold">Eco Apparel</h3> 
+            </a>
+        </div>
+    </div>
+	<!-- qa pharmaca -->
+	<div class="row qa-banner">
+		<div class="col-md-6 col-md-offset-6">
+			<p>All of our nutritional and herbal supplements are selected according to our rigorous Dietary Supplement Vendor Quality Assurance & Transparency Standards Program.
+			</p>
+			<div class="qa-cta"><img src="{{media url="wysiwyg/categories/2018/beauty/beauty/beauty-category_09.jpg"}}" alt="Pharmaca Quality Stuff"><br>
+			<a href="/quality-assurance" class="action primary">Learn more</a><br></div>
+		</div>
+	
+	</div>
 
-<div id="custom-category">
-    <div class="row">
-        <div class="col-md-12 cta-parent">
-            <img src="/media/wysiwyg/categories/2018/home-baby/cat-header-kids-baby.jpg" alt="Shop Baby Care" />
-            <div class="cta-center">
-                <a href="#" class="action primary">All Kids &amp; Baby</a>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <img src="/media/wysiwyg/categories/2018/home-baby/cat-row1-natural-home.jpg" alt="Shop Natural Home" />
-            <h3 class="center">Natural Home</h3>
-        </div>
-        <div class="col-md-6">
-            <img src="/media/wysiwyg/categories/2018/home-baby/cat-row1-fitness-gear.jpg" alt="Shop Fitness Gear" />
-            <h3 class="center">Fitness Gear</h3>
-        </div>
-    </div>
-    <div class="row botm">
-        <div class="col-md-12 center botm-logo">
-            <h2 class="h1-supporting">Brand of the Month</h2>
-            <img src="/media/wysiwyg/categories/2018/home-baby/cat-row2-botm-logo.jpg" alt="Brand of the Month Schmidts">
-        </div>
-        <div class="col-md-12 cta-parent">
-            <img src="/media/wysiwyg/categories/2018/home-baby/cat-row2-botm-banner.jpg" alt="Shop Brand of the Month" />
-            <div class="banner-copy-left copy-dark">
-                <h3>Organic Skin Care for Life</h3>
-                <a class="action primary">Shop Zoe Organics</a>
-            </div>
-        </div>
-    </div>
+
+	<!-- favy products -->
+	<div class="row fav-products">
+		<h2 class="section-title">Some of our favorites</h2>
+		<div>{{widget type="WeltPixel\OwlCarouselSlider\Block\Slider\Category" category="category/81"}}</div>
+	</div>
+
 </div>
-
