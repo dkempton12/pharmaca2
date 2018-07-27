@@ -41,10 +41,12 @@ line-height: 30px;}
     border-bottom: 2px solid #333
  }
 
-.ves-megamenu .navigation .level0 .submenu .nav-item.current>a {
+.ves-megamenu .navigation .submenu .nav-item a span {
     border: none;
 }
-
+.submenu-inner a.nav-anchor:hover > span {
+    text-decoration: underline;
+}
 
 /* Fixes the bold on hover from making the rest of the nav items move */
 .navigation .level0, .navigation .level0 > a {
@@ -136,12 +138,31 @@ span.brand-name {
 @media (min-width: 768px){
     .nav-sections {margin-bottom: 0;}
     .ves-megamenu.top-navigation>.navigation {padding: 10px 20px 0 10px;}
-    
 }
 
 /* Needed to reset the top positioning given in the above center dropdown styles */
 @media (max-width: 767px) {
     .center-dropdowns .submenu.dropdown-menu {top: initial!important;}
+    .navigation .level0.active>a:not(.ui-state-active), .navigation .level0.has-active>a:not(.ui-state-active),
+    .navigation .submenu:not(:first-child) .active>a,
+    .ves-megamenu .level0.nav-item.active>a span,
+    .ves-megamenu .nav-item.active>a span {
+        border: none;
+    }
+    .ves-megamenu>.navigation .nav-item.active>a {
+        color: #333
+    }
+
+    .navigation .submenu:not(:first-child) .level1.active>a {
+        padding: 0 20px
+    }
+
+    .submenu-inner a.nav-anchor:hover span {text-decoration: none;}
+
+    .navigation .level0.active>a:not(.ui-state-active) span:not(.ui-menu-icon), .navigation .level0.has-active>a:not(.ui-state-active) span:not(.ui-menu-icon) {
+        margin-left: 0;
+    }
+
 }
 
 /* General Header Fixes */

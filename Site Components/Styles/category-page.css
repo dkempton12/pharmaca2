@@ -139,6 +139,22 @@ img.mdm-img {
         display: none;
     }
 
+    #main-cat h3 {
+        display: block;
+    }
+
+    .row.skin-type {
+        display: none;
+    }
+
+    #main-cat .col-md-6 {
+        margin-bottom: 2em;
+    }
+
+    #main-cat .col-md-3 {
+        margin-bottom: 2em;
+    }
+
     /*sub categories*/
     /*hide content*/
     #main-cat.sub-cat {
@@ -159,7 +175,8 @@ img.mdm-img {
         text-align: center;
     }
     
-    #main-cat .owl-slide {
+    #main-cat .owl-slide,
+    #main-cat .banner {
         display: none;
     }
 
