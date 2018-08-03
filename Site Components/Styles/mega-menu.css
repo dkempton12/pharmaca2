@@ -87,6 +87,25 @@ line-height: 30px;}
 
 /* Brands */
 
+#mm-brands img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transform: none;
+    transition: all 0.2s ease;
+}
+
+#mm-brands .mm-image img {
+    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+    transform: none;
+    transition: all 0.2s ease;
+}
+
+#mm-brands img:hover {
+    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+}
+
 #mm-brands .col-md-6 {
     padding: 0;
     width: 48%;
@@ -162,6 +181,16 @@ span.brand-name {
     .navigation .level0.active>a:not(.ui-state-active) span:not(.ui-menu-icon), .navigation .level0.has-active>a:not(.ui-state-active) span:not(.ui-menu-icon) {
         margin-left: 0;
     }
+
+/*IOS FIXES*/
+    .nav-open .page-wrapper {
+        position: initial;
+    }
+
+    .nav-open .page-wrapper .page-header {
+        left: 45%;
+    }
+
 
 }
 
