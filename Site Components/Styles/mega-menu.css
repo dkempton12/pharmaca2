@@ -27,6 +27,11 @@ line-height: 30px;}
     position: initial!important;
 }
 
+/**page title margin**/
+.cms-page-view h1.page-title {
+    margin: 0.8em 0;
+}
+
 /* Updates styling to still differentiate active cats*/
 .ves-megamenu .navigation .level0.current>a {
     background: none;
@@ -188,7 +193,7 @@ span.brand-name {
     }
 
     .nav-open .page-wrapper .page-header {
-        left: 45%;
+        left: 43%;
     }
 
 

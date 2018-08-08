@@ -94,3 +94,22 @@ div#brand-page {
 #brand-page img.pull-right {margin: 1em 0 1em 1em;}
 #brand-page .row {margin-bottom: 3em;}
 
+/*MOBILE*/
+@media screen and (max-width: 768px) {
+    .modal-intro,
+    div#brand-page {
+        padding: 0;
+    }
+    #brand-page img.pull-right,
+    #brand-page img.pull-left {
+        display: block;
+        margin: 2rem auto;
+        float: none!important;
+    }
+
+    #brand-page iframe {
+        max-width: 100%;
+    }
+}
+
+
