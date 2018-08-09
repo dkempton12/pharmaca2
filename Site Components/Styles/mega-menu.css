@@ -187,6 +187,10 @@ span.brand-name {
         margin-left: 0;
     }
 
+.page-header .header.links>.customer-welcome .customer-menu .header.links {
+    position: initial;
+}
+
 /*IOS FIXES*/
     .nav-open .page-wrapper {
         position: initial;
@@ -196,11 +200,22 @@ span.brand-name {
         left: 43%;
     }
 
+/*Mega Menu footer item fixes*/
+.navigation .item-footer {
+    display: none;
+}
+
+.center-dropdowns .submenu.dropdown-menu {
+    border-top: 1px solid #ccc
+}
+
 
 }
 
-/* General Header Fixes */
+
 @media screen and (max-width: 576px) {
+
+/*General Header Fixes*/
     .logo {
         max-width: 100%;
         width: 54%
@@ -248,6 +263,20 @@ span.brand-name {
     right: 18px;
 }
 
+.nav-open .nav-mobile .navigation {
+    padding-left: 0!important;
+}
+
+
+/*ACCOUNT DASH FIXES*/
+.account .block-collapsible-nav {
+    top: -5rem;
+}
+
+.account .page-title {
+    margin-top: 1em
+}
+
 }
 
 @media (min-width: 768px){
@@ -257,6 +286,3 @@ line-height: 25px;}
 .navigation .level0 .submenu a {padding: 5px 0 0px 0px;}
 .navigation .level0 .submenu a {   padding: 5px 0 5px 0px;}
 }
-
-
-
