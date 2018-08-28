@@ -13,26 +13,28 @@
     color: #404041;}
 
 @media (min-width: 768px) {
-.ves-megamenu.ves-offcanvas .level0 .submenu .nav-item>a, .ves-megamenu.ves-dhorizontal .level0 .submenu .nav-item>a {
-line-height: 30px;}
+    .ves-megamenu.ves-offcanvas .level0 .submenu .nav-item>a, .ves-megamenu.ves-dhorizontal .level0 .submenu .nav-item>a {
+        line-height: 30px;
+    }
 }
 
-/** eds fixes  **/
+
+/***** eds fixes  *****/
 .center-dropdowns .submenu.dropdown-menu {
     position: absolute!important;
     width: 100%!important;
     top: 80px!important
 }
 .center-dropdowns.ves-megamenu .navigation .level0 {
-    position: initial!important;
+    position: static!important;
 }
 
-/**page title margin**/
+/*******page title margin******/
 .cms-page-view h1.page-title {
     margin: 0.8em 0;
 }
 
-/* Updates styling to still differentiate active cats*/
+/***** Updates styling to still differentiate active cats ****/
 .ves-megamenu .navigation .level0.current>a {
     background: none;
     font-weight: 600;
@@ -53,7 +55,7 @@ line-height: 30px;}
     text-decoration: underline;
 }
 
-/* Fixes the bold on hover from making the rest of the nav items move */
+/*** Fixes the bold on hover from making the rest of the nav items move ***/
 .navigation .level0, .navigation .level0 > a {
     transition: none!important;
     padding: 0 4px!important;
@@ -68,12 +70,12 @@ line-height: 30px;}
     visibility: hidden;
 }
 
-/* Fixes background hover color on deals menu */
+/**** Fixes background hover color on deals menu ****/
 .navigation #deals a:hover {
     background: none;
 }
 
-/* styling of view all link*/
+/**** styling of view all link ****/
 .ves-megamenu .navigation .level0 .submenu .submenu-inner .item-footer a:hover {
     background: none;
     color: inherit;
@@ -90,7 +92,7 @@ line-height: 30px;}
 }
 
 
-/* Brands */
+/**** Brands ****/
 
 #mm-brands img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -147,24 +149,92 @@ span.brand-name {
     line-height: 10px;
 }
 
-/* Media Queries */
 
-@media screen and (max-width: 1280px) {
-  .center-dropdowns .submenu.dropdown-menu {
-    top: 110px!important
-  }
+/***Sitewide Fixes***/
+
+/***product list left + right margin***/
+.catalog-category-view.page-layout-2columns-left .toolbar.toolbar-products {
+    margin: 0 15px;
+}
+
+/*supplement facts*/
+div#product_facts ul {
+  border-top: solid 3px #666;
+  margin: 1em 0 1em 0;
+  padding: 0 0 2em 0;
+  list-style-type: none;
+}
+div#product_facts ul li {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 1em 0 2em 0;
+  clear: both;
+  border-top: 1px solid #888;
+}
+div#product_facts ul li.title {
+  font-weight: bold;
+}
+div#product_facts ul li div {
+  display: inline;
+}
+div#product_facts ul li div.perServing {
+  float: right;
+  margin: 0;
+  width: 20%;
+}
+div#product_facts ul li div.dv {
+  float: left;
+  margin: 0 5% 0;
+  max-width: 20%;
+}
+div#product_facts ul li div.supplementName {
+  float: left;
+  width: 50%;
+}
+div#product_facts p {
+  border-top: 1px solid #666;
+  padding: 1em 0;
+  margin: 0.5em 0 0 0;
+}
+
+/********* Media Queries ******/
+
+/***IE Fixes****/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .center-dropdowns .submenu.dropdown-menu {
+        top: 50px!important
+    }
+}
+
+@media screen and (max-width: 1440px) {
     main#maincontent {
         padding: 0 15px;
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .page-header-v2 .header.content .logo, .page-header-v3 .header.content .logo, .page-header-v4 .header.content .logo {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1387px) {
+    .center-dropdowns .submenu.dropdown-menu {
+        top: 110px!important
+    }
+}
+    
 
 @media (min-width: 768px){
     .nav-sections {margin-bottom: 0;}
     .ves-megamenu.top-navigation>.navigation {padding: 10px 20px 0 10px;}
 }
 
-/* Needed to reset the top positioning given in the above center dropdown styles */
+/***** Needed to reset the top ****
+*****positioning given in the above center ****
+********dropdown styles *****/
+
 @media (max-width: 767px) {
     .center-dropdowns .submenu.dropdown-menu {top: initial!important;}
     .navigation .level0.active>a:not(.ui-state-active), .navigation .level0.has-active>a:not(.ui-state-active),
@@ -187,27 +257,27 @@ span.brand-name {
         margin-left: 0;
     }
 
-.page-header .header.links>.customer-welcome .customer-menu .header.links {
-    position: initial;
-}
-
-/*IOS FIXES*/
-    .nav-open .page-wrapper {
-        position: initial;
+    .page-header .header.links>.customer-welcome .customer-menu .header.links {
+        position: static;
     }
 
-    .nav-open .page-wrapper .page-header {
-        left: 43%;
+    /******IOS FIXES******/
+        .nav-open .page-wrapper {
+            position: initial;
+        }
+
+        .nav-open .page-wrapper .page-header {
+            left: 43%;
+        }
+
+    /****Mega Menu footer item fixes*****/
+    .navigation .item-footer {
+        display: none;
     }
 
-/*Mega Menu footer item fixes*/
-.navigation .item-footer {
-    display: none;
-}
-
-.center-dropdowns .submenu.dropdown-menu {
-    border-top: 1px solid #ccc
-}
+    .center-dropdowns .submenu.dropdown-menu {
+        border-top: 1px solid #ccc
+    }
 
 
 }
@@ -215,7 +285,7 @@ span.brand-name {
 
 @media screen and (max-width: 576px) {
 
-/*General Header Fixes*/
+/******General Header Fixes******/
     .logo {
         max-width: 100%;
         width: 54%
@@ -229,16 +299,25 @@ span.brand-name {
          margin-left: 0;
     }
 
-.ves-megamenu>.navigation .nav-item .item-content>.nav-dropdown {
-      padding-left: 0;
-}
+    .ves-megamenu>.navigation .nav-item .item-content>.nav-dropdown {
+        padding-left: 0;
+    }
 
     #mm-brands .col-md-6 {
         width: initial;
+        border-right: 0;
+        padding-right: 15px;
     }
 
     #mm-brands .col-md-5 {
         width: initial;
+        border-right: 0;
+        margin-right: 17px;
+        padding-right: 15px;
+    }
+
+    #mm-brands .col-md-3, #mm-brands .col-md-4 {
+        margin: 0;
     }
 
     #mm-brands .col-md-1 {
@@ -249,40 +328,40 @@ span.brand-name {
         line-height: initial;
     }
 
-/*opens the hidden subcategories*/
-.ves-megamenu.ves-offcanvas .show-mobile .opener, 
-.hide-mobile {
-    display: none;
-}
+    /*******opens the hidden subcategories******/
+    .ves-megamenu.ves-offcanvas .show-mobile .opener, 
+    .hide-mobile {
+        display: none;
+    }
 
-.show-mobile .submenu {
-    display: block
-}
+    .show-mobile .submenu {
+        display: block
+    }
 
-.ves-megamenu .navigation .opener {
-    right: 18px;
-}
+    .ves-megamenu .navigation .opener {
+        right: 18px;
+    }
 
-.nav-open .nav-mobile .navigation {
-    padding-left: 0!important;
-}
+    .nav-open .nav-mobile .navigation {
+        padding-left: 0!important;
+    }
 
 
-/*ACCOUNT DASH FIXES*/
-.account .block-collapsible-nav {
-    top: -5rem;
-}
+    /***** ACCOUNT DASH FIXES *****/
+    .account .block-collapsible-nav {
+        top: -5rem;
+    }
 
-.account .page-title {
-    margin-top: 1em
-}
+    .account .page-title {
+        margin-top: 1em
+    }
 
 }
 
 @media (min-width: 768px){
-.ves-megamenu.ves-offcanvas .level0 .submenu .nav-item>a, .ves-megamenu.ves-dhorizontal .level0 .submenu .nav-item>a {
-line-height: 25px;}
-.ves-megamenu .navigation .nav-item.subhover>.submenu>.submenu-inner { padding: 10px;}
-.navigation .level0 .submenu a {padding: 5px 0 0px 0px;}
-.navigation .level0 .submenu a {   padding: 5px 0 5px 0px;}
+    .ves-megamenu.ves-offcanvas .level0 .submenu .nav-item>a, .ves-megamenu.ves-dhorizontal .level0 .submenu .nav-item>a {
+    line-height: 25px;}
+    .ves-megamenu .navigation .nav-item.subhover>.submenu>.submenu-inner { padding: 10px;}
+    .navigation .level0 .submenu a {padding: 5px 0 0px 0px;}
+    .navigation .level0 .submenu a {   padding: 5px 0 5px 0px;}
 }

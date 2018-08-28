@@ -1,10 +1,7 @@
 <!-- skin container -->
 <div id="skinContainer" class="skinBg">
-    <div class="skinTitle">
-      <h1 class="skinH1"><span>Shop</span><br />
-        Natural Beauty<br />
-        <span>by Skin Type</span>
-        </h1>
+    <div class="row">
+        <img alt="Shop Beauty by Skin Type" src="/media/wysiwyg/categories/2018/beauty/skin-type/shop-by-skin-type-banner.jpg">
     </div>
     <div class="row">
     <!-- Normal Skin -->
@@ -40,9 +37,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12"><img src="/media/wysiwyg/categories/2018/beauty/skin-type/skin-type_12.jpg" alt="Shop By Skin Type"/></div>
     </div>
     <div class="row">
         <!-- Combo Skin -->
@@ -86,33 +80,20 @@
 #layered-filter-block {
     display: none;
 }
-#skinContainer .row {  max-width: 1000px; width: 100%;}
+#skinContainer .row {  max-width: 1000px; width: 100%; margin: 2rem auto;}
 
 #skinContainer {
-  max-width: 1300px;
-  border: solid 1px #fff;
-  margin: 0 auto;
-  background: url(/media/wysiwyg/categories/2018/beauty/skin-type/Skin-Type-bg2.jpg) no-repeat;
-  min-height: 1200px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background: #ededed;
+    padding: 2rem;
 }
 
 #skinContainer .skinTitle {
-  max-width: 410px;
-  height: 150px;
-  background: rgba(255,255,255,0.7);
-  padding: 1em 1em 2em 3em;
-  margin: 5em auto 3em auto;
+    text-align: center;
+    margin: 2rem;
 }
 
-#skinContainer h1.skinH1 {
-  font-size: 3.4em;
-  line-height: 37px;
-  text-transform: capitalize;
-}
-
-#skinContainer h1.skinH1 span {
-  font-size: 68%;
-}
 
 /* Products */
 
@@ -130,9 +111,8 @@ height: 337px;
   background: rgba(246,244,237,0.7);
   padding: 0.6em 0;
   font-size: 1.3em;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 0.6em;
-  font-family: 'Raleway', sans-serif;
   color:#333
 }
 
@@ -232,6 +212,10 @@ opacity: 1;
 #skinContainer .view-first:hover h2.top {
 opacity: 0;
 transition: all 0.2s linear;
+}
+
+.Predictive-intelligence--catalog {
+    display: none;
 }
 
 /* Mobile */
