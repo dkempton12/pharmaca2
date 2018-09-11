@@ -329,6 +329,7 @@ div#product_facts p {
     }
 
     /*******opens the hidden subcategories******/
+
     .ves-megamenu.ves-offcanvas .show-mobile .opener, 
     .hide-mobile {
         display: none;
