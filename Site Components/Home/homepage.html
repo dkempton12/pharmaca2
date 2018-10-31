@@ -1,3 +1,153 @@
+<style>
+
+.theme-pearl .page-wrapper .page-main .columns, .page.messages {width: 100% !important; max-width: 100% !important}
+.page-wrapper .breadcrumbs {display: none;}
+.theme-pearl .page-wrapper .page-main {padding: 0px;}
+
+.whats-hot-box {
+    text-align: center;
+    height: 280px;
+    vertical-align: bottom;
+    background: #f4f4f4;
+}
+
+div#pi-block {
+    height: 500px;
+    border: solid 1px #ccc;
+}
+
+
+h2.hp-title {
+    margin: 50px 0 20px;
+}
+
+span.subtitle {
+    display: block;
+}
+
+.container-v1 .custom-padding {
+    padding: 0 50px;
+}
+
+.promo {
+    position: relative;
+}
+
+/* hp custom font styling */
+
+#main-hp h2 {
+    font-weight: 400;
+    font-size: 3.8rem;
+line-height: 45px;
+}
+#main-hp h4 {
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#main-hp p {
+    font-size: 18px;
+    line-height: 30px;
+	}
+
+#main-hp a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#main-hp a:hover {
+    text-decoration: underline;
+    color: #404041;
+}
+
+#main-hp a.action:hover {
+     text-decoration: none;
+}
+
+#main-hp #igdrec_1 a {
+    display: block;
+}
+
+#main-hp .owl-slide,
+#main-hp .banner {
+   max-height: 450px;
+   overflow: hidden;
+}
+
+#main-hp .show-mobile {
+   display: none;
+}
+
+
+#mobile-hp {
+ display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+#main-hp .bottom-left p {
+    line-height: 0;
+}
+
+#mobile-hp {
+  display: block;
+}
+
+#mobile-hp .shop-by-cat-list.center.list-unstyled {
+    list-style-type: none;
+    padding-left: 0;
+}
+#mobile-hp .by-brand .col-xs-4 {
+    margin-bottom: 2em;
+}
+
+#mobile-hp .by-brand a {
+    font-size: inherit;
+    color: inherit;
+}
+
+#mobile-hp .shop-by-cat-list li {
+    border: 1px solid #ccc;
+    margin-bottom: 0;
+    padding: 0.5em 0;
+    
+}
+
+#mobile-hp .shop-by-cat-list li a {
+color: #404041
+}
+
+
+#main-hp .show-desktop {
+  display: none;
+}
+
+#main-hp .show-mobile {
+  display: block;
+}
+#main-hp {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main-hp h2 {
+    font-size: 2.5rem;
+}
+#main-hp .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#main-hp .owl-slide {
+    height: auto;
+}
+}
+
+
+</style>
+
+
 <!--OWL-->
 {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="72"}}
 
@@ -6,9 +156,9 @@
     <!--SLIDERS-->
     <div class="row owl-slide">
         <div class="col-md-12 nopadding">
-            <a href="/beauty/indie-beauty">
-                <img class="show-desktop" src="/media/wysiwyg/homepage/2018/oct/hp-slider-beauty.jpg" alt="Shop Indie Beauty at Pharmaca">
-                <img class="show-mobile" src="/media/wysiwyg/homepage/2018/oct/hp-slider-beauty-mobile.jpg" alt="Shop Indie Beauty at Pharmaca">
+            <a href="/beauty">
+                <img class="show-desktop" src="/media/wysiwyg/homepage/2018/nov/hp-slider-beauty.jpg" alt="Shop  Beauty at Pharmaca">
+                <img class="show-mobile" src="/media/wysiwyg/homepage/2018/nov/hp-slider-beauty-mobile.jpg" alt=" Indie Beauty at Pharmaca">
             </a>
         </div>
         <div class="col-md-12 nopadding">
@@ -17,6 +167,14 @@
                 <img class="show-mobile" src="/media/wysiwyg/homepage/2018/oct/hp-slider-cold-support-mobile.jpg" alt="Cold Support at Pharmaca">
             </a>
         </div>
+<!--
+        <div class="col-md-12 nopadding">
+            <a href="#">
+                <img class="show-desktop" src="/media/wysiwyg/homepage/2018/nov/hp-slider-holiday.jpg" alt="Holiday at Pharmaca">
+                <img class="show-mobile" src="/media/wysiwyg/homepage/2018/nov/hp-slider-holiday-mobile.jpg" alt="Holiday at Pharmaca">
+            </a>
+        </div>
+-->
     </div>
     <div class="col_full">
         <!-- empty space -->
@@ -108,22 +266,22 @@
             </div>
             <div class="col_one_fourth">
                 <a href="/what-s-hot">
-                    <img src="/media/wysiwyg/homepage/2018/sep/hp-whats-hot.jpg" alt="Whats Hot" />
+                    <img src="/media/wysiwyg/homepage/2018/nov/hp-whats-hot.jpg" alt="Whats Hot" />
                 </a>
             </div>
             <div class="col_one_fourth">
                 <a href="/what-s-new">
-                    <img src="/media/wysiwyg/homepage/2018/sep/hp-whats-new.jpg" alt="Whats New" />
+                    <img src="/media/wysiwyg/homepage/2018/nov/hp-whats-new.jpg" alt="Whats New" />
                 </a>
             </div>
             <div class="col_one_fourth">
                 <a href="/our-experts">
-                    <img src="/media/wysiwyg/homepage/2018/sep/hp-our-expers.jpg" alt="Experts" />
+                    <img src="/media/wysiwyg/homepage/2018/nov/hp-our-experts.jpg" alt="Experts" />
                 </a>
             </div>
             <div class="col_one_fourth col_last">
                 <a href="/discover-our-brands">
-                    <img src="/media/wysiwyg/homepage/2018/sep/hp-our-brands.jpg" alt="Our Brands" />
+                    <img src="/media/wysiwyg/homepage/2018/nov/hp-discover-our-brands.jpg" alt="Our Brands" />
                 </a>
             </div>
         </div>
@@ -134,7 +292,7 @@
                 <!-- empty space -->
             </div>
             <div class="col_half">
-                <a href="/gifts-with-purchase"><img src="/media/wysiwyg/homepage/2018/oct/hp-gwp.jpg" alt="GWP" /></a>
+                <a href="/gifts-with-purchase"><img src="/media/wysiwyg/homepage/2018/nov/hp-gwp.jpg" alt="GWP" /></a>
             </div>
             <div class="col_half col_last">
                 <h2 class="hp-title">Don’t forget your <span>Gift with Purchase<span></h2>
@@ -171,7 +329,7 @@
                 </div>
             </div>
             <div class="col_two_fifth col_last">
-                <a href="/beauty/indie-beauty"><img src="/media/wysiwyg/homepage/2018/oct/hp-indie-beauty.jpg" alt="Indie Beauty" /></a>
+                <a href="/beauty/indie-beauty"><img src="/media/wysiwyg/homepage/2018/nov/indie-beauty.jpg" alt="Indie Beauty" /></a>
             </div>
         </div>
 

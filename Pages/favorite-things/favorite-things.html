@@ -1,0 +1,568 @@
+<style>
+
+div#gwl-wrapper {
+    max-width: 1344px;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 3em;
+}
+    
+.SKcontainer {margin:0 auto 3em auto;}
+
+.lineBG {position: relative;z-index: 1;}
+.lineBG:before {
+    border-top: 2px solid #dfdfdf;
+    content:"";
+    margin: 0 auto; 
+    position: absolute; 
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+span.bgWhite { background-color: #fff;display: block;width: 36%;margin: 0 auto;}
+
+/* mobile */
+@media (max-width: 667px) { 
+  span.bgWhite  {width: 100%;}
+}
+
+#gwl-list-container {
+	padding: 0;
+	clear: both;
+	margin: 0 auto 4em auto;
+	width: 90%;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 13px;
+	color: #333;
+	line-height: 1.5em;
+	background: url('/media/wysiwyg/holiday/2018/favorite-things/gold-pattern5.png');
+	padding-bottom: 3em;
+}
+
+#gwl-wrapper img.holidayH {
+    max-width: 80%;
+    margin: 0 auto 1em;
+}
+    
+ #gwl-wrapper .holHeader p {
+    margin: 0 0 1em 0;
+    font-size: 1.5em;
+}
+
+.gwl-prod {
+	padding: 0;
+	display: inline-block;
+}
+
+#gwl-list-container .gwl-prod img {
+    max-height: 250px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+#gwl-list-container .prod-title {
+	line-height: 1.52em;
+	font-size: 15px;
+	text-transform: uppercase;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+}
+
+#gwl-list-container p.brand-title {
+    margin: 1em 0 0 0;
+    color: #cc9933;
+    font-family: 'Libre Baskerville';
+    text-transform: lowercase;
+    font-size: 1.8rem;
+}
+
+#gwl-list-container p.prod-descrip {
+	line-height: 1.5em;
+	color: #666;
+	margin: 1em 0 2em 0;
+}
+
+#gwl-list-container .gwl-product-details {
+	max-width: 231px;
+	margin: 0 auto;
+}
+
+#gwl-list-container a.action primary, a.action primary:hover, a.action primary:active, a.action primary:focus {
+	background: #cc9933; /* Old browsers */
+	padding: 8px 20px 7px 20px;
+	font-size: 12px;
+	line-height: normal;
+    color: #fff;
+    text-decoration: none;
+}
+
+/***LOTS OF IMAGE STYLING***/
+
+div#gwl-list-container > div {
+	background-color: #ffffff;
+	border: dotted 1px #eee;
+	padding: 2em 0;
+}
+    
+.gwl-prod {
+    width: 25%;   
+}
+
+.gwl-prod.prod-1 {
+	margin: 10% 2.5% 0 2.5%;
+}
+
+.gwl-prod.prod-2 {
+	margin: 3% 2.5% 0 2.5%;
+	vertical-align: top;
+}
+
+.gwl-prod.prod-3 {
+    margin: 0 2.5% 0 2.5%;
+}
+
+.gwl-prod.prod-18{
+	margin: 4.5% 2.5% 0 2.5%;
+}
+
+.gwl-prod.prod-4,
+.gwl-prod.prod-6{
+	margin: 5% 2.5% 0 2.5%;
+	vertical-align: top;
+}
+
+.gwl-prod.prod-5 {
+	margin: -4% 2.5% 0 2.5%;
+	vertical-align: top;
+}
+
+.gwl-prod.prod-7 {
+	margin: 2% 2.5% 0 2.5%;
+	vertical-align: top;
+}
+
+.gwl-prod.prod-8 {
+	margin: -4% 2.5% 0 2.5%;
+	vertical-align: top;
+}    
+
+.gwl-prod.prod-9 {
+    margin: 4.5% 2.5% 0 2.5%;
+}    
+    
+.gwl-prod.prod-10 {
+	margin: 1% 2.5% 0 2.5%;
+    vertical-align: top;
+}
+    
+.gwl-prod.prod-11 {
+    margin: -3% 2.5% 0 2.5%;
+    vertical-align: top;
+}
+    
+.gwl-prod.prod-12 {
+    margin: 3% 2.5% 0 2.5%;
+}
+    
+.gwl-prod.prod-13 {
+    margin: -3% 2.5% 0 2.5%;
+    vertical-align: top;
+}
+    
+.gwl-prod.prod-14 {
+    margin: -4% 2.5% 0 2.5%;
+    vertical-align: top;
+}    
+    
+.gwl-prod.prod-15 {
+    margin: 3.5% 2.5% 0 2.5%;
+}    
+    
+.gwl-prod.prod-16 {
+    margin: -16% 2.5% 0 2.5%;
+    vertical-align: top;
+}
+    
+.gwl-prod.prod-17 {
+    margin: -10% 2.5% 0 2.5%;
+    vertical-align: top;
+} 
+    
+.gwl-prod.prod-19 {
+    margin: -17% 2.5% 0 2.5%;
+    vertical-align: top;
+}
+    
+.gwl-prod.prod-20 {
+    margin: -11% 2.5% 0 2.5%;
+    vertical-align: top;
+}
+    
+.gwl-prod.prod-21 {
+    margin: 5% 2.5% 0 2.5%;
+    vertical-align: top;
+}
+    
+.gwl-prod.prod-22 {
+    margin: -17% 2.5% 0 2.5%;
+    vertical-align: top;
+}
+    
+.gwl-prod.prod-23 {
+    margin: -11% 2.5% 0 2.5%;
+    vertical-align: top;
+}
+
+.gwl-prod.prod-24 {
+    margin: 3% 2.5% 0 2.5%;
+    vertical-align: top;
+}  
+    
+.gwl-prod.prod-25 {
+    margin: -16% 2.5% 0 2.5%;
+    vertical-align: top;
+}  
+    
+.gwl-prod.prod-26 {
+    margin: -10% 2.5% 0 2.5%;
+    vertical-align: top;
+}  
+    
+.gwl-prod.prod-27 {
+    margin: 3% 2.5% 0 2.5%;
+    vertical-align: top;
+}      
+
+/********MEDIA QUERIES***********/
+
+@media screen and (max-width: 1024px) {
+    #gwl-wrapper #gwl-list-container .gwl-prod {
+        width: 44%;
+        margin: 2.5%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    #gwl-wrapper #gwl-list-container .gwl-prod {
+        width: 90%;
+        margin: 5% auto;
+    }
+}    
+
+
+</style>
+
+<div id="gwl-wrapper">
+    <div class="row">
+          <div class="twelve columns topMargin-small lineBG holHeader">
+            <span class="bgWhite"><img src="/media/wysiwyg/holiday/2018/favorite-things/our-favorites-header2.jpg" class="flexIMG centre holidayH" alt="Our Favorite Things"></span>
+            <p>Treat them (or yourself) to a few of this year’s best natural gift ideas.</p>
+          </div>
+     </div>
+    <div id="gwl-list-container">
+        <div class="gwl-prod prod-1">
+            <a href="/la-chatelaine">
+                <img alt="La Chatelaine" src="/media/wysiwyg/holiday/2018/favorite-things/la-chatelaine.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">La Chatelaine</p>
+                <p class="prod-title">Hand Creams</p>
+                <p class="prod-descrip">These wonderfully emollient hand creams are brought to you from the south of France using time-honored craftsmanship, and ethically sourced natural and organic ingredients.</p>
+                <a class="action primary" href="/bath-body/body-care/hand-lotion-oil">SHOP HAND & BODY LOTION</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-2">
+            <a href="#">
+                <img alt="Pharmaca Bath Salts" src="/media/wysiwyg/holiday/2018/favorite-things/pharmaca2.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Pharmaca</p>
+                <p class="prod-title">Pink Himalayan Salts</p>
+                <p class="prod-descrip">Mineral-rich salts come together with pure essential oils and crushed herbs and flowers to provide the ultimate soaking experience.  </p>
+                <a class="action primary" href="/bath-body/bath-shower/bath-salt-bubble-bath">SHOP BATH SALT & BUBBLE BATH</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-3">
+            <a href="/lavanila">
+                <img alt="Lavanila " src="/media/wysiwyg/holiday/2018/favorite-things/lavanila.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Lavanila</p>
+                <p class="prod-title">The Healthy Fragrance in Vanilla Grapefruit</p>
+                <p class="prod-descrip">Juicy pink grapefruit mingles with fresh lime, warm cedarwood and soft Madagascar vanilla in this bright fragrance that will leave you feeling like you’ve been kissed by sunshine.</p>
+                <a class="action primary" href="/bath-body/body-care/fragrance">SHOP FRAGRANCE</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-4">
+            <a href="/klean-kanteen">
+                <img alt="Klean Kanteen Water Bottles" src="/media/wysiwyg/holiday/2018/favorite-things/klean-kanteen.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Klean Kanteen</p>
+                <p class="prod-title">Insulated Water Bottle</p>
+                <p class="prod-descrip">Give them the gift of hydration! These bottles are a great way to keep water cold when you’re at the gym or on the go. </p>
+                <a class="action primary" href="/home-baby/fitness-gear-accessories/water-bottles">SHOP WATER BOTTLES</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-5">
+            <a href="/jurlique-refreshing-citrus-body-lotion-300ml">
+                <img alt="Jurlique Refreshing Body Lotion in Citrus" src="/media/wysiwyg/holiday/2018/favorite-things/jurlique.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Jurlique</p>
+                <p class="prod-title">Refreshing Body Lotion in Citrus</p>
+                <p class="prod-descrip">Made with nourishing avocado and macadamia oils and natural mandarin, tangerine and lemon fragrance, this lotion leaves skin deeply hydrated, beautifully scented and visibly glowing.</p>
+                <a class="action primary" href="/bath-body/body-care">SHOP BODY CARE</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-6">
+            <a href="/tru-melange-vanilla-peppermint-glass-soy-candle-5oz">
+                <img alt="Tru Melange Soy Candle in Vanilla Peppermint" src="/media/wysiwyg/holiday/2018/favorite-things/tru-melange.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Tru Melange</p>
+                <p class="prod-title">Soy Candle in Vanilla Peppermint</p>
+                <p class="prod-descrip">Set light to the sweet scents of the holidays with these soy wax candles, infused with pure essential oils and housed in beautiful glass jars.</p>
+                <a class="action primary" href="/tru-melange">SHOP TRU MELANGE</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-7">
+            <a href="/now-ultrasonic-real-bamboo-essential-oil-diffuser">
+                <img alt="NOW Ultrasonic Real Bamboo Essential Oil Diffuser" src="/media/wysiwyg/holiday/2018/favorite-things/now.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">NOW</p>
+                <p class="prod-title">Ultrasonic Real Bamboo Essential Oil Diffuser</p>
+                <p class="prod-descrip">Want to relax? Focus? Get energized? Add just a few drops of your favorite essential oil to this stylish diffuser and customize the mood in any room. </p>
+                <a class="action primary" href="/home-baby/natural-home/aromatherapy-relaxation">SHOP AROMATHERAPY</a>
+            </div>
+
+        </div>
+        <div class="gwl-prod prod-8">
+             <a href="/juice-beauty-best-of-juice-beauty-skincare-gift-set">
+                <img alt="Juice Beauty Best of Kit" src="/media/wysiwyg/holiday/2018/favorite-things/juice-beauty.jpg">
+             </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Juice Beauty</p>
+                <p class="prod-title">Best of Kit</p>
+                <p class="prod-descrip">Tis the season for gorgeous! Best-sellers from Juice Beauty’s best-selling Green Apple and Stem Cellular lines come together in this starter kit that delivers plump, glowing skin. A great value! </p>
+                <a class="action primary" href="/beauty/makeup/makeup-kits-sets">SHOP MAKEUP KITS & SETS</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-9">
+            <a href="#">
+                <img alt="Bee Lucia Wellness Candle in Lavender & Amethyst" src="/media/wysiwyg/holiday/2018/favorite-things/bee-lucia.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Bee Lucia</p>
+                <p class="prod-title">Wellness Candle in Lavender & Amethyst</p>
+                <p class="prod-descrip">These gorgeous candles are made from beeswax and organic coconut oil and infused with healing stones and essential oils to nourish the spirit. </p>
+                <a class="action primary" href="/home-baby/natural-home/candles">SHOP CANDLES</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-10">
+            <a href="/bucky-heart-warmer-pillow">
+                <img alt="Bucky Heart Warmer Pillow" src="/media/wysiwyg/holiday/2018/favorite-things/bucky.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Bucky</p>
+                <p class="prod-title">Heart Warmer Pillow</p>
+                <p class="prod-descrip">Show your loved one you care with this plush, heatable pillow that will warm them to the core.</p>
+                <a class="action primary" href="/bucky">SHOP BUCKY</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-11">
+            <a href="/nuface-trinity-facial-toning-kit">
+                <img alt="NuFace Trinity Facial Toning Kit" src="/media/wysiwyg/holiday/2018/favorite-things/nuface.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">NuFace</p>
+                <p class="prod-title">Trinity Facial Toning Kit</p>
+                <p class="prod-descrip">Take your skin care to the next level! Microcurrents function as your skin’s personal trainer, delivering a skin strengthening routine that targets fine lines and wrinkles.</p>
+                <a class="action primary" href="/beauty/beauty-accessories">SHOP BEAUTY ACCESSORIES</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-12">
+            <a href="/indie-lee-coconut-citrus-body-scrub-250g">
+                <img alt="Indie Lee Coconut Citrus Body Scrub" src="/media/wysiwyg/holiday/2018/favorite-things/indie-lee.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Indie Lee</p>
+                <p class="prod-title">Coconut Citrus Body Scrub</p>
+                <p class="prod-descrip">Gently exfoliate every inch of you with this skin-loving blend of raw cane sugar, coconut and jojoba oils—and the uplifting aromas of lemongrass, lemon balm and vanilla.</p>
+                <a class="action primary" href="/indie-lee">SHOP INDIE LEE</a>
+            </div>
+        </div>       
+        <div class="gwl-prod prod-13">
+            <a href="/eminence-wildflower-ultralight-oil-3-3oz">
+                <img alt="Eminence Wildflower Ultralight Oil" src="/media/wysiwyg/holiday/2018/favorite-things/eminence.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Eminence</p>
+                <p class="prod-title">Wildflower Ultralight Oil</p>
+                <p class="prod-descrip">The ultimate post-bath luxury! Specially formulated with botanicals that provide sheer moisture and leave skin with a smooth satin finish.</p>
+                <a class="action primary" href="/bath-body/body-care/body-oil">SHOP BODY OILS</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-14">
+            <a href="/pre-de-provence-shea-butter-lavender-gift-bag">
+                <img alt="Pre de Provence Shea Butter Lavender Gift Bag" src="/media/wysiwyg/holiday/2018/favorite-things/pre-de-provence.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Pre de Provence</p>
+                <p class="prod-title">Shea Butter Lavender Gift Bag</p>
+                <p class="prod-descrip">The perfect duo for clean, soft hands in a wonderfully fragrant lavender scent. Great for gift giving, to have on hand for guests or to keep as a treat for yourself.</p>
+                <a class="action primary" href="/pre-de-provence">SHOP PRE DE PROVENCE</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-15">
+            <a href="/u-konserve-insulated-stainless-steel-tumbler-8oz">
+                <img alt="U Konserve Insulated Tumbler" src="/media/wysiwyg/holiday/2018/favorite-things/u-konserve.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">U Konserve</p>
+                <p class="prod-title">Insulated Tumbler</p>
+                <p class="prod-descrip">Coffee or beer? Either way, this double-walled number keeps beverages hot or cold for hours.</p>
+                <a class="action primary" href="/home-baby/natural-home/home">SHOP HOME</a>
+            </div>
+        </div>
+
+<!--
+        <div class="gwl-prod prod-16">
+            <a href="/sonage-botanica-souffle-creme-1-7oz">
+                <img alt="Sonage Botanica Souffle Creme" src="/media/wysiwyg/holiday/2018/favorite-things/sonage.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Sonäge</p>
+                <p class="prod-title">Botanica Souffle Crème </p>
+                <p class="prod-descrip">Five incredibly soft brushes in a take-anywhere clutch help you stay flawless all day and night.</p>
+                <a class="action primary" href="/sonage">SHOP SONAGE</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-17">
+            <a href="/catalogsearch/result/?q=Evolution+Salt+Co">
+                <img alt="Evolution Salt Co Natural Crystal Salt Lamp" src="https://www.pharmaca.com/media/wysiwyg/holiday/favorite-things/evolution-salt-co.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Evolution Salt Co.</p>
+                <p class="prod-title">Natural Crystal Salt Lamp</p>
+                <p class="prod-descrip">A garden's worth of natural ingredients gives your skin what it needs to look its best.</p>
+                <a class="action primary" href="/natural-home/aromatherapy-relaxation/salt-lamps">Salt Lamps</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-18">
+            <a href="/s-w-basics-full-mini-kit">
+                <img alt="sw basics mini kit" src="/media/wysiwyg/holiday/2018/favorite-things/sw-basics.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">S.W. Basics</p>
+                <p class="prod-title">Full Mini Kit</p>
+                <p class="prod-descrip">This pretty little set features everything you need to get started with this less-is-more, all-natural line. </p>
+                <a class="action primary" href="/s-w-basics">SHOP S.W. BASICS</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-19">
+            <a href="/sarabecca">
+                <img alt="Sarabecca Roll-on Perfume" src="/media/wysiwyg/holiday/2018/favorite-things/sarabecca.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Sarabecca</p>
+                <p class="prod-title">Roll-On Perfumes</p>
+                <p class="prod-descrip">A purse-ready stash of artisan-made essential oil-scented perfume. All natural and all luxury.</p>
+                <a class="action primary" href="/body-hair-care/body-care/perfume">SHOP PERFUME</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-20">
+            <a href="/zoe-organics-pregnancy-gift-set">
+                <img alt="Zoe Organics Pregnancy Set" src="/media/wysiwyg/holiday/2018/favorite-things/zoe-organics.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Zoe Organics</p>
+                <p class="prod-title">Pregnancy Gift Set </p>
+                <p class="prod-descrip">Treat that mama-to-be to organic, nourishing ingredients to keep her skin in tip-top shape!</p>
+                <a class="action primary" href="/shop-by-condition/pregnancy-support">SHOP PREGNANCY SUPPORT</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-21">
+            <a href="/zum">
+                <img alt="Zum Bath SAlts" src="/media/wysiwyg/holiday/2018/favorite-things/zum.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Zum</p>
+                <p class="prod-title">Bath Salts</p>
+                <p class="prod-descrip">Delight the skin and senses with these essential oil-based salts that nourish and rejuvenate. Zum-tastic!</p>
+                <a class="action primary" href="/body-hair-care/bath-shower/bath-salt-bubble-baths">SHOP BATH &amp; SHOWER</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-22">
+            <a href="/herbal-concepts">
+                <img alt="Herbal Concepts Shoulder Wraps" src="/media/wysiwyg/holiday/2018/favorite-things/herbal-concepts.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Herbal Concepts</p>
+                <p class="prod-title">Shoulder Wrap</p>
+                <p class="prod-descrip">Ease tension and soothe the soul with this perfectly shaped wrap that’s ideal after a long day’s work. </p>
+                <a class="action primary" href="/natural-home/aromatherapy-relaxation/neck-body-wraps">SHOP NECK AND BODY WRAPS </a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-23">
+            <a href="/klean-kanteen-insulated-tumbler-winter-lake-16oz">
+                <img alt="Acure Morrocan Oil Set" src="/media/wysiwyg/holiday/2018/favorite-things/klean-kanteen.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Klean Kanteen</p>
+                <p class="prod-title">Insulated Water Bottles</p>
+                <p class="prod-descrip">A great way to keep water cold when you’re at the gym or on the go.</p>
+                <a class="action primary" href="/klean-kanteen">SHOP KLEAN KANTEEN</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-24">
+            <a href="/catalogsearch/result/?q=jane+iredale+holiday">
+                <img alt="jane iredale Holiday Set" src="/media/wysiwyg/holiday/2018/favorite-things/jane-iredale.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title"><i>jane iredale</i></p>
+                <p class="prod-title">Holiday Collection </p>
+                <p class="prod-descrip">Spice up your holiday parties with new lip gloss shades and a refillable compact that will make you feel beautiful all year long. </p>
+                <a class="action primary" href="/facial-care-beauty/makeup">SHOP MAKEUP</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-25">
+            <a href="/dr-hauschka-revitalizing-face-care-kit">
+                <img alt="Dr. Hauschk Revitilizing Face Care Kit" src="/media/wysiwyg/holiday/2018/favorite-things/dr-hauschka2.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Dr. Hauschka</p>
+                <p class="prod-title">Revitalizing Face Care Kit</p>
+                <p class="prod-descrip">A sweet chance to try six all-time customer favorites in a cute tin.</p>
+                <a class="action primary" href="/dr-hauschka">SHOP DR. HAUSCHKA</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-26">
+            <a href="/trilipiderm-rehydration-night-creme-1-7oz">
+                <img alt="Trilipiderm Rehydration Night Creme" src="/media/wysiwyg/holiday/2018/favorite-things/trilipiderm.jpg">
+            </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Trilipiderm</p>
+                <p class="prod-title">Rehydration Night Crème</p>
+                <p class="prod-descrip">For when you need serious hydration along with cell renewal, collagen boosting, free radical-fighting….you get the idea.</p>
+                <a class="action primary" href="/facial-care-beauty/facial-care/moisturizers-oils">SHOP MOISTURIZERS &amp; OILS</a>
+            </div>
+        </div>
+        <div class="gwl-prod prod-27">
+            <a href="/trumelange-glass-screen-print-fresh-17oz">
+            <img alt="Tru Melange Glass Candle" src="/media/wysiwyg/holiday/favorite-things/tru-melange.jpg">
+        </a>
+            <div class="gwl-product-details">
+                <p class="brand-title">Tru Melange</p>
+                <p class="prod-title">Glass Candle</p>
+                <p class="prod-descrip">Set light to the sweet scents of the holidays—in beautiful glass jars or travel tins. </p>
+                <a class="action primary" href="/tru-melange">SHOP TRU MELANGE</a>
+            </div>
+        </div>
+-->
+    </div>
+</div>
